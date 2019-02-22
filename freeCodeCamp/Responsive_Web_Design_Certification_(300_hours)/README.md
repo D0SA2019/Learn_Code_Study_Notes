@@ -2,7 +2,7 @@
 ------------
 #### 1.1. Basic HTML and HTML5
 
-* All in one study notes and worksheet : [notes](), [.html]()
+* All in one study notes and worksheet : [notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.md), [.html](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.html)
 ---------
 
 **Lessons**
