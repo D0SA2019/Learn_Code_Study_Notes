@@ -1,0 +1,207 @@
+# codecademy
+My personal notes and projects on Codecademy
+
+## 1. Python Syntax
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/1_Python_Syntax.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/1_Python_Syntax.py)
+* Tip Calculator Project notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Tip_Calculator_Project.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Tip_Calculator_Project.py)
+---------
+This lesson will introduce you to Python, a general-purpose, object-oriented interpreted language you can use for countless standalone projects or scripting applications.
+
+**Exercises**
+1. Hello World!
+2. Print Statements
+3. Strings
+4. Handling Errors
+5. Variables
+6. Arithmetic
+7. Updating Variables
+8. Comments
+9. Numbers
+10. Two Types of Division
+11. Multi-line Strings
+12. Booleans
+13. ValueError
+14. Review
+
+
+## 2. Strings & Console Output
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/2_Strings_and_Console_Output.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/2_Strings_Console_Output.py)
+---------
+#### 2.1. Strings
+This lesson will introduce you to strings and console output in Python, including creating string literals, calling a variety of string methods, and using the "print" keyword.
+
+**Exercises**
+1. Strings
+2. Practice
+3. Escaping characters
+4. Access by Index
+5. String methods
+6. lower()
+7. upper()
+8. str()
+9. Dot Notation
+10. Printing Strings
+11. Printing Variables
+12. String Concatenation
+13. Explicit String Conversion
+14. String Formatting with %, Part 1
+15. String Formatting with %, Part 2
+16. And Now, For Something Completely Familiar
+
+#### 2.2. Date and Time
+This lesson is a follow up to Unit 2: Strings and Console input and will give you practice with the concepts introduced in that lesson.
+
+**Exercises**
+1. The datetime Library
+2. Getting the Current Date and Time
+3. Extracting Information
+4. Hot Date
+5. Pretty Time
+6. Grand Finale
+
+
+
+## 3. Conditionals & Control Flow
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/3_Conditionals_and_Control_Flow.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/3_Conditionals_Control_Flow.py)
+---------
+In this lesson, we'll learn how to create programs that generate different outcomes based on user input!
+
+**Exercises**
+1. Go With the Flow
+2. Compare Closely!
+3. Compare... Closelier!
+4. How the Tables Have Turned
+5. To Be and/or Not to Be
+6. And
+7. Or
+8. Not
+9. This and That (or This, But Not That!)
+10. Mix 'n' Match
+11. Conditional Statement Syntax
+12. If You're Having...
+13. Else Problems, I Feel Bad for You, Son...
+14. I Got 99 Problems, But a Switch Ain't One
+15. The Big If
+
+#### PygLatin
+In this lesson we'll put together all of the Python skills we've learned so far including string manipulation and branching. We'll be building a Pyg Latin translator. (That's Pig Latin for Python Programmers!)
+
+**Exercises**
+1. Break It Down
+2. Ahoy! (or Should I Say Ahoyay!)
+3. Input!
+4. Check Yourself!
+5. Check Yourself... Some More
+6. Pop Quiz!
+7. Ay B C
+8. Word Up
+9. Move it on Back
+10. Ending Up
+11. Testing, Testing, is This Thing On?
+
+
+## 4. Functions
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/4_Functions.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/4_Functions.py)
+---------
+A function is a reusable section of code written to perform a specific task in a program. We gave you a taste of functions in Unit 3; here, you'll learn how to create your own.
+
+**Exercises**
+1. What Good are Functions?
+2. Function Junction
+3. Call and Response
+4. Parameters and Arguments
+5. Functions Calling Functions
+6. Practice Makes Perfect
+7. I Know Kung Fu
+8. Generic Imports
+9. Function Imports
+10. Universal Imports
+11. Here Be Dragons
+12. On Beyond Strings
+13. max()
+14. min()
+15. abs()
+16. type()
+17. Review: Functions
+18. Review: Modules
+19. Review: Built-In Functions
+
+#### Taking a Vacation
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Taking_a_Vacation.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Taking_a_Vacation.py)
+---------
+Hard day at work? Rough day at school? Take a load off with a programming vacation!
+
+**Exercises**
+1. Before We Begin
+2. Planning Your Trip
+3. Getting There
+4. Transportation
+5. Pull it Together
+6. Hey, You Never Know!
+7. Plan Your Trip!
+
+
+## 5. Python Lists and Dictionaries
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/5_Python_Lists_and_Dictionaries.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/5_Python_Lists_and_Dictionaries.py)
+---------
+Lists and dictionaries are powerful tools you can use to store, organize, and manipulate all kinds of information.
+
+**Exercises**
+1. Introduction to Lists
+2. Access by Index
+3. New Neighbors
+4. Late Arrivals & List Length
+5. List Slicing
+6. Slicing Lists and Strings
+7. Maintaining Order
+8. For One and All
+9. More with 'for'
+10. This Next Part is Key
+11. New Entries
+12. Changing Your Mind
+13. Remove a Few Things
+14. It's Dangerous to Go Alone! Take This
+
+
+#### A Day at the Supermarket
+
+Let's manage our own supermarket and buy some goods along the way!
+
+**Exercises**
+1. BeFOR We Begin
+2. This is KEY!
+3. Control Flow and Looping
+4. Lists + Functions
+5. String Looping
+6. Your Own Store!
+7. Investing in Stock
+8. Keeping Track of the Produce
+9. Something of Value
+10. Shopping at the Market
+11. Making a Purchase
+12. Stocking Out
+13. Let's Check Out!
+
+
+## 6. Student Becomes The Teacher
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/6_Student_Becomes_The_Teacher.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/6_Student_Becomes_The_Teacher.py)
+---------
+Use what you've learned so far to manage your own class.
+
+**Exercises**
+1. Lesson Number One
+2. What's the Score?
+3. Put It Together
+4. For the Record
+5. It's Okay to be Average
+6. Just Weight and See
+7. Sending a Letter
+8. Part of the Whole
+9. How is Everybody Doing?
