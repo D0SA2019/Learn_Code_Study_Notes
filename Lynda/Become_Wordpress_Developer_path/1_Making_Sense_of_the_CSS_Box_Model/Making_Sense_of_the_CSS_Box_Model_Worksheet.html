@@ -1,0 +1,683 @@
+<!DOCTYPE HTML5>
+<html>
+<head>
+  <title>Making Sense of the CSS Box Model Worksheet</title>
+</head>
+
+<style type="text/css">
+  h1 {
+  	font-family: "Roboto";
+		text-align: center;
+	}
+
+  h4 {
+    font-family: "Roboto";
+    text-align: center;
+  }
+  h5 {
+    color: red;
+  }
+
+	p {
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+  /* line-height examples */
+	.line-50 {
+		font-size: 12px;
+		line-height: 50px;
+	}
+
+  .line-5 {
+    font-size: 12px;
+    line-height: 5px;
+  }
+
+  /* letter-spacing examples */
+  .space-5 {
+    letter-spacing: 5px;
+  }
+
+  .space-1 {
+    letter-spacing: -1px;
+  }
+
+  /* text-align examples */
+
+  .align1 {
+    text-align: center;
+  }
+
+  .align2 {
+    text-align: right;
+  }
+
+  .align3 {
+    text-align: justify;
+  }
+
+  /* width and height examples */
+
+  .box1 {
+    width: 50%;
+  }
+
+  .box2 {
+
+    width: 80%;
+  }
+
+  .box3 {
+    width: 70%;
+    height: 30px;
+  }
+
+  .box4 {
+    width: 70%;
+    height: 30px;
+    overflow: scroll;
+  }
+
+  .padding {
+    padding: 50px 100px 50px 100px;
+  }
+
+  .border-solid {
+    border-color: lightblue;
+    border-style: solid;
+    border-width: 5px;
+  }
+
+  .border-dashed {
+    border-color: lightblue;
+    border-style: dashed;
+    border-width: 5px
+  }
+
+  .border-dotted {
+    border-color: lightblue;
+    border-style: dotted;
+    border-width: 5px
+  }
+
+  .border-double {
+    border-color: lightblue;
+    border-style: double;
+    border-width: 5px
+  }
+
+  .border-inset {
+    border-color: lightblue;
+    border-style: inset;
+    border-width: 5px
+  }
+
+  .border-outset {
+    border-color: lightblue;
+    border-style: outset;
+    border-width: 5px
+  }
+
+  .font {
+    font-family: 'Incon';
+    font-style: italic;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .capital {
+    text-transform: capitalize;
+  }
+
+  .upper {
+    text-transform: uppercase;
+  }
+
+  .lower {
+    text-transform: lowercase;
+  }
+
+  .wordspace {
+    word-spacing: 0.5em;
+  }
+
+  .indent {
+    text-indent: 2em;
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+
+  .overline {
+    text-decoration: overline;
+  }
+
+  .underlinecolor {
+    text-decoration: underline;
+    text-decoration-color: pink;
+  }
+
+  .underlinestyle {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+  .textcolor {
+    color: purple;
+  }
+
+  .shadow1 {
+    text-shadow: 1px 1px 1px darkgray;
+  }
+
+  .shadow2 {
+    text-shadow: 1px 5px 1px darkgray;
+  }
+
+  .shadow3 {
+    text-shadow: 5px 1px 1px darkgray;
+  }
+
+  .backcolor {
+    background-color: yellow;
+  }
+
+  .backimage {
+    background: url('1.jpg');
+  }
+
+  .backimage1 {
+    background: url('1.jpg')
+    center
+    center
+    no-repeat;
+  }
+
+  .backimage2 {
+    background: url('1.jpg')
+    center
+    center
+    no-repeat;
+    background-size: cover;
+  }
+
+  .backimage3 {
+    background: url('1.jpg')
+    center
+    center
+    no-repeat;
+    background-size: contain;
+  }
+
+  .backimage4 {
+    background: url('1.jpg')
+    center
+    center
+    no-repeat;
+    background-size: 200px;
+  }
+
+  .backimage5 {
+    background: url('1.jpg')
+    center
+    center
+    no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .boxshadow {
+    box-shadow: 2px 2px 2px black;
+  }
+
+  .boxshadow1 {
+    box-shadow: 2px 2px 20px black;
+  }
+
+  .boxshadow2 {
+    box-shadow: 2px 10px 2px black;
+  }
+
+  .boxshadow3 {
+    box-shadow: 20px 2px 2px black;
+  }
+
+  .boxshadow4 {
+    box-shadow: 2px 2px 2px 2px black;
+  }
+
+  code {
+    display: inline-block;
+    border: 5px solid pink;
+  }
+
+  #flex {
+    display: flex;
+  }
+
+  #table {
+    display: table;
+  }
+
+  #tablecell {
+    display: table-cell;
+    box-sizing: border-box;
+    width: 33%;
+  }
+
+  .image1 {
+    float: left;
+    border: 2px solid black;
+    margin-right; 2em;
+  }
+
+  .image2 {
+    float: left;
+    display: block;
+    border: 2px solid black;
+    margin-right: 2em;
+  }
+
+  .relative {
+    float: left;
+    position: relative;
+    top: 1.2em;
+    left: -2em;
+    border: 2px solid black;
+  }
+
+  .absolute {
+    float: left;
+    position: absolute;
+    left: 3em;
+    border: 2px solid black;
+  }
+
+  .sticky {
+    float: left;
+    position: sticky;
+    top: 2em;
+    left: 1.4em;
+    border: 2px solid black;
+  }
+
+  .floatwidth {
+    float: left;
+    width: 20%;
+    margin-right: 1em;
+    border: 2px solid black;
+  }
+
+  .container {
+    background-color: lightblue;
+    border: 2px solid blue;
+  }
+
+  .floatleft {
+    float: left;
+    border: 2px solid black;
+    width: 30%;
+  }
+
+  .container1 {
+    background-color: lightblue;
+    border: 2px solid blue;
+    display: flex;
+  }
+
+  blockquote::before {
+    content: '"';
+    font-family: cursive;
+    font-size: 1.5em;
+    color: darkgray;
+  }
+
+  blockquote::after {
+    content: '"';
+    font-family: cursive;
+    font-size: 1.5em;
+    color: darkgray;
+  }
+
+  .first::first-letter {
+    font-family: cursive;
+    font-size: 4.5em;
+    line-height: 0.6em;
+    float: left;
+    color: darkgray;
+  }
+
+  .first::first-line {
+    color: purple;
+  }
+
+  .first::selection {
+    background-color: yellow;
+    color: green;
+  }
+
+  blockquote:first-of-type {
+    border: 4px solid darkgray;
+    text-align: center;
+    padding: 1.5em;
+    font-family: monospace;
+  }
+
+  .widthbox1 {
+    width: 33%;
+  }
+
+  .widthbox2 {
+    width: 33%;
+    padding: 1em;
+  }
+
+  .vertical {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .order {
+    flex-direction: row-reverse;
+  }
+</style>
+
+
+
+<body>
+
+<h1>Making Sense of the CSS Box Model</h1>
+<h4>Worksheet</h4>
+
+---
+
+<h5> Normal text -> p </h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus lectus. Etiam quis augue a elit tincidunt rutrum. Cras velit urna, malesuada in lacus nec, lobortis suscipit est. Curabitur a elit euismod, ultricies sem eu, tristique justo. Nunc urna mi, finibus vitae varius sed, hendrerit ut nibh. Fusce quis cursus risus. Curabitur convallis imperdiet dapibus. Sed nec mauris erat. Vivamus vel maximus massa, vitae ultricies metus. Nulla eu aliquam magna. Integer hendrerit metus massa, quis tristique quam efficitur eu. Mauris suscipit nisi enim, at dictum lectus congue feugiat. Etiam porta pulvinar lacus, sit amet blandit mauris convallis a.</p>
+
+<h5> line-height : 50px </h5>
+<p class="line-50">Nunc tincidunt iaculis quam, et venenatis urna. Duis vitae ligula quis elit venenatis tempus eget ut risus. Sed metus metus, pellentesque non diam non, pharetra imperdiet dui. Aliquam posuere porttitor erat eget egestas. Integer imperdiet erat luctus metus accumsan ullamcorper. Quisque dapibus nisi pharetra fermentum aliquam. Vivamus maximus velit eu enim pellentesque condimentum. Fusce iaculis porta fringilla. Mauris sed libero vulputate, aliquam ligula at, sollicitudin nulla. Maecenas et nibh cursus, tempor diam sed, gravida eros. Cras congue elit sed porttitor tincidunt. Pellentesque pretium aliquet magna, sit amet elementum arcu tempus feugiat. Praesent in lacinia neque. Suspendisse dignissim bibendum varius. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus nulla risus, viverra id volutpat in, elementum vitae nulla.</p>
+
+<h5> line-height : 5px </h5>
+<p class="line-5">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5> letter-spacing : 5px </h5>
+<p class="space-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus lectus. Etiam quis augue a elit tincidunt rutrum. Cras velit urna, malesuada in lacus nec, lobortis suscipit est. Curabitur a elit euismod, ultricies sem eu, tristique justo. Nunc urna mi, finibus vitae varius sed, hendrerit ut nibh. Fusce quis cursus risus. Curabitur convallis imperdiet dapibus. Sed nec mauris erat. Vivamus vel maximus massa, vitae ultricies metus. Nulla eu aliquam magna. Integer hendrerit metus massa, quis tristique quam efficitur eu. Mauris suscipit nisi enim, at dictum lectus congue feugiat. Etiam porta pulvinar lacus, sit amet blandit mauris convallis a.</p>
+
+<h5> letter-spacing : -1px </h5>
+<p class="space-1">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5> text-align : center </h5>
+<p class="align1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus lectus. Etiam quis augue a elit tincidunt rutrum. Cras velit urna, malesuada in lacus nec, lobortis suscipit est. Curabitur a elit euismod, ultricies sem eu, tristique justo. Nunc urna mi, finibus vitae varius sed, hendrerit ut nibh. Fusce quis cursus risus. Curabitur convallis imperdiet dapibus. Sed nec mauris erat. Vivamus vel maximus massa, vitae ultricies metus. Nulla eu aliquam magna. Integer hendrerit metus massa, quis tristique quam efficitur eu. Mauris suscipit nisi enim, at dictum lectus congue feugiat. Etiam porta pulvinar lacus, sit amet blandit mauris convallis a.</p>
+
+<h5> text-align : right </h5>
+<p class="align2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus lectus. Etiam quis augue a elit tincidunt rutrum. Cras velit urna, malesuada in lacus nec, lobortis suscipit est. Curabitur a elit euismod, ultricies sem eu, tristique justo. Nunc urna mi, finibus vitae varius sed, hendrerit ut nibh. Fusce quis cursus risus. Curabitur convallis imperdiet dapibus. Sed nec mauris erat. Vivamus vel maximus massa, vitae ultricies metus. Nulla eu aliquam magna. Integer hendrerit metus massa, quis tristique quam efficitur eu. Mauris suscipit nisi enim, at dictum lectus congue feugiat. Etiam porta pulvinar lacus, sit amet blandit mauris convallis a.</p>
+
+<h5> text-align : justify </h5>
+<p class="align3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id faucibus lectus. Etiam quis augue a elit tincidunt rutrum. Cras velit urna, malesuada in lacus nec, lobortis suscipit est. Curabitur a elit euismod, ultricies sem eu, tristique justo. Nunc urna mi, finibus vitae varius sed, hendrerit ut nibh. Fusce quis cursus risus. Curabitur convallis imperdiet dapibus. Sed nec mauris erat. Vivamus vel maximus massa, vitae ultricies metus. Nulla eu aliquam magna. Integer hendrerit metus massa, quis tristique quam efficitur eu. Mauris suscipit nisi enim, at dictum lectus congue feugiat. Etiam porta pulvinar lacus, sit amet blandit mauris convallis a.</p>
+
+<h5>width : 50%</h5>
+<p class="box1">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>width : 80%</h5>
+<p class="box2 ">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>width : 70% & height : 30px</h5>
+<p class="box3">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<br>
+<br>
+<h5>width : 70% & height : 30px & overflow : scroll </h5>
+<p class="box4">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+
+<h5>padding : 50px 100px 50px 100px </h5>
+<p class="padding">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: solid & border-width: 5px</h5>
+<p class="padding border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: dashed & border-width: 5px</h5>
+<p class="padding border-dashed">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: dotted & border-width: 5px</h5>
+<p class="padding border-dotted">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: double & border-width: 5px</h5>
+<p class="padding border-double">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: inset & border-width: 5px</h5>
+<p class="padding border-inset">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<h5>padding : 50px 100px & border-color: lightblue & border-style: outset & border-width: 5px</h5>
+<p class="padding border-outset">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<h5> font-family & font-size & font-style </h5>
+<p class="font">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5> text-transform: capitalize</h5>
+<p class="capital">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5> text-transform: uppercase</h5>
+<p class="upper">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5> text-transform: lowercase</h5>
+<p class="lower">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>word-spacing: 0.5em</h5>
+<p class="wordspace">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>text-indent: 2em</h5>
+<p class="indent">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>text-decoration: underline</h5>
+<p class="underline">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>text-decoration: overline</h5>
+<p class="overline">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>text-decoration: underline & text-decoration-color: pink</h5>
+<p class="underlinecolor">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>text-decoration: underline & text-decoration-style: dotted</h5>
+<p class="underlinestyle">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+
+<h5>color: purple</h5>
+<p class="textcolor">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>color: purple & text-shadow: 1px 1px 1px darkgray</h5>
+<p class="textcolor shadow1">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>color: purple & text-shadow: 1px 5px 1px darkgray</h5>
+<p class="textcolor shadow2">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>color: purple & text-shadow: 5px 1px 1px darkgray</h5>
+<p class="textcolor shadow3">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background-color: yellow</h5>
+<p class="backcolor">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg')</h5>
+<p class="backimage">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg') center center no-repeat</h5>
+<p class="backimage1">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg') center center no-repeat & background-size: cover</h5>
+<p class="backimage2">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg') center center no-repeat & background-size: contain</h5>
+<p class="backimage3">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg') center center no-repeat & background-size: 200px</h5>
+<p class="backimage4">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>background: url('1.jpg') center center no-repeat & background-size: 100% 100%</h5>
+<p class="backimage5">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>box-shadow: 2px 2px 2px black</h5>
+<p class="boxshadow">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>box-shadow: 2px 2px 20px black</h5>
+<p class="boxshadow1">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>box-shadow: 2px 10px 2px black</h5>
+<p class="boxshadow2">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>box-shadow: 20px 2px 2px black</h5>
+<p class="boxshadow3">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>box-shadow: 2px 2px 2px 2px black</h5>
+<p class="boxshadow4">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>display: inline-box (code)</h5>
+<p>Nulla rutrum volutpat leo non <code>scelerisque</code>. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales.</p>
+
+<h5>display: flex</h5>
+<div id="flex">
+<p class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+
+<h5>display: table</h5>
+<div id="table">
+<p id="tablecell" class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p id="tablecell" class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p id="tablecell" class="border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+
+<h5>float: left & border: 2px solid black & margin-right; 2em</h5>
+<img class="image1" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="200" width="200">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+
+<br>
+<br>
+<br>
+<h5>display : block & float: left & border: 2px solid black & margin-right: 2em</h5>
+<img class="image2" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="200" width="200">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+
+<h5> position: relative & top: 1.2em & left: -2em & float: left</h5>
+<img class="relative" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="200" width="200">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<br>
+<br>
+<h5> position: relative & left: 1.2em & float: left </h5>
+<img class="absolute" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="200" width="200">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<br>
+<br>
+<br>
+<br>
+
+<h5> position: relative & left: 1.2em & float: left </h5>
+<img class="sticky" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="200" width="200">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<br>
+<br>
+<h5> float: left & width: 20% & margin-right: 1em </h5>
+<img class="floatwidth" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="">
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+
+<h5> float: left & width: 30% </h5>
+<div class="container">
+  <img class="floatleft" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="250" width="250">
+  <p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+</div>
+
+<br>
+<br>
+<br>
+<h5> float: left & width: 30% & display: flex </h5>
+<div class="container1">
+  <img class="floatleft" src="https://onlinehifi.co.nz/wp-content/uploads/2018/02/paradigm-rock-monitor-80-granite-1.jpg" alt="" height="250" width="250">
+  <p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+</div>
+
+
+<h5> blockquote:: before - after : content: '"' & font-family: cursive & font-size: 1.5em & color: darkgray </h5>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis.</p>
+<blockquote>Phasellus consequat dapibus tincidunt.</blockquote>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<h5> first-letter -> font-family: cursive & font-size: 4.5em & line-height: 0.6em & float: left & color: darkgray </h5>
+<p class="first">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis.</p>
+<blockquote>Phasellus consequat dapibus tincidunt.</blockquote>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<h5> first-letter + first-line -> color: purple </h5>
+<p class="first">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis.</p>
+<blockquote>Phasellus consequat dapibus tincidunt.</blockquote>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<h5> first-letter + first-line + selection -> background-color: yellow & color: green;  </h5>
+<p class="first">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis.</p>
+<blockquote>Phasellus consequat dapibus tincidunt.</blockquote>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+
+<h5> before/after & first-of-type & border: 4px solid darkgray & text-align: center & padding: 1.5em & font-family: monospace;  </h5>
+<div class="first2">
+<p class="first">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis.</p>
+<blockquote>Phasellus consequat dapibus tincidunt.</blockquote>
+<p>Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+</div>
+
+<h5>display: flex & width: 33%</h5>
+<div id="flex">
+<p class="widthbox1 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p class="widthbox1 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p class="widthbox1 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+
+<h5>display: flex & width: 33% & padding: 1em</h5>
+<div id="flex">
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+<h5>display: flex & width: 33% & padding: 1em & align-items: center & justify-content: center </h5>
+<div id="flex" class="vertical">
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p class="widthbox2 border-solid">Nulla rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+<h5>display: flex & width: 33% & padding: 1em</h5>
+<div id="flex" class="order">
+<p class="widthbox2 border-solid">Nulla1 rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+
+<p class="widthbox2 border-solid">Nulla2 rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. Curabitur faucibus massa vel velit posuere luctus. Sed nec quam in tortor dignissim interdum id et purus. Pellentesque erat dolor, convallis id diam id, finibus dapibus massa. Nam maximus erat quis tellus interdum, quis accumsan orci sodales. </p>
+
+<p class="widthbox2 border-solid">Nulla3 rutrum volutpat leo non scelerisque. Nam lobortis, nisi a sagittis vehicula, enim nibh rutrum libero, non dapibus erat dui eget quam. Duis vestibulum imperdiet arcu id semper. Nunc vehicula et enim id convallis. Phasellus consequat dapibus tincidunt. </p>
+</div>
+
+</body>
+</html>
