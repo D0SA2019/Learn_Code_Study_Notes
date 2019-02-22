@@ -1,0 +1,34 @@
+# Coursera-Python-for-Everybody-Specialization
+The personal notes, codes and assignments of "Python for Everybody Specialization" on Coursera by Charles Severance (University of Michigan).
+
+## Course 1 : Programming for Everybody (Getting Started with Python)
+* [Chapter One : Why We Program?](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.1_Chapter_One-Why_We_Program%3F.md)
+* [Chapter Two : Variables, Expressions, and Statements](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.2_Chapter_Two-Variables_Expressions_and_Statements.md)
+* [Assignment 2.2](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_2.2.md)
+* [Chapter Three : Conditional Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.3_Chapter_Three-Conditional_Code.md)
+* [Assignment 3.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_3.1.md)
+* [Assignment 3.3](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_3.3.md)
+* [Chapter Four : Functions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.4_Chapter_Four-Functions.md)
+* [Chapter Five : Loops and Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.5_Chapter_Five-Loops_and_Iteration.md)
+* [Assignment 5.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_5.1.md)
+
+
+## Course 2 : Python Data Structures
+* [Chapter Six: Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.1_Chapter_Six-Strings.md)
+* [Assignment 6.5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_6.5.md)
+* [Chapter Seven : Files](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.2_Chapter_Seven-Files.md)
+* [Assignment 7.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_7.1.md)
+* [Assignment 7.2](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_7.2.md)
+* [Chapter Eight : Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.3_Chapter_Eight-Lists.md)
+* [Assignment 8.4](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_8.4.md)
+* [Assignment 8.5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_8.5.md)
+* [Chapter Nine - Dictionaries](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.4_Chapter_Nine-Dictionaries.md)
+* [Assignment 9.4](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_9.4.md)
+* [Chapter Ten - Tuples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.5_Chapter_Nine-Tuples.md)
+* [Assignment 10.2](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_10.2.md)
+
+## Course 3 : Using Python to Access Web Data
+* [Chapter Eleven: Regular Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.1_Chapter_Eleven-Regular%20Expressions.md)
+* [Assignment 11.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_11.1.md)
+* [Chapter Twelve : Networks and Sockets](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.2_Chapter_Twelve-Networks%20and%20Sockets.md)
+* [Assignment 12.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_12.1.md)
