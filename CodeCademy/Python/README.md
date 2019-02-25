@@ -233,3 +233,30 @@ Now that you've learned about lists, let's turbo-charge them with functions.
 16. Using strings in lists in functions
 17. Using two lists as two arguments in a function
 18. Using a list of lists in a function
+
+#### Battleship!
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Battleship.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Battleship.py)
+---------
+In this lesson, we will make a simplified version of the classic board game Battleship! We'll use functions, lists, and conditionals to make our game.
+
+**Exercises**
+1. Welcome to Battleship!
+2. Getting Our Feet Wet
+3. Make a List
+4. Check it Twice
+5. Custom Print
+6. Printing Pretty
+7. Hide...
+8. ...and Seek!
+9. It's Not Cheating—It's Debugging!
+10. You win!
+11. Danger, Will Robinson!!
+12. Bad Aim
+13. Not Again!
+14. Test Run
+15. Play It, Sam
+16. Game Over
+17. A Real Win
+18. To Your Battle Stations!
+19. Extra Credit
