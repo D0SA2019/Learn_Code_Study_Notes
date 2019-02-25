@@ -205,3 +205,31 @@ Use what you've learned so far to manage your own class.
 7. Sending a Letter
 8. Part of the Whole
 9. How is Everybody Doing?
+
+
+
+## 7. Lists and Functions
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/7_Lists_and_Functions.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/7_Lists_and_Functions.py)
+---------
+Now that you've learned about lists, let's turbo-charge them with functions.
+
+**Exercises**
+1. List accessing
+2. List element modification
+3. Appending to a list
+4. Removing elements from lists
+5. Changing the functionality of a function
+6. More than one argument
+7. Strings in functions
+8. Passing a list to a function
+9. Using an element from a list in a function
+10. Modifying an element of a list in a function
+11. List manipulation in functions
+12. Printing out a list item by item in a function
+13. Modifying each element in a list in a function
+14. Passing a range into a function
+15. Iterating over a list in a function
+16. Using strings in lists in functions
+17. Using two lists as two arguments in a function
+18. Using a list of lists in a function
