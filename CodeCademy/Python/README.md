@@ -260,3 +260,55 @@ In this lesson, we will make a simplified version of the classic board game Batt
 17. A Real Win
 18. To Your Battle Stations!
 19. Extra Credit
+
+
+## 8. Loops
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/8_Loops.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/8_Loops.py)
+---------
+Loops allow you to quickly iterate over information in Python. In this lesson, we'll cover two types of loop: 'while' and 'for'.
+
+**Exercises**
+1. While you're here
+2. Condition
+3. While you're at it
+4. Simple errors
+5. Infinite loops
+6. Break
+7. While / else
+8. Your own while / else
+9. For your health
+10. For your hobbies
+11. For your strings
+12. For your A
+13. For your lists
+14. Looping over a dictionary
+15. Counting as you go
+16. Multiple lists
+17. For / else
+18. Change it up
+19. Create your own
+
+
+#### Practice Makes Perfect
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Practice_Makes_Perfect.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Practice_Makes_Perfect.py)
+---------
+You know a lot of Python now. Let's do some practice problems!
+
+**Exercises**
+1. Practice! Practice Practice!
+2. is_even
+3. is_int
+4. digit_sum
+5. factorial
+6. is_prime
+7. reverse
+8. anti_vowel
+9. scrabble_score
+10. censor
+11. count
+12. purify
+13. product
+14. remove_duplicates
+15. median
