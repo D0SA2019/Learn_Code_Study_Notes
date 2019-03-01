@@ -1,4 +1,4 @@
-# 8. Loops
+# Loops
 
 
 ### 8.1. While you're here
