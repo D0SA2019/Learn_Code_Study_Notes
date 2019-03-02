@@ -315,7 +315,7 @@ You know a lot of Python now. Let's do some practice problems!
 
 
 
-#### 9. Exam Statistics
+## 9. Exam Statistics
 ------------
 * Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/9_Exam_Statistics.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/9_Exam_Statistics.py)
 ---------
