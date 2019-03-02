@@ -312,3 +312,22 @@ You know a lot of Python now. Let's do some practice problems!
 13. product
 14. remove_duplicates
 15. median
+
+
+
+#### 9. Exam Statistics
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/9_Exam_Statistics.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/9_Exam_Statistics.py)
+---------
+Your students just took their first test. It's time to see how everyone did. Let's write a program to compute the mean, variance, and standard deviation of the test scores.
+
+**Exercises**
+1. Let's look at those grades!
+2. Print those grades
+3. Review
+4. The sum of scores
+5. Computing the Average
+6. Review
+7. The Variance
+8. Standard Deviation
+9. Review
