@@ -331,3 +331,31 @@ Your students just took their first test. It's time to see how everyone did. Let
 7. The Variance
 8. Standard Deviation
 9. Review
+
+
+
+## 10. Advanced Topics in Python
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/10_Advanced_Topics_in_Python.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/10_Advanced_Topics_in_Python.py)
+---------
+In this lesson, we'll cover some of the more complex aspects of Python, including iterating over data structures, list comprehensions, list slicing, and lambda expressions.
+
+**Exercises**
+1. Iterators for Dictionaries
+2. keys() and values()
+3. The 'in' Operator
+4. Building Lists
+5. List Comprehension Syntax
+6. Now You Try!
+7. List Slicing Syntax
+8. Omitting Indices
+9. Reversing a List
+10. Stride Length
+11. Practice Makes Perfect
+12. Anonymous Functions
+13. Lambda Syntax
+14. Try It!
+15. Iterating Over Dictionaries
+16. Comprehending Comprehensions
+17. List Slicing
+18. Lambda Expressions
