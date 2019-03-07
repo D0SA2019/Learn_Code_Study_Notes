@@ -359,3 +359,26 @@ In this lesson, we'll cover some of the more complex aspects of Python, includin
 16. Comprehending Comprehensions
 17. List Slicing
 18. Lambda Expressions
+
+
+#### Introduction to Bitwise Operators
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Introduction_to_Bitwise_Operators.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Introduction_to_Bitwise_Operators.py)
+---------
+Bitwise operations directly manipulate bits—patterns of 0s and 1s. Though they can be tricky to learn at first, their speed makes them a useful addition to any programmer's toolbox.
+
+**Exercises**
+1. Just a Little BIT
+2. Lesson I0: The Base 2 Number System
+3. I Can Count to 1100!
+4. The bin() Function
+5. int()'s Second Parameter
+6. Slide to the Left! Slide to the Right!
+7. A BIT of This AND That
+8. A BIT of This OR That
+9. This XOR That?
+10. See? This is NOT That Hard!
+11. The Man Behind the Bit Mask
+12. Turn It On
+13. Just Flip Out
+14. Slip and Slide
