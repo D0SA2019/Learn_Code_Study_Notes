@@ -382,3 +382,30 @@ Bitwise operations directly manipulate bits—patterns of 0s and 1s. Though they
 12. Turn It On
 13. Just Flip Out
 14. Slip and Slide
+
+
+## 11. Introduction to Classes
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/11_Introduction_to_Classes.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/11_Introduction_to_Classes.py)
+---------
+Classes are a crucial part of object-oriented programming (OOP). In this lesson, we'll explain what classes are, why they're important, and how to use them effectively.
+
+**Exercises**
+1. Why Use Classes?
+2. Class Syntax
+3. Classier Classes
+4. Let's Not Get Too Selfish
+5. Instantiating Your First Object
+6. More on `__init__()` and self
+7. Class Scope
+8. A Methodical Approach
+9. They're Multiplying!
+10. It's Not All Animals and Fruits
+11. Warning: Here Be Dragons
+12. Inheritance Syntax
+13. Override!
+14. This Looks Like a Job For...
+15. Class Basics
+16. Class It Up
+17. Instantiate an Object
+18. Inheritance
