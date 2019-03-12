@@ -409,3 +409,23 @@ Classes are a crucial part of object-oriented programming (OOP). In this lesson,
 16. Class It Up
 17. Instantiate an Object
 18. Inheritance
+
+
+#### Classes
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Classes.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Classes.py)
+---------
+Make your own Car and learn how to driveCar()!
+
+**Exercises**
+1. Class basics
+2. Create an instance of a class
+3. Class member variables
+4. Calling class member variables
+5. Initializing a class
+6. Referring to member variables
+7. Creating class methods
+8. Modifying member variables
+9. Inheritance
+10. Overriding methods
+11. Building useful classes
