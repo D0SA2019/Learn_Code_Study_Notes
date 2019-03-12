@@ -1,7 +1,15 @@
 # Lynda
 
-1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path)
-	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model)
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
+
+-----------------
+
+1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) 🔜
+	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
 	* CSS Essential Training 1
 	* HTML Essential Training
 	* jQuery for Web Designers

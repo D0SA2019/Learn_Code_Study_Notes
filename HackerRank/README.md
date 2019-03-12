@@ -1,7 +1,13 @@
 # HackerRank
 My HackerRank solutions and challenges
 
-## [30 Days of Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python)
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
+
+## [30 Days of Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python) 🔜
 
 * Day 0 : Hello, World. ([md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day%200%20-%20Hello%2C%20World.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_0_Hello_World.py))
 * Day 1 : Data Types ([md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day%201%20-%20Data%20Types.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_1_Data_Types.py))
@@ -13,7 +19,7 @@ My HackerRank solutions and challenges
 * Day 7 : Arrays ([md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day%207-%20Arrays.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_7_Arrays.py))
 * Day 8: Dictionaries and Maps ([md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day%208-%20Dictionaries%20and%20Maps.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_8_Dictionaries_and_Maps.py))
 
-## [Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency)
+## [Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency) 🔜
 * [001 - Say "Hello, World!"](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/Python_Language_Proficiency/001%20-%20Say%20%22Hello%2C%20World!%22%20With%20Python.md)
 * [002 - Python If-Else](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/Python_Language_Proficiency/002%20-%20Python%20If-Else.md)
 * [003 - Arithmetic Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/Python_Language_Proficiency/003%20-%20Arithmetic%20Operators.md)
