@@ -1,6 +1,12 @@
 ## 1. Responsive Web Design Certification (300 hours)
+
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
 ------------
-#### 1.1. Basic HTML and HTML5
+#### 1.1. Basic HTML and HTML5 ✅
 
 * All in one study notes and worksheet : [notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.md), [.html](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.html)
 ---------
@@ -35,7 +41,7 @@
 27. [Define the Head and Body of an HTML Document](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5/27.%20Define%20the%20Head%20and%20Body%20of%20an%20HTML%20Document.md)
 
 ---------
-#### 1.2. Basic CSS
+#### 1.2. Basic CSS ✅
 
 * All in one study notes : [notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/02_Basic_CSS.md)
 ---------

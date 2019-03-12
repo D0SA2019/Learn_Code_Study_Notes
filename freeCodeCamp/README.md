@@ -1,10 +1,17 @@
 # freeCodeCamp
 Below you will find my personal freeCodeCamp study notes and projects. By clicking on the headlines you can access the study notes and details of that course or subject.
 
-## 1. [Responsive Web Design Certification (300 hours)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours))
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
 
-1. [Basic HTML and HTML5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.md)
-2. [Basic CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/02_Basic_CSS.md)
+
+## 1. [Responsive Web Design Certification (300 hours)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)) ⏳
+
+1. [Basic HTML and HTML5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5.md) ✅
+2. [Basic CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/02_Basic_CSS.md) ✅
 3. Applied Visual Design
 4. Applied Accessibility
 5. Responsive Web Design Principles
@@ -17,7 +24,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Build a Technical Documentation Page
 	- Build a Personal Portfolio Webpage
 
-## 2. Javascript Algorithms And Data Structures Certification (300 hours)
+## 2. Javascript Algorithms And Data Structures Certification (300 hours) 🔜
 
 1. Basic JavaScript
 2. ES6
@@ -35,7 +42,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Telephone Number Validator
 	- Cash Register
 
-## 3. Front End Libraries Certification (300 hours)
+## 3. Front End Libraries Certification (300 hours) 🔜
 
 1. Bootstrap
 2. jQuery
@@ -50,7 +57,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Build a JavaScript Calculator
 	- Build a Pomodoro Clock
 
-## 4. Data Visualization Certification (300 hours)
+## 4. Data Visualization Certification (300 hours) 🔜
 
 1. Data Visualization with D3
 2. JSON APIs and Ajax
@@ -61,7 +68,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Visualize Data with a Choropleth Map
 	- Visualize Data with a Treemap Diagram
 
-## 5. Apis And Microservices Certification (300 hours)
+## 5. Apis And Microservices Certification (300 hours) 🔜
 
 1. Managing Packages with Npm
 2. Basic Node and Express
@@ -73,7 +80,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Exercise Tracker
 	- File Metadata Microservice
 
-## 6. Information Security And Quality Assurance Certification (300 hours)
+## 6. Information Security And Quality Assurance Certification (300 hours) 🔜
 
 1. Information Security with HelmetJS
 2. Quality Assurance and Testing with Chai
@@ -85,7 +92,7 @@ Below you will find my personal freeCodeCamp study notes and projects. By clicki
 	- Stock Price Checker
 	- Stock Price Checker
 
-## 7. Coding Interview Prep (Thousands of hours of challenges)
+## 7. Coding Interview Prep (Thousands of hours of challenges) 🔜
 
 1. Algorithms
 2. Data Structures
