@@ -429,3 +429,21 @@ Make your own Car and learn how to driveCar()!
 9. Inheritance
 10. Overriding methods
 11. Building useful classes
+
+
+## 12. File Input/Output
+------------
+* Study notes and worksheet : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/12_File_Input_Output.md), [py](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/12_File_Input_Output.py)
+---------
+Now that you understand Python syntax and have been introduced to some Python best practices, let's apply what you've learned to a real-world application: writing data to a file.
+
+**Exercises**
+1. See It to Believe It
+2. The open() Function
+3. Writing
+4. Reading
+5. Reading Between the Lines
+6. PSA: Buffering Data
+7. The 'with' and 'as' Keywords
+8. Try It Yourself
+9. Case Closed?
