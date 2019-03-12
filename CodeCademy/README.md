@@ -1,7 +1,14 @@
 # codecademy
 My personal notes and projects on Codecademy
 
-### 1.[ Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python)
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+|🔜 | Waiting |
+
+
+### 1.[ Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
 1. Python Syntax
 2. Strings & Console Output
 3. Conditionals & Control Flow

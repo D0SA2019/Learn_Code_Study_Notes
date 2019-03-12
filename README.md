@@ -1,19 +1,37 @@
 # Learn_Code_Study_Notes
 You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Java, Web Development from the courses that I've taken from different sources like Coursera, Codecademy, FreeCodeCamp, Lynda, Udemy, DataCamp, FutureLearn, edx, HackerRank, LeetCode.
 
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
+
+---------------
+
 ## [CodeCademy](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy)
-1. [Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python)
+1. [Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
+
+---------------
 
 ## [Coursera](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera)
-1. [Python For Everybody Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera)
+1. [Python For Everybody Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera) ⏳
 	* Course 1 : Programming for Everybody (Getting Started with Python)
 	* Course 2 : Python Data Structures
 	* Course 3 : Using Python to Access Web Data
 	* Course 4 :Using Databases with Python
 	* Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python
 
+---------------
+
+## [HackerRank](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank)
+1. [30 Days of Code : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python) 🔜
+2. [Language Proficiency : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency) 🔜
+
+---------------
+
 ## [FreeCodeCamp](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp)
-1. [Responsive Web Design Certification (300 hours)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours))
+1. [Responsive Web Design Certification (300 hours)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)) 🔜
 	* [Basic HTML and HTML5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/01_Basic_HTML_and_HTML5)
 	* [Basic CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/freeCodeCamp/Responsive_Web_Design_Certification_(300_hours)/02_Basic_CSS)
 	* Applied Visual Design
@@ -112,14 +130,11 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 	* Rosetta Code
 	* Project Euler
 
-## [HackerRank](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank)
-1. [30 Days of Code : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python)
-2. [Language Proficiency : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency)
-
+---------------
 
 ## [Lynda](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda)
-1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path)
-	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model)
+1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) 🔜
+	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
 	* CSS Essential Training 1
 	* HTML Essential Training
 	* jQuery for Web Designers
