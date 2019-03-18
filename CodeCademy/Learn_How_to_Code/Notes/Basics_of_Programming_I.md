@@ -43,16 +43,11 @@ In each box, enter the type of terrain that should go in the accompanying tile. 
 
 **GIVEN**
 
-[source code](https://s3.amazonaws.com/codecademy-content/programs/code-foundations-path/bop-i/variables/exercise_1/index.html)
+[codepen](https://codepen.io/hevalhazalkurt/pen/PLaxzY/)
 
 ![](http://i65.tinypic.com/4he4yh.png)
 
 ![](http://i66.tinypic.com/2ic0cno.png)
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="Terrain Pattern with Rock, Forest and Grass" src="//codepen.io/hevalhazalkurt/embed/PLaxzY/?height=265&theme-id=0&default-tab=html,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/hevalhazalkurt/pen/PLaxzY/'>Terrain Pattern with Rock, Forest and Grass</a> by Heval Hazal Kurt
-  (<a href='https://codepen.io/hevalhazalkurt'>@hevalhazalkurt</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 
 ### 1.1.2. Reusing Values in Variables
@@ -94,17 +89,11 @@ How was this process different from the last exercise? Did variables make this p
 
 **GIVEN**
 
-[source code](https://s3.amazonaws.com/codecademy-content/programs/code-foundations-path/bop-i/variables/exercise_2/index.html)
+[codepen](https://codepen.io/hevalhazalkurt/pen/zbayWg/)
 
 ![](http://i65.tinypic.com/t6q742.png)
 
 ![](http://i67.tinypic.com/2ihrqle.png)
-
-
-<iframe height="265" style="width: 100%;" scrolling="no" title="Terrain Pattern with Rock, Forest and Grass 1" src="//codepen.io/hevalhazalkurt/embed/zbayWg/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/hevalhazalkurt/pen/zbayWg/'>Terrain Pattern with Rock, Forest and Grass 1</a> by Heval Hazal Kurt
-  (<a href='https://codepen.io/hevalhazalkurt'>@hevalhazalkurt</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 
 ### 1.1.3. Changing the Value of a Variable
@@ -147,25 +136,90 @@ Use the drop-down menus to explore the different options for the board and try c
 
 **GIVEN**
 
-[source code](https://s3.amazonaws.com/codecademy-content/programs/code-foundations-path/bop-i/variables/exercise_3/index.html)
+[codepen](https://codepen.io/hevalhazalkurt/pen/jJKdVo/)
 
 ![](http://i68.tinypic.com/k3kmr9.png)
 
-<iframe height="265" style="width: 100%;" scrolling="no" title="Terrain Patterns" src="//codepen.io/hevalhazalkurt/embed/jJKdVo/?height=265&theme-id=0&default-tab=js,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-  See the Pen <a href='https://codepen.io/hevalhazalkurt/pen/jJKdVo/'>Terrain Patterns</a> by Heval Hazal Kurt
-  (<a href='https://codepen.io/hevalhazalkurt'>@hevalhazalkurt</a>) on <a href='https://codepen.io'>CodePen</a>.
-</iframe>
 
 
 ### 1.1.4. Putting it All Together
+Now that you know a bit about variables, let’s code some ourselves!
 
+We create or declare a variable by giving it a name and setting it equal to a value.
 
+```js
+terrain = 'lake'
+```
+
+In the code editor, we’ve written out an example of a variable declaration. We’ve included `one` variable in the workspace, named one, and it’s currently set to `'grass'`.
 
 ##### Instructions
+Below variable ‘one’, declare a variable called `two`. Set variable ‘two’ to equal `'rocks'`. Remember to pay attention to details, like punctuation.
+
+Next, create a variable `three` and set it equal to `'forest'`.
+
+Run the code! How does the board game change?
+
+Now, try replacing the values with other ones that you’ve seen in this lesson! Here’s the full list:
+
+Group 1:
+
+* grass
+* rocks
+* forest
+
+Group 2:
+
+* lake
+* beach
+* town
+
+Group 3:
+
+* glacier
+* desert
+* moon
+
+
+```js
+// GIVEN
+// declare variable one
+// set it equal to the value 'grass'
+
+one = 'grass'
+
+
+// declare variable two
+// set it equal to the value 'rocks'
+
+
+
+// declare variable three
+// set it equal to the value 'forest'
+
+
+```
+
+![](http://i63.tinypic.com/ayq11.jpg)
+
+
+```js
+// SOLUTION
+one = 'grass'
+
+two = 'rocks'
+
+three = 'forest'
+```
+
+![](http://i63.tinypic.com/96dxmr.png)
 
 
 ### 1.1.5. Review - Variables
+Congrats! Now you’ve learned about variables and why they’re useful in programming. In this lesson, we learned that:
 
+* *Variables* allow us to store information
+* Variables allow us to quickly *reuse* a value in our program.
+* Variables let us easily *change* a value in our program.
 
-
-##### Instructions
+In the next lesson, we’ll look at different kinds of information that we can use in a program and save to variables.
