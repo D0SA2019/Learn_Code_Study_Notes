@@ -16,9 +16,9 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 
 ## [Coursera](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera)
 1. [Python For Everybody Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera) ⏳
-	* Course 1 : Programming for Everybody (Getting Started with Python)
-	* Course 2 : Python Data Structures
-	* Course 3 : Using Python to Access Web Data
+	* Course 1 : Programming for Everybody (Getting Started with Python) ✅
+	* Course 2 : Python Data Structures ✅
+	* Course 3 : Using Python to Access Web Data ⏳
 	* Course 4 :Using Databases with Python
 	* Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python
 
