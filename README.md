@@ -11,7 +11,7 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 
 ## [CodeCademy](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy)
 1. [Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
-
+2. [Learn How to Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_How_to_Code) ✅
 ---------------
 
 ## [Coursera](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera)
