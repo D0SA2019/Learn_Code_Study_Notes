@@ -60,7 +60,7 @@ Learn to build simple programs using operators.
 
 ### 1.7. Functions
 ------------
-* Study notes : [md]()
+* Study notes : [md](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Functions.md)
 ---------
 Learn about functions: what they are, why programmers use them, and where they use them.
 
