@@ -1,7 +1,7 @@
-# Basics of Programming I
-## 1.9. Control Flow
+# Basics of Programming III
+## 2.3. Control Flow
 
-### 1.9.1. Control Flow
+### 2.3.1. Control Flow
 
 How do computers make decisions? Here are a few examples:
 
@@ -33,7 +33,7 @@ In what order are the instructions executed?
 [codepen](https://codepen.io/hevalhazalkurt/pen/qvyzZp)
 
 
-### 1.9.2. Conditional
+### 2.3.2. Conditional
 *If the user’s profile is private, hide their posts. Otherwise, make them visible.*
 
 Computers can run instructions on their own, leaving us to work on more interesting and creative problems. But computers can’t make decisions on their own. Programmers can give them multiple sets of instructions and describe the right conditions in which to use each set. They can describe a structure like the quoted program above: “if X, then do instruction set 1. Otherwise do instruction set 2.” This structure is called a *conditional* control structure because the computer’s instructions depend on some *condition(s)*.
@@ -64,7 +64,7 @@ What’s the control flow for each?
 
 [codepen](https://codepen.io/hevalhazalkurt/pen/MxBNvX)
 
-### 1.9.3. Loop
+### 2.3.3. Loop
 *Repeat a sound four times a measure.*
 
 Computers are good at repetitive tasks: they exactly follow instructions and perform them quickly. But if the programmer has to write the same instructions for every repetition, they waste time and increase the chances of a mistake.
@@ -85,7 +85,7 @@ What is the condition or count that must be met to stop looping?
 
 
 
-### 1.9.4. Exception
+### 2.3.4. Exception
 *Collect shipping and email address. Reject a purchase if either is incorrect.*
 
 Errors, or exceptions, happen all the time in programming. You can’t escape them. But you can handle them gracefully.
@@ -115,7 +115,7 @@ What happens when you select a real address and a fake email?
 ![](https://media.giphy.com/media/9VaGmpgjKm5BmI1d0l/giphy.gif)
 
 
-### 1.9.5. Putting It All Together
+### 2.3.5. Putting It All Together
 
 Let’s recreate the conditional control structure using JavaScript! (The one about social media posts, remember?)
 
@@ -188,7 +188,7 @@ if (mode === 'public') {
 ```
 
 
-### 1.9.6. Review
+### 2.3.6. Review
 Well done! Control flow is a fundamental concept in programming, and learning the basics will serve you wherever your path leads, regardless of language or domain. In review:
 
 * *Control flow* is the order in which instructions are executed.

@@ -40,12 +40,12 @@ My personal notes and projects on Codecademy
 	* [Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Operators.md)
 	* [Operators Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Operators_Quiz.md)
 2. Basics of Programming II
-	* Functions
-	* Functions Quiz
-	* Control Flow
-	* Control Flow Quiz
+	* [Functions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Functions.md)
+	* [Functions Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Functions_Quiz.md)
+	* [Control Flow](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Control_Flow.md)
+	* [Control Flow Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Control_Flow_Quiz.md)
 3. Basics of Programming III
-	* Lists
-	* Lists Quizz
-	* Loops
-	* Loops Quiz
+	* [Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Lists.md)
+	* [Lists Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Lists_Quiz.md)
+	* [Loops](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Loops.md)
+	* [Loops Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/commit/dd191492427c24d2c01ec6973dbaf32388d88e02)

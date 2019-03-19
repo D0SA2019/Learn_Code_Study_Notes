@@ -1,9 +1,9 @@
 # Basics of Programming I
-## 1.10. Control Flow Quiz
+## 2.4. Control Flow Quiz
 
 ✅
 
-### 1.10.1. Question 1
+### 2.4.1. Question 1
 
 Which of these best describes a loop?
 
@@ -15,7 +15,7 @@ B. A control structure that repeats a set of instructions UNTIL a specified cond
 C. A control structure that executes a set of instructions IF a specified condition is true.
 
 
-### 1.10.2. Question 2
+### 2.4.2. Question 2
 
 Which of these best describes an exception control structure?
 
@@ -29,7 +29,7 @@ C. A set of instructions is executed. If an exception occurs, that set’s execu
 
 
 
-### 1.10.3. Question 3
+### 2.4.3. Question 3
 
 Define control flow.
 
@@ -43,7 +43,7 @@ C. The order of execution in a program. ✅
 D. The condition that must be met to execute a conditional statement.
 
 
-### 1.10.4. Question 4
+### 2.4.4. Question 4
 
 One of these “programs” uses a conditional control structure. Which one is it?
 
@@ -56,7 +56,7 @@ C. “Do something Z number of times” or “do something repeatedly until some
 
 
 
-### 1.10.4. Question 4
+### 2.4.4. Question 4
 
 Fill in the Blank: Control structures, such as `___`, allow for `___` to be altered during the execution of a program.
 

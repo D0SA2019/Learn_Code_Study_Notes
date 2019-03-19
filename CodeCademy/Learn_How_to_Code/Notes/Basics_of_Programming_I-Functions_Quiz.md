@@ -1,9 +1,9 @@
 # Basics of Programming I
-## 1.8. Functions Quiz
+## 2.2. Functions Quiz
 
 ✅
 
-### 1.8.1. Question 1
+### 2.2.1. Question 1
 
 What are some benefits of using functions in a program?
 
@@ -16,7 +16,7 @@ C. Reusability, flexibility, organization ✅
 
 
 
-### 1.8.2. Question 2
+### 2.2.2. Question 2
 
 When a function’s name, inputs, and instructions are specified, we can say that the function is…
 
@@ -28,7 +28,7 @@ B. called.
 C. executed.
 
 
-### 1.8.3. Question 3
+### 2.2.3. Question 3
 
 Which one of the following statements is true about functions?
 
@@ -40,7 +40,7 @@ B. When an instruction step is executed, all functions that share that step are 
 C. Functions cannot be defined.
 
 
-### 1.8.4. Question 4
+### 2.2.4. Question 4
 
 When a function is called,
 
@@ -54,7 +54,7 @@ C. it is defined.
 D. it picks up the phone.
 
 
-### 1.8.5. Question 5
+### 2.2.5. Question 5
 
 Fill in the Blank: When we define a function, its inputs are called `___`. Each time we call the function, we’ll give actual values for each input, called `___`.
 

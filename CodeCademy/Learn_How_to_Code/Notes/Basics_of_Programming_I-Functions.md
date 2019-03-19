@@ -1,8 +1,8 @@
 # Basics of Programming I
-## 1.7. Functions
+## 2.1. Functions
 
 
-### 1.7.1. Functions
+### 2.1.1. Functions
 
 This lesson requires you to know the basics of hamburger-making:
 
@@ -30,7 +30,7 @@ Hint: Add bread – Add burger patty – Add pickles – Add bread.
 ![](https://media.giphy.com/media/3h3GQIMSckKTBzvE1u/giphy.gif)
 
 
-### 1.7.2. Functions for Reusability
+### 2.1.2. Functions for Reusability
 
 Instead of giving those instructions for every hamburger, we can group and name them as a single function:
 
@@ -55,7 +55,7 @@ Build hamburgers with a function: In this example you can call the function by c
 ![](https://media.giphy.com/media/5nrZeSbpt6d1RusDuz/giphy.gif)
 
 
-### 1.7.3. Functions for Flexibility
+### 2.1.3. Functions for Flexibility
 
 Not everyone wants to eat hamburgers.
 
@@ -90,7 +90,7 @@ Notice how the instructions change with different inputs.
 
 
 
-### 1.7.4. Functions for organization
+### 2.1.4. Functions for organization
 
 A sandwich wouldn’t be complete without fries and dessert!
 
@@ -142,7 +142,7 @@ Questions: Which approach was easier this time?
 [codepen](https://codepen.io/hevalhazalkurt/pen/JzBVyq)
 
 
-### 1.7.5. Putting It All Together
+### 2.1.5. Putting It All Together
 Time to get coding! It’s okay if you don’t recognize all the symbols in this code: we’ll walk you through the parts you need to know.
 
 The `makeSandwich()` function is provided in **main.js**. It is defined with two parameters, `topping1` and `topping2`. By reading the instructions inside the function, we can see that it is constructing a string of words that represent the ingredients in the sandwich. For example, the first ingredient is `'bread'`.
@@ -202,7 +202,7 @@ result = makeSandwich('peanut butter', 'jelly')
 ```
 
 
-### 1.7.6. Review
+### 2.1.6. Review
 
 Well done! Functions are a fundamental concept in programming, and learning the basics will serve you wherever your path leads, regardless of language or domain. To review:
 
