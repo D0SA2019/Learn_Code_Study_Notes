@@ -10,8 +10,8 @@
 
 1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) 🔜
 	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
-	* [CSS Essential Training 1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_CSS_Essential_Training_1) ⏳
-	* HTML Essential Training
+	* [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training)⏳
+	* CSS Essential Training 1
 	* jQuery for Web Designers
 	* Wordpress : Workflows
 	* Wordpress : Accessibility

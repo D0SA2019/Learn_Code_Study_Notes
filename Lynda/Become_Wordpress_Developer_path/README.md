@@ -1,20 +1,22 @@
 # Lynda Become Wordpress Developer
 Below you will find my personal Lynda - Become Advanced Wordpress Developer study notes and projects. By clicking on the headlines you can access the study notes and details of that course or subject.
 
-### 1. [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model)
+| Status | Meaning |
+|--|--|
+| ✅ | Finished |
+| ⏳| Work in Progress |
+| 🔜 | Waiting |
+
+-----------------
+
+### 1. [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
 01. Introduction
 02. [Appetizer The Web Is Made of Boxes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/02_Appetizer_The_Web_Is_Made_of_Boxes/02_Appetizer_The_Web_Is_Made_of_Boxes.md)
 03. [Entre The Origin of the Box in Typography](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/03_Entre_The_Origin_of_the_Box_in_Typography/03_Entre_The_Origin_of_the_Box_in_Typography.md)
 04. [Main Course Understanding the Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/04_Main_Course_Understanding_the_Box_Model/04_Main_Course_Understanding_the_Box_Model.md)
 05. [Dessert The Brave New World of CSS Boxes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/05_Dessert_The_Brave_New_World_of_CSS_Boxes/05_Dessert_The_Brave_New_World_of_CSS_Boxes.md)
 
-### 2. CSS Essential Training 1
-1. Getting Started
-2. CSS Course
-3. Typography
-4. Layouts
-
-### 3. HTML Essential Training
+### 2. [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training)⏳
 1. Introducing HTML
 2. Basic Page Structure
 3. Formatting Page Content
@@ -23,6 +25,12 @@ Below you will find my personal Lynda - Become Advanced Wordpress Developer stud
 6. Creating Lists
 7. Controlling Styling
 8. Basic Scripting
+
+### 3. CSS Essential Training 1
+1. Getting Started
+2. CSS Course
+3. Typography
+4. Layouts
 
 ### 4. jQuery for Web Designers
 1. Introducing jQuery

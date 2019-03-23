@@ -4,7 +4,7 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 | Status | Meaning |
 |--|--|
 | ✅ | Finished |
-| ⏳| Work in Progress |
+| ⏳ | Work in Progress |
 | 🔜 | Waiting |
 
 ---------------
@@ -28,8 +28,8 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 ## [Lynda](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda)
 1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) ⏳
 	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
-	* [CSS Essential Training 1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_CSS_Essential_Training_1)⏳
-	* HTML Essential Training
+	* [HTML Essential Training]()⏳
+	* CSS Essential Training 1
 	* jQuery for Web Designers
 	* Wordpress : Workflows
 	* Wordpress : Accessibility
