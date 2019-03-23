@@ -5,7 +5,7 @@ My personal notes and projects on Codecademy
 |--|--|
 | ✅ | Finished |
 | ⏳| Work in Progress |
-|🔜 | Waiting |
+| 🔜 | Waiting |
 
 
 ### 1.[Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
@@ -31,7 +31,7 @@ My personal notes and projects on Codecademy
 * [Tip Calculator Project](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Python/Notes/Tip_Calculator_Project.md)  
 
 
-### 2.[Learn How to Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_How_to_Code) ⏳
+### 2.[Learn How to Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_How_to_Code) ✅
 1. Basics of Programming I
 	* [Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Variables.md)
 	* [Variables Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Variables_Quiz.md)
@@ -49,3 +49,13 @@ My personal notes and projects on Codecademy
 	* [Lists Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Lists_Quiz.md)
 	* [Loops](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/Learn_How_to_Code/Notes/Basics_of_Programming_I-Loops.md)
 	* [Loops Quiz](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/commit/dd191492427c24d2c01ec6973dbaf32388d88e02)
+
+
+### 3. [Introduction to HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/%20Introduction_to_HTML) ✅
+1. Elements and Structure
+	* [Introduction to HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/1.1_Introduction_to_HTML.md)
+	* [HTML Document Standards](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/1.2_HTML_Document_Standards.md)
+2. [Tables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/2.1_Tables.md)
+3. Forms
+	* [Forms](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/3.1_Forms.md)
+	* [Form Validation](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/3.2_Form_Validation.md)
