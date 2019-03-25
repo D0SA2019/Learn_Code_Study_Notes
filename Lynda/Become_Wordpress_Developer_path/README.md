@@ -17,9 +17,9 @@ Below you will find my personal Lynda - Become Advanced Wordpress Developer stud
 05. [Dessert The Brave New World of CSS Boxes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/05_Dessert_The_Brave_New_World_of_CSS_Boxes/05_Dessert_The_Brave_New_World_of_CSS_Boxes.md)
 
 ### 2. [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training)⏳
-1. Introducing HTML
-2. Basic Page Structure
-3. Formatting Page Content
+1. [Introducing HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/1.1_Introducing_HTML.md)
+2. [Basic Page Structure](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.2_Basic_Page_Structure.md)
+3. [Formatting Page Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.3_Formatting_Page_Content.md)
 4. Structuring Content
 5. Creating Links
 6. Creating Lists

@@ -21,19 +21,19 @@ Topics include:
 	* Welcome
 	* Using the exercise files
 	* Using the challenges
-01. Introducing HTML
+01. [Introducing HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/1.1_Introducing_HTML.md)
 	* The importance of HTML
 	* Basic HTML syntax
 	* The current state of HTML
 	* HTML resources
 	* Choosing a code editor
-02. Basic Page Structure
+02. [Basic Page Structure](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.2_Basic_Page_Structure.md)
 	* Exploring an HTML document
 	* DOCTYPE declarations
 	* The document head
 	* The document body
 	* Understanding content models
-03. Formatting Page Content
+03. [Formatting Page Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.3_Formatting_Page_Content.md)
 	* Formatting content with HTML
 	* Using headings
 	* Formatting paragraphs
