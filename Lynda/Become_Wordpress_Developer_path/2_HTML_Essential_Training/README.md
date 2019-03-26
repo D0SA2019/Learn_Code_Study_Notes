@@ -44,7 +44,7 @@ Topics include:
 	* Displaying images
 	* Challenge: Formatting page content
 	* Solution: Formatting page content
-04. Structuring Content
+04. [Structuring Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.4_Structuring_Content.md)
 	* The value of structure
 	* Controlling document outlines
 	* The nav element

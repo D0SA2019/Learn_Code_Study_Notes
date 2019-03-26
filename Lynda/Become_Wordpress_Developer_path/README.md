@@ -20,7 +20,7 @@ Below you will find my personal Lynda - Become Advanced Wordpress Developer stud
 1. [Introducing HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/1.1_Introducing_HTML.md)
 2. [Basic Page Structure](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.2_Basic_Page_Structure.md)
 3. [Formatting Page Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.3_Formatting_Page_Content.md)
-4. Structuring Content
+4. [Structuring Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.4_Structuring_Content.md)
 5. Creating Links
 6. Creating Lists
 7. Controlling Styling
