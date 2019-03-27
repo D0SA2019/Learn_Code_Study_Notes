@@ -56,7 +56,7 @@ Topics include:
 	* Using WAI-ARIA roles
 	* Challenge: Adding sectioning content
 	* Solution: Adding sectioning content
-05. Creating Links
+05. [Creating Links](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.5_Creating_Links.md)
 	* Exploring the anchor element
 	* Linking to pages within your site
 	* Linking to external pages
