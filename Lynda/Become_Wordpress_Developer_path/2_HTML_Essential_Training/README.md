@@ -64,7 +64,7 @@ Topics include:
 	* Linking to page regions
 	* Challenge: Creating links
 	* Solution: Creating links
-06. Creating Lists
+06. [Creating Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.6_Creating_Lists.md)
 	* Unordered lists
 	* Ordered lists
 	* Definition lists
