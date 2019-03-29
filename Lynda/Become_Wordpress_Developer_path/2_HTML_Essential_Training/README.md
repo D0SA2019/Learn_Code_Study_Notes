@@ -70,7 +70,7 @@ Topics include:
 	* Definition lists
 	* Challenge: Creating lists
 	* Solution: Creating lists
-07. Controlling Styling
+07. [Controlling Styling](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.7_Controlling_Styling.md)
 	* HTML and CSS
 	* Creating inline styles
 	* The style element
@@ -79,7 +79,7 @@ Topics include:
 	* Externalizing styles
 	* Challenge : Controlling basic styling
 	* Solution: Controlling basic styling
-08. Basic Scripting
+08. [Basic Scripting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.8_Basic_Scripting.md)
 	* HTML and Javascript
 	* The script element
 	* Writing a function

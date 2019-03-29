@@ -16,15 +16,15 @@ Below you will find my personal Lynda - Become Advanced Wordpress Developer stud
 04. [Main Course Understanding the Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/04_Main_Course_Understanding_the_Box_Model/04_Main_Course_Understanding_the_Box_Model.md)
 05. [Dessert The Brave New World of CSS Boxes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model/05_Dessert_The_Brave_New_World_of_CSS_Boxes/05_Dessert_The_Brave_New_World_of_CSS_Boxes.md)
 
-### 2. [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training)⏳
+### 2. [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training) ✅
 1. [Introducing HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/1.1_Introducing_HTML.md)
 2. [Basic Page Structure](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.2_Basic_Page_Structure.md)
 3. [Formatting Page Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.3_Formatting_Page_Content.md)
 4. [Structuring Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.4_Structuring_Content.md)
 5. [Creating Links](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.5_Creating_Links.md)
 6. [Creating Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.6_Creating_Lists.md)
-7. Controlling Styling
-8. Basic Scripting
+7. [Controlling Styling](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.7_Controlling_Styling.md)
+8. [Basic Scripting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training/Notes/2.8_Basic_Scripting.md)
 
 ### 3. CSS Essential Training 1
 1. Getting Started
