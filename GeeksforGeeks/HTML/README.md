@@ -1,4 +1,5 @@
 # GeeksforGeeks
+## HTML
 Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks.org/html-tutorials/) study notes and projects. By clicking on the headlines you can access the study notes and details of that course or subject.
 
 | Status | Meaning |
@@ -9,9 +10,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 
 ---------------
 
-## [HTML]() ⏳
-1. <big>**Basics**</big>
-<sup>
+1. **Basics**
 	* HTML | Introduction
 	* HTML | Editors
 	* HTML | Basics
@@ -39,9 +38,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* HTML | Canvas Basics
 	* HTML | Computer Code Elements
 	* HTML | Entities
-	</sup>
-2. <big>**HTML5**</big>
-<sup>
+2. **HTML5**
 	* Difference between HTML and HTML5
 	* HTML5 | Semantics
 	* HTML 5 | `<header>` Tag
@@ -64,9 +61,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* HTML5 | Video
 	* HTML5 Game Development | Infinitely Scrolling Background
 	* HTML5 | translate Attribute
-	</sup>
-3. <big>**Tags**</big>
-<sup>
+3. **Tags**
 	* HTML | `<style>` Tag
 	* HTML | `<sub>` and `<sup>` Tags
 	* HTML | `<nav>` Tag
@@ -133,9 +128,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* HTML | form Tag
 	* HTML | param Tag
 	* HTML | `<code>` Tag
-	</sup>
-4. <big>**Attributes**</big>
-<sup>
+4. **Attributes**
 	* HTML | ondragend Event Attribute
 	* HTML | dropzone Attribute
 	* HTML | ondrag Event Attribute
@@ -193,9 +186,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* HTML | oninvalid Event Attribute
 	* HTML | onkeydown Event Attribute
 	* HTML | onmouseover Event Attribute
-	</sup>
-5. <big>**DOM**</big>
-<sup>
+5. **DOM**
 	* DOM (Document Object Model)
 	* HTML | DOM `activeElement` Property
 	* HTML | DOM `anchors` Collection
@@ -238,9 +229,7 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* HTML | DOM Location `pathname` Property
 	* HTML | DOM Location `hostname` Property
 	* HTML | DOM Location `href` Property
-</sup>
-6. <big>**Misc**</big>
-<sup>
+6. **Misc**
 	* Most commonly used tags in HTML
 	* Difference Between HTML and ASP
 	* Creating a responsive Modal Sign-Up form
@@ -254,4 +243,3 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 	* DHTML JavaScript
 	* How to remove the space between inline-block elements
 	* Adding Google Maps With A Marker
-</sup>
