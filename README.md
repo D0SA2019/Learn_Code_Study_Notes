@@ -49,6 +49,17 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 
 ---------------
 
+## [GeeksforGeeks](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/GeeksforGeeks)
+1. [HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/GeeksforGeeks/HTML) ⏳
+2. CSS
+3. PHP
+4. SQL
+5. JavaScript
+6. jQuery
+7. Python
+
+---------------
+
 ## [HackerRank](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank)
 1. [30 Days of Code : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python) 🔜
 2. [Language Proficiency : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency) 🔜
