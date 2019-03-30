@@ -19,8 +19,8 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 1. [Python For Everybody Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera) ⏳
 	* Course 1 : Programming for Everybody (Getting Started with Python) ✅
 	* Course 2 : Python Data Structures ✅
-	* Course 3 : Using Python to Access Web Data ⏳
-	* Course 4 : Using Databases with Python
+	* Course 3 : Using Python to Access Web Data ✅
+	* Course 4 : Using Databases with Python ⏳
 	* Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python
 
 	---------------
@@ -28,7 +28,7 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 ## [Lynda](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda)
 1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) ⏳
 	* [Making Sense of the CSS Box Model](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/1_Making_Sense_of_the_CSS_Box_Model) ✅
-	* [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training) ✅ 
+	* [HTML Essential Training](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path/2_HTML_Essential_Training) ✅
 	* CSS Essential Training 1
 	* jQuery for Web Designers
 	* Wordpress : Workflows

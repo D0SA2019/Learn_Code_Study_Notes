@@ -38,3 +38,4 @@ The personal notes, codes and assignments of "Python for Everybody Specializatio
 * [Assignment 11.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_11.1.md)
 * [Chapter Twelve : Networks and Sockets](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.2_Chapter_Twelve-Networks%20and%20Sockets.md)
 * [Assignment 12.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_12.1.md)
+* [Chapter Thirteen: Web Services and XML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.3_Chapter_Thirteen-Web_Services_and_XML.md)
