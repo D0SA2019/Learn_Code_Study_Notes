@@ -11,18 +11,18 @@ Below you will find my personal [GeeksforGeeks - HTML](https://www.geeksforgeeks
 ---------------
 
 1. **Basics**
-	* HTML | Introduction
-	* HTML | Editors
-	* HTML | Basics
-	* HTML | Attributes
-	* HTML | Paragraph
-	* HTML | Text Formatting
-	* HTML | Quotations
-	* HTML | Tables
-	* HTML | Lists
-	* HTML | Spell Check
-	* HTML | Color Styles and HSL
-	* HTML | Geolocation
+	* [HTML | Introduction](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.1_HTML_Introduction.md)
+	* [HTML | Editors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.2_HTML_Editors.md)
+	* [HTML | Basics](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.3_HTML_Basics.md)
+	* [HTML | Attributes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.4_HTML_Attributes.md)
+	* [HTML | Paragraph](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.5_HTML_Paragraph.md)
+	* [HTML | Text Formatting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.6_HTML_Text_Formatting.md)
+	* [HTML | Quotations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.7_HTML_Quotations.md)
+	* [HTML | Tables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.8_HTML_Tables.md)
+	* [HTML | Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.9_HTML_Lists.md)
+	* [HTML | Spell Check](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.10_HTML_Spell_Check.md)
+	* [HTML | Color Styles and HSL](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.11_HTML_Color_Styles_and_HSL.md)
+	* [HTML | Geolocation](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/GeeksforGeeks/HTML/Notes/1.12_HTML_Geolocation.md)
 	* HTML | Drag and Drop
 	* HTML | Charsets
 	* HTML | Images
