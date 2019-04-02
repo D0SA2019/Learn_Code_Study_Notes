@@ -49,14 +49,20 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 
 ---------------
 
-## [GeeksforGeeks](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/GeeksforGeeks)
-1. [HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/GeeksforGeeks/HTML) ⏳
+## [W3Schools](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/W3Schools)
+1. [HTML5](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/W3Schools/HTML5) ⏳
 2. CSS
-3. PHP
-4. SQL
-5. JavaScript
-6. jQuery
-7. Python
+3. Javascript
+4. Bootstrap
+5. jQuery
+6. AngularJS
+7. Vue.js
+8. SQL
+9. PHP
+10. ASP
+11. Python
+12. Node.js
+13. JAVA
 
 ---------------
 
