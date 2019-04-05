@@ -10,11 +10,11 @@ My personal notes and projects on W3Schools
 ---------------
 ### 1. HTML5 ⏳
 #### 1.1. HTML Tutorial ⏳
-1. HTML Introduction
-2. HTML Editors
-3. HTML Basic
-4. HTML Elements
-5. HTML Attributes
+1. [HTML Introduction](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.1_HTML_Introduction.md)
+2. [HTML Editors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.2_HTML_Editors.md)
+3. [HTML Basic Examples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.3_HTML_Basic.md)
+4. [HTML Elements](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.4_HTML_Elements.md)
+5. [HTML Attributes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.5_HTML_Attributes.md)
 6. HTML Headings
 7. HTML Paragraphs
 8. HTML Styles
