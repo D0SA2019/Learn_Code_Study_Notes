@@ -15,10 +15,10 @@ My personal notes and projects on W3Schools
 3. [HTML Basic Examples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.3_HTML_Basic.md)
 4. [HTML Elements](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.4_HTML_Elements.md)
 5. [HTML Attributes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.5_HTML_Attributes.md)
-6. HTML Headings
-7. HTML Paragraphs
-8. HTML Styles
-9. HTML Formatting
+6. [HTML Headings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.6_HTML_Headings.md)
+7. [HTML Paragraphs](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.7_HTML_Paragraphs.md)
+8. [HTML Styles](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.8_HTML_Styles.md)
+9. [HTML Formatting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.9_HTML_Formatting.md)
 10. HTML Quotations
 11. HTML Comments
 12. HTML Colors
