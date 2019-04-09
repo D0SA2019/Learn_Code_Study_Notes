@@ -19,10 +19,10 @@ My personal notes and projects on W3Schools
 7. [HTML Paragraphs](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.7_HTML_Paragraphs.md)
 8. [HTML Styles](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.8_HTML_Styles.md)
 9. [HTML Formatting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.9_HTML_Formatting.md)
-10. HTML Quotations
-11. HTML Comments
-12. HTML Colors
-13. HTML CSS
+10. [HTML Quotations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.10_HTML_Quotation_and_Citation_Elements.md)
+11. [HTML Comments](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.11_HTML_Comments.md)
+12. [HTML Colors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.12_HTML_Colors.md)
+13. [HTML Styles - CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.13_HTML_Styles_CSS.md) 
 14. HTML Links
 15. HTML Images
 16. HTML Tables
