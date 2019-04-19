@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Tables</title>
+	<meta charset="UTF-8">
+
+	<style>
+		table.ex {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td.ex,
+		th.ex {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even).ex {
+			background-color: #dddddd;
+		}
+
+		table.border,
+		th.border,
+		td.border {
+			border: 1px solid black;
+		}
+
+		table.bordercol,
+		th.bordercol,
+		td.bordercol {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th.pad,
+		td.pad {
+			border: 1px solid black;
+			padding: 15px;
+		}
+
+		th.left,
+		td.left {
+			border: 1px solid black;
+			padding: 5px;
+			text-align: left;
+		}
+
+		table.space {
+			border: 1px solid black;
+			border-spacing: 15px;
+		}
+
+		table#t01 {
+			width: 100%;
+			background-color: #f1f1c1;
+		}
+
+		table#t02 {
+			width: 100%;
+		}
+
+		table#t02, th, td {
+			border: 1px solid black;
+  		border-collapse: collapse;
+			padding: 15px;
+			text-align: left;
+		}
+
+		table#t02 tr:nth-child(even) {
+			background-color: #eee;
+		}
+
+		table#t02 tr:nth-child(odd) {
+			background-color: #fff;
+		}
+
+		table#t02 th {
+			background-color: black;
+			color: white;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Example -->
+	<h2>HTML Table</h2>
+
+	<table class="ex">
+		<tr class="ex">
+			<th class="ex">Company</th>
+			<th class="ex">Contact</th>
+			<th class="ex">Country</th>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Alfreds Futterkiste</td>
+			<td class="ex">Maria Anders</td>
+			<td class="ex">Germany</td>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Centro comercial Moctezuma</td>
+			<td class="ex">Francisco Chang</td>
+			<td class="ex">Mexico</td>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Ernst Handel</td>
+			<td class="ex">Roland Mendel</td>
+			<td class="ex">Austria</td>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Island Trading</td>
+			<td class="ex">Helen Bennett</td>
+			<td class="ex">UK</td>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Laughing Bacchus Winecellars</td>
+			<td class="ex">Yoshi Tannamuri</td>
+			<td class="ex">Canada</td>
+		</tr>
+		<tr class="ex">
+			<td class="ex">Magazzini Alimentari Riuniti</td>
+			<td class="ex">Giovanni Rovelli</td>
+			<td class="ex">Italy</td>
+		</tr>
+	</table>
+
+
+	<hr>
+
+	<!-- Defining an HTML Table -->
+	<table style="width: 100%;">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+
+	<hr>
+	<br>
+
+
+	<!-- HTML Table - Adding a Border -->
+	<table class="border" style="width: 100%;">
+		<tr>
+			<th class="border">Firstname</th>
+			<th class="border">Lastname</th>
+			<th class="border">Age</th>
+		</tr>
+		<tr>
+			<td class="border">Jill</td>
+			<td class="border">Smith</td>
+			<td class="border">50</td>
+		</tr>
+		<tr>
+			<td class="border">Eve</td>
+			<td class="border">Jackson</td>
+			<td class="border">94</td>
+		</tr>
+		<tr>
+			<td class="border">John</td>
+			<td class="border">Doe</td>
+			<td class="border">80</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+	<hr>
+	<br>
+
+	<!-- HTML Table - Collapsed Borders -->
+	<table class="bordercol" style="width: 100%;">
+		<tr>
+			<th class="bordercol">Firstname</th>
+			<th class="bordercol">Lastname</th>
+			<th class="bordercol">Age</th>
+		</tr>
+		<tr>
+			<td class="bordercol">Jill</td>
+			<td class="bordercol">Smith</td>
+			<td class="bordercol">50</td>
+		</tr>
+		<tr>
+			<td class="bordercol">Eve</td>
+			<td class="bordercol">Jackson</td>
+			<td class="bordercol">94</td>
+		</tr>
+		<tr>
+			<td class="bordercol">John</td>
+			<td class="bordercol">Doe</td>
+			<td class="bordercol">80</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+
+	<hr>
+	<br>
+
+
+	<!-- HTML Table - Adding Cell Padding -->
+	<table class="bordercol" style="width: 100%;">
+		<tr>
+			<th class="bordercol, pad">Firstname</th>
+			<th class="bordercol, pad">Lastname</th>
+			<th class="bordercol, pad">Age</th>
+		</tr>
+		<tr>
+			<td class="bordercol, pad">Jill</td>
+			<td class="bordercol, pad">Smith</td>
+			<td class="bordercol, pad">50</td>
+		</tr>
+		<tr>
+			<td class="bordercol, pad">Eve</td>
+			<td class="bordercol, pad">Jackson</td>
+			<td class="bordercol, pad">94</td>
+		</tr>
+		<tr>
+			<td class="bordercol, pad">John</td>
+			<td class="bordercol, pad">Doe</td>
+			<td class="bordercol, pad">80</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+
+	<hr>
+	<br>
+
+	<!-- HTML Table - Left-align Headings -->
+	<table class="bordercol" style="width: 100%;">
+		<tr>
+			<th class="bordercol, left">Firstname</th>
+			<th class="bordercol, left">Lastname</th>
+			<th class="bordercol, left">Age</th>
+		</tr>
+		<tr>
+			<td class="bordercol, left">Jill</td>
+			<td class="bordercol, left">Smith</td>
+			<td class="bordercol, left">50</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">Eve</td>
+			<td class="bordercol, left">Jackson</td>
+			<td class="bordercol, left">94</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">John</td>
+			<td class="bordercol, left">Doe</td>
+			<td class="bordercol, left">80</td>
+		</tr>
+	</table>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- HTML Table - Adding Border Spacing -->
+	<table class="space" style="width: 100%;">
+		<tr>
+			<th class="left">Firstname</th>
+			<th class="left">Lastname</th>
+			<th class="left">Age</th>
+		</tr>
+		<tr>
+			<td class="left">Jill</td>
+			<td class="left">Smith</td>
+			<td class="left">50</td>
+		</tr>
+		<tr>
+			<td class="left">Eve</td>
+			<td class="left">Jackson</td>
+			<td class="left">94</td>
+		</tr>
+		<tr>
+			<td class="border">John</td>
+			<td class="border">Doe</td>
+			<td class="border">80</td>
+		</tr>
+	</table>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- HTML Table - Cells that Span Many Columns -->
+	<table class="bordercol" style="width: 100%;">
+		<tr>
+			<th class="bordercol, left">Name</th>
+			<th class="bordercol, left" colspan="2">Telephone</th>
+		</tr>
+		<tr>
+			<td class="bordercol, left">Bill Gates</td>
+			<td class="bordercol, left">55577854</td>
+			<td class="bordercol, left">55577855</td>
+		</tr>
+	</table>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- HTML Table - Cells that Span Many Rows -->
+	<table class="bordercol" style="width: 100%;">
+		<tr>
+			<th class="bordercol, left">Name</th>
+			<td class="bordercol, left">Bill Gates</td>
+		</tr>
+		<tr>
+			<th rowspan="2" class="bordercol, left">Telephone</th>
+			<td class="bordercol, left">55577854</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">55577855</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+
+	<hr>
+
+	<!-- HTML Table - Adding a Caption -->
+	<br>
+
+	<table class="bordercol" style="width: 100%;">
+		<caption>Monthly savings</caption>
+		<tr>
+			<th class="bordercol, left">Month</th>
+			<th class="bordercol, left">Savings</th>
+		</tr>
+		<tr>
+			<td class="bordercol, left">January</td>
+			<td class="bordercol, left">$100</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">February</td>
+			<td class="bordercol, left">$50</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+
+	<hr>
+
+	<!-- A Special Style for One Table -->
+
+	<br>
+
+	<table class="bordercol" id="t01">
+		<tr>
+			<th class="bordercol, left">Firstname</th>
+			<th class="bordercol, left">Lastname</th>
+			<th class="bordercol, left">Age</th>
+		</tr>
+		<tr>
+			<td class="bordercol, left">Jill</td>
+			<td class="bordercol, left">Smith</td>
+			<td class="bordercol, left">50</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">Eve</td>
+			<td class="bordercol, left">Jackson</td>
+			<td class="bordercol, left">94</td>
+		</tr>
+		<tr>
+			<td class="bordercol, left">John</td>
+			<td class="bordercol, left">Doe</td>
+			<td class="bordercol, left">80</td>
+		</tr>
+	</table>
+
+
+	<br>
+
+	<table id="t02">
+		<tr>
+			<th>Firstname</th>
+			<th>Lastname</th>
+			<th>Age</th>
+		</tr>
+		<tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		</tr>
+		<tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		</tr>
+		<tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+</body>
+
+</html>
