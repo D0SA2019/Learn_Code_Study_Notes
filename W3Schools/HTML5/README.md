@@ -22,11 +22,11 @@ My personal notes and projects on W3Schools
 10. [HTML Quotations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.10_HTML_Quotation_and_Citation_Elements.md)
 11. [HTML Comments](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.11_HTML_Comments.md)
 12. [HTML Colors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.12_HTML_Colors.md)
-13. [HTML Styles - CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.13_HTML_Styles_CSS.md) 
-14. HTML Links
-15. HTML Images
-16. HTML Tables
-17. HTML Lists
+13. [HTML Styles - CSS](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.13_HTML_Styles_CSS.md)
+14. [HTML Links](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.14_HTML_Links.md)
+15. [HTML Images](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.15_HTML_Images.md)
+16. [HTML Tables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.16_HTML_Tables.md)
+17. [HTML Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.17_HTML_Lists.md)
 18. HTML Blocks
 19. HTML Classes
 20. HTML Id
