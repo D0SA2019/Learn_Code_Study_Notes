@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Lists</title>
+	<meta charset="UTF-8">
+
+	<style>
+
+	ul#nav {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333333;
+	}
+
+	li#nav {
+		float: left;
+	}
+
+	li#nav a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 16px;
+		text-decoration: none;
+	}
+
+	li#nav a:hover {
+		background-color: #111111;
+	}
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Examples -->
+	<h2>An Unordered HTML List</h2>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+
+	<h2>An Ordered HTML List</h2>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+
+
+	<hr>
+
+	<!-- Unordered HTML List -->
+
+	<h2>An Unordered HTML List</h2>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+
+	<hr>
+	<br>
+
+
+	<!-- Choose List Item Marker -->
+	<h2>Unordered List with Disc Bullets</h2>
+	<ul style="list-style-type: disc;" >
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List with Circle Bullets</h2>
+	<ul style="list-style-type: circle;" >
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List with Square Bullets</h2>
+	<ul style="list-style-type: square;" >
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+	<h2>Unordered List with None Bullets</h2>
+	<ul style="list-style-type: none;" >
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+
+
+	<hr>
+	<br>
+
+	<!-- Ordered HTML List -->
+
+	<h2>An Ordered HTML List</h2>
+	<ol>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+
+	<br>
+
+
+
+	<hr>
+	<br>
+
+
+	<!-- Ordered HTML List - The Type Attribute -->
+	<h2>Ordered List with Numbers</h2>
+	<ol type="1">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Uppercase Letters</h2>
+	<ol type="A">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Lowercase Letters</h2>
+	<ol type="a">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Uppercase Roman Numbers</h2>
+	<ol type="I">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<h2>Ordered List with Lowercase Roman Numbers</h2>
+	<ol type="i">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<br>
+
+
+
+	<hr>
+	<br>
+
+	<!-- HTML Description Lists -->
+	<h2>A Description List</h2>
+
+	<dl>
+		<dt>Coffee</dt>
+		<dd>- black hot drink</dd>
+		<dt>Milk</dt>
+		<dd>- white cold drink</dd>
+	</dl>
+
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- Nested HTML Lists -->
+	<h2>A Nested List</h2>
+
+	<ul>
+		<li>Coffee</li>
+		<li>Tea
+			<ul>
+				<li>Black tea</li>
+				<li>Green tea</li>
+			</ul>
+			</li>
+		<li>Milk</li>
+	</ul>
+
+
+
+	<br>
+	<hr>
+
+
+	<!-- Control List Counting  -->
+	<h2>The start attribute</h2>
+
+	<ol start="50">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+	<ol type="I" start="50">
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ol>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- Horizontal List with CSS -->
+	<h2>Navigation Menu</h2>
+
+	<ul id="nav">
+		<li id="nav"><a href="#home">Home</a></li>
+		<li id="nav"><a href="#news">News</a></li>
+		<li id="nav"><a href="#contact">Contact</a></li>
+		<li id="nav"><a href="#about">About</a></li>
+	</ul>
+
+	<br>
+
+
+</body>
+
+</html>
