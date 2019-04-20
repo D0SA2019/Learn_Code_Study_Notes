@@ -27,9 +27,9 @@ My personal notes and projects on W3Schools
 15. [HTML Images](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.15_HTML_Images.md)
 16. [HTML Tables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.16_HTML_Tables.md)
 17. [HTML Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.17_HTML_Lists.md)
-18. HTML Blocks
-19. HTML Classes
-20. HTML Id
+18. [HTML Blocks](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.18_HTML%20Block_and_Inline_Elements.md)
+19. [HTML Classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.19_HTML_The_class_Attribute.md)
+20. [HTML Id](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.20_HTML_The_id_Attribute.md)
 21. HTML Iframes
 22. HTML JavaScript
 23. HTML File Paths
