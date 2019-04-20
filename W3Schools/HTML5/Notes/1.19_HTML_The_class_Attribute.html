@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML The class Attribute</title>
+	<meta charset="UTF-8">
+
+	<style>
+		.cities {
+			background-color: black;
+			color: white;
+			padding: 20px;
+			margin: 20px;
+		}
+
+		span.note {
+			font-size: 120%;
+			color: red;
+		}
+
+		.city {
+			background-color: tomato;
+			color: white;
+			padding: 10px;
+		}
+
+		.main {
+			text-align: center;
+		}
+
+		.special {
+			color: blue;
+		}
+
+		.mystyle {
+			color: red;
+		}
+
+		.intro {
+			background: pink;
+		}
+
+		.special1 {
+			color: red;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Using The class Attribute -->
+
+	<div class="cities">
+		<h2>London</h2>
+		<p>London is the capital of England.</p>
+	</div>
+
+	<div class="cities">
+		<h2>Paris</h2>
+		<p>Paris is the capital of France.</p>
+	</div>
+
+	<div class="cities">
+		<h2>Tokyo</h2>
+		<p>Tokyo is the capital of Japan.</p>
+	</div>
+
+
+
+	<br>
+	<hr>
+
+
+
+	<!-- Using The class Attribute on Inline Elements -->
+	<h1>My <span class="note">Important</span> Heading</h1>
+	<p>This is some <span class="note">important</span> text.</p>
+
+	<br>
+	<hr>
+
+
+
+
+
+	<!-- Select Elements With a Specific Class -->
+
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<br>
+	<hr>
+
+
+	<!-- Multiple Classes -->
+
+	<h2 class="city main">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+	<br>
+	<hr>
+
+
+	<!-- Different Tags Can Share Same Class -->
+
+	<h2 class="city">Paris</h2>
+	<p class="city">Paris is the capital of France.</p>
+
+	<br>
+	<hr>
+
+
+
+	<!-- Using The class Attribute in JavaScript -->
+	<p>Click the button, to hide all elements with the class name "city", with JavaScript:</p>
+
+	<button onclick="myFunction()">Hide elements</button>
+
+	<h2 class="city">London</h2>
+	<p>London is the capital of England.</p>
+
+	<h2 class="city">Paris</h2>
+	<p>Paris is the capital of France.</p>
+
+	<h2 class="city">Tokyo</h2>
+	<p>Tokyo is the capital of Japan.</p>
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementsByClassName("city");
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+		}
+	</script>
+
+	<br>
+	<hr>
+
+
+
+	<!-- Exercises -->
+
+	<p class="special">My paragraph</p>
+
+	<h1 class="mystyle">My Home Page</h1>
+
+	<h1 class="intro special1">My Home Page</h1>
+
+
+
+
+</body>
+
+</html>
