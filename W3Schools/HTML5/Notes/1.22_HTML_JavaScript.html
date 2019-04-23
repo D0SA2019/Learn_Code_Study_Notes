@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML JavaScript</title>
+	<meta charset="UTF-8">
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- Example -->
+	<h1>My First JavaScript</h1>
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time</button>
+
+	<p id="demo"></p>
+
+
+
+
+	<br>
+	<hr>
+
+
+
+	<!-- The HTML <script> Tag -->
+
+	<h2>Use JavaScript to Change Text</h2>
+
+	<p id="demotext"></p>
+
+	<script>document.getElementById("demotext").innerHTML = "Hello Javascript!";</script>
+
+
+
+
+
+	<br>
+	<hr>
+
+
+
+
+
+	<!-- A Taste of JavaScript -->
+
+	<h2>My First JavaScript</h2>
+	<p>JavaScript can change the content of an HTML element:</p>
+
+	<button type="button" onclick="myFunction()">Click Me!</button>
+
+	<p id="democlick">This is a demonstration.</p>
+
+	<script>
+		function myFunction() {
+			document.getElementById("democlick").innerHTML = "Hello Javascript!";
+		}
+	</script>
+
+
+	<br>
+	<hr>
+
+	<h2>JavaScript can change HTML styles</h2>
+	<p id="demostyle">JavaScript can change the style of an HTML element.</p>
+
+	<script>
+		function myFunction1() {
+			document.getElementById("demostyle").style.fontSize = "25px";
+			document.getElementById("demostyle").style.color = "red";
+			document.getElementById("demostyle").style.backgroundColor = "yellow";
+		}
+	</script>
+
+	<button type="button" onclick="myFunction1()">Click Me!</button>
+	<br>
+
+
+
+
+	<br>
+	<hr>
+
+
+	<!-- JavaScript can change HTML attributes -->
+	<br>
+	<h2>JavaScript can change HTML attributes</h2>
+	<script>
+		function light(sw) {
+			var pic;
+			if (sw == 0) {
+				pic = "https://www.w3schools.com/html/pic_bulboff.gif"
+			} else {
+				pic = "https://www.w3schools.com/html/pic_bulbon.gif"
+			}
+			document.getElementById("myImage").src = pic;
+		}
+	</script>
+
+	<img id="myImage" src="https://www.w3schools.com/html/pic_bulboff.gif" width="100" height="180">
+
+	<p>
+		<button type="button" onclick="light(1)">Light On</button>
+		<button type="button" onclick="light(0)">Light Off</button>
+	</p>
+
+
+
+
+	<br>
+	<hr>
+
+
+	<!-- The HTML <noscript> Tag -->
+	<p id="demono"></p>
+
+	<script>
+		document.getElementById("demono").innerHTML = "Hello JavaScript!";
+	</script>
+
+	<noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+	<p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+
+
+
+	<br>
+	<hr>
+
+
+
+	<!-- Exercise 1 -->
+
+	<p id="demoex1">Hi.</p>
+
+	<script>
+	document.getElementById("demoex1").innerHTML = "Hello World!";
+	</script>
+
+	<br>
+	<hr>
+
+
+	<!-- Exercise 2 -->
+	<p id="demoex2">Hi.</p>
+
+	<script>
+	document.getElementById("demoex2").style.fontSize= "40px";
+	</script>
+
+	<br>
+	<hr>
+
+
+	<!-- Exercise 3 -->
+	<p id="demoex3">Hi.</p>
+
+	<script>
+	document.getElementById("demoex3").style.color= "red";
+	</script>
+
+	<br>
+	<hr>
+
+
+
+	<!-- Exercise 4 -->
+	<img id="demoex4" src="https://www.w3schools.com/html/pic_bulbon.gif">
+
+	<script>
+		document.getElementById("demoex4").src= "https://www.w3schools.com/html/pic_bulbon.gif";
+	</script>
+
+
+
+
+</body>
+
+</html>
