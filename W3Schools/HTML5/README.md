@@ -30,12 +30,12 @@ My personal notes and projects on W3Schools
 18. [HTML Blocks](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.18_HTML%20Block_and_Inline_Elements.md)
 19. [HTML Classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.19_HTML_The_class_Attribute.md)
 20. [HTML Id](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.20_HTML_The_id_Attribute.md)
-21. HTML Iframes
-22. HTML JavaScript
-23. HTML File Paths
-24. HTML Head
-25. HTML Layout
-26. HTML Responsive
+21. [HTML Iframes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.21_HTML_Iframes.md)
+22. [HTML JavaScript](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.22_HTML_JavaScript.md)
+23. [HTML File Paths](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.23_HTML_File_Paths.md)
+24. [HTML Head](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.24_HTML_Head.md)
+25. [HTML Layout](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.25_HTML_Layouts.md)
+26. [HTML Responsive](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.26_HTML_Responsive_Web_Design.md)
 27. HTML Computercode
 28. HTML Entities
 29. HTML Symbols
