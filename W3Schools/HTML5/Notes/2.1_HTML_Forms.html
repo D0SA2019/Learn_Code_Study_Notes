@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Forms</title>
+	<meta charset="UTF-8">
+
+	<style>
+	</style>
+
+</head>
+
+<body>
+
+
+	<!-- Example -->
+	<h2>HTML Forms</h2>
+	<form action="/action_page.php">
+		First Name:<br>
+		<input type="text" name="firstname" value="Mickey"> <br><br>
+		Last Name:<br>
+		<input type="text" name="lastname" value="Mouse"><br></br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+	<br>
+	<br>
+	<hr>
+
+
+
+	<!-- Text Input -->
+	<h2>Text Input</h2>
+	<form>
+		First name: <br>
+		<input type="text" name="firstname"> <br>
+		Last name: <br>
+		<input type="text" name="lastname">
+	</form>
+
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- Radio Button Input -->
+	<h2>Radio Buttons</h2>
+	<form>
+		<input type="radio" name="gender" value="male" checked>Male <br>
+		<input type="radio" name="gender" value="female">Female <br>
+		<input type="radio" name="gender" value="other">Other <br>
+	</form>
+
+
+
+	<br>
+	<hr>
+
+
+	<!-- The Submit Button -->
+	<h2>The Submit Button</h2>
+
+	<form action="/action_page.php">
+		First Name : <br>
+		<input type="text" name="firstname" value="Mickey"> <br>
+		Last Name : <br>
+		<input type="text" name="lastname" value="Mouse"> </br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+
+	<br>
+	<hr>
+
+
+	<!-- The Target Attribute  -->
+	<h2>The Target Attribute</h2>
+
+	<form action="/action_page.php" target="_blank">
+		First name : <br>
+		<input type="text" name="firstname" value="Mickey"><br>
+		Last name : <br>
+		<input type="text" name="lastname" value="Mouse"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+	<br>
+	<hr>
+
+
+	<!-- The Method Attribute -->
+	<h2>The Method Attribute</h2>
+	<form action="/action_page.php" target="_blank" method="GET">
+		First name:<br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+	<br>
+	<hr>
+	<br>
+
+
+	<form action="/action_page.php" target="_blank" method="POST">
+		First name:<br>
+		<input type="text" name="firstname" value="Mickey">
+		<br>
+		Last name:<br>
+		<input type="text" name="lastname" value="Mouse">
+		<br><br>
+		<input type="submit" value="Submit">
+	</form>
+
+
+	<br>
+	<hr>
+
+	<!-- Grouping Form Data with <fieldset> -->
+	<h2>Grouping Form Data with Fieldset</h2>
+
+	<form action="/action_page.php">
+		<fieldset>
+			<legend>Personal Information : </legend>
+			First name:<br>
+			<input type="text" name="firstname" value="Mickey">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname" value="Mouse">
+			<br><br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- Exercises -->
+
+	<form>
+		<input type="button" value="OK">
+	</form>
+
+	<br><br>
+
+	<form>
+		<input type="radio" name="gender" value="male"> Male
+		<input type="radio" name="gender" value="female"> Female
+	</form>
+
+	<br><br>
+
+	<form action="/action_page.php">
+		Name: <input type="text" name="name">
+		<input type="submit" value="Submit">
+	</form>
+
+	<br><br>
+
+	<form action="/action_page.php" method="post">
+		Name: <input type="text" name="name">
+		<input type="submit">
+	</form>
+
+	<br><br><hr>
+
+
+</body>
+
+</html>
