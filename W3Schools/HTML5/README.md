@@ -9,7 +9,7 @@ My personal notes and projects on W3Schools
 
 ---------------
 ### 1. HTML5 ⏳
-#### 1.1. HTML Tutorial ⏳
+#### 1.1. HTML Tutorial ✅
 1. [HTML Introduction](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.1_HTML_Introduction.md)
 2. [HTML Editors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.2_HTML_Editors.md)
 3. [HTML Basic Examples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.3_HTML_Basic.md)
@@ -36,15 +36,15 @@ My personal notes and projects on W3Schools
 24. [HTML Head](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.24_HTML_Head.md)
 25. [HTML Layout](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.25_HTML_Layouts.md)
 26. [HTML Responsive](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.26_HTML_Responsive_Web_Design.md)
-27. HTML Computercode
-28. HTML Entities
-29. HTML Symbols
-30. HTML Charset
-31. HTML URL Encode
-32. HTML XHTML
+27. [HTML Computercode](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.27_HTML_Computer_Code_Elements.md)
+28. [HTML Entities](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.28_HTML_Entities.md)
+29. [HTML Symbols](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.29_HTML_Symbols.md)
+30. [HTML Encoding (Character Sets)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.30_HTML_Encoding_Character_Sets.md)
+31. [HTML URL Encode](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.31_HTML_Uniform_Resource_Locators.md)
+32. [HTML XHTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/1.32_HTML_and_XHTML.md)
 
-#### 1.2. HTML Forms 🔜
-1. HTML Forms
+#### 1.2. HTML Forms ⏳
+1. [HTML Forms](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/W3Schools/HTML5/Notes/2.1_HTML_Forms.md)
 2. HTML Form Elements
 3. HTML Input Types
 4. HTML Input Attributes
