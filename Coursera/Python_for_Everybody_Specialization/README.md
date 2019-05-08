@@ -7,6 +7,9 @@ The personal notes, codes and assignments of "Python for Everybody Specializatio
 | ⏳| Work in Progress |
 | 🔜 | Waiting |
 
+
+----
+
 ## Course 1 : Programming for Everybody (Getting Started with Python) ✅
 * [Chapter One : Why We Program?](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.1_Chapter_One-Why_We_Program%3F.md)
 * [Chapter Two : Variables, Expressions, and Statements](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.2_Chapter_Two-Variables_Expressions_and_Statements.md)
@@ -18,6 +21,7 @@ The personal notes, codes and assignments of "Python for Everybody Specializatio
 * [Chapter Five : Loops and Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/1.5_Chapter_Five-Loops_and_Iteration.md)
 * [Assignment 5.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_5.1.md)
 
+----
 
 ## Course 2 : Python Data Structures ✅
 * [Chapter Six: Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.1_Chapter_Six-Strings.md)
@@ -33,9 +37,18 @@ The personal notes, codes and assignments of "Python for Everybody Specializatio
 * [Chapter Ten - Tuples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/2.5_Chapter_Nine-Tuples.md)
 * [Assignment 10.2](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_10.2.md)
 
-## Course 3 : Using Python to Access Web Data ⏳
+----
+
+## Course 3 : Using Python to Access Web Data ✅
 * [Chapter Eleven: Regular Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.1_Chapter_Eleven-Regular%20Expressions.md)
 * [Assignment 11.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_11.1.md)
 * [Chapter Twelve : Networks and Sockets](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.2_Chapter_Twelve-Networks%20and%20Sockets.md)
 * [Assignment 12.1](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/Assignment_12.1.md)
 * [Chapter Thirteen: Web Services and XML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/3.3_Chapter_Thirteen-Web_Services_and_XML.md)
+
+----
+
+## Course 4 : Using Databases with Python ⏳
+* Chapter 14 : Object Oriented Python
+* Chapter 15 : Basic Structured Query Language
+* Chapter 16 : Databases and Visualization
