@@ -59,7 +59,7 @@ if __name__ == '__main__':
     N = int(input())
 ```
 
-## Solution
+## Solution 1
 
 ```python
 import math
@@ -79,4 +79,54 @@ if __name__ == '__main__':
         print("Not Weird")
     else :
         print("Weird")
+```
+
+
+## Solution 2
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    N = int(input())
+    if N % 2 != 0:
+        print("Weird")
+    else:
+        if N <= 5:
+            print("Not Weird")
+        elif N <= 20:
+            print("Weird")
+        else:
+            print("Not Weird")
+```
+
+
+## Solution 3
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    N = int(input())
+    if N % 2 != 0:
+        print("Weird")
+    else:
+        if N in range(0,6):
+            print("Not Weird")
+        elif N in range(6,21):
+            print("Weird")
+        else:
+            print("Not Weird")
 ```
