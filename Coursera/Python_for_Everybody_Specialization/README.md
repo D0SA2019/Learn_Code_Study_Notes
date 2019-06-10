@@ -1,4 +1,4 @@
-# Coursera-Python-for-Everybody-Specialization
+# Coursera - Python for Everybody Specialization
 The personal notes, codes and assignments of "Python for Everybody Specialization" on Coursera by Charles Severance (University of Michigan).
 
 | Status | Meaning |
@@ -48,7 +48,12 @@ The personal notes, codes and assignments of "Python for Everybody Specializatio
 
 ----
 
-## Course 4 : Using Databases with Python ⏳
-* Chapter 14 : Object Oriented Python
-* Chapter 15 : Basic Structured Query Language
-* Chapter 16 : Databases and Visualization
+## Course 4 : Using Databases with Python ✅
+* [Chapter 14 : Object Oriented Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/4.1_Chapter_14_Object_Oriented_Python.md)
+* [Chapter 15 : Basic Structured Query Language](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/4.2_Chapter_15_Basic_Structured_Query_Language.md)
+* [Chapter 16 : Databases and Visualization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python_for_Everybody_Specialization/Study_Notes/4.3_Chapter_16_Databases_and_Visualization.md)
+
+
+-----
+
+## Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python 🔜
