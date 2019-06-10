@@ -20,9 +20,16 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 	* Course 1 : Programming for Everybody (Getting Started with Python) ✅
 	* Course 2 : Python Data Structures ✅
 	* Course 3 : Using Python to Access Web Data ✅
-	* Course 4 : Using Databases with Python ⏳
-	* Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python
+	* Course 4 : Using Databases with Python ✅
+	* Course 5 : Capstone: Retrieving, Processing, and Visualizing Data with Python 🔜
 
+2. [Python 3 Programming Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera/Python3_Programming_Specialization)
+	* Course 1 : Python Basics ⏳
+	* Course 2 : Python Functions, Files, and Dictionaries 🔜
+	* Course 3 : Data Collection and Processing with Python 🔜
+	* Course 4 : Python Classes and Inheritance 🔜
+	* Course 5 : Python Project: pillow, tesseract, and opencv 🔜
+	
 	---------------
 
 ## [Lynda](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda)
