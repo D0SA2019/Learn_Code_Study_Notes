@@ -1,5 +1,5 @@
 # Coursera - Python 3 Programming Specialization
-The personal notes, codes and assignments of "Python 3 Programming Specialization" on Coursera by Charles Severance (University of Michigan).
+The personal notes, codes and assignments of "***Python 3 Programming Specialization***" on Coursera by University of Michigan.
 
 | Status | Meaning |
 |--|--|
@@ -11,9 +11,20 @@ The personal notes, codes and assignments of "Python 3 Programming Specializatio
 ----
 
 ## Course 1 : Python Basics ⏳
-#### Week 1 : General Introduction
-* Welcome to Python Basics!
+#### Week 1 : General Introduction ⏳
+***([study notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.py))***
+
+* [Welcome to Python Basics!](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.1_Welcome_to_Python_Basics.md)
 * Programming in Python
+	- [Values and Data Types](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.2_Values_and_Data_Types.md)
+	- [Operators and Operands](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.3_Operators_and_Operands.md)
+	- [Function Calls](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.4_Function_Calls.md)
+	- Data Types
+	- Variables
+	- Statements and Expressions
+	- Updating Variables
+	- Hard-Coding
+	- Input
 * Turtle Graphics
 * The Way of the Programmer
 
