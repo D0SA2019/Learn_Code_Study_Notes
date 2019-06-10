@@ -50,7 +50,27 @@ if __name__ == '__main__':
     n = int(input())
 ```
 
-## Solution
+## Solution 1
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    for i in numbers :
+        print(n, "x", i, "=", (n*i))
+```
+
+
+## Solution 2
 
 ```python
 import math
@@ -64,6 +84,26 @@ import sys
 if __name__ == '__main__':
     n = int(input())
 
-    for i in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
-        print(n, "x", i, "=", (n*i))
+    for i in range(1,11):
+        result = n * i
+        print("{} x {} = {}".format(n, i, result))
+```
+
+
+## Solution 3
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    for i in range(1,11):
+        print("{} x {} = {}".format(n, i, n * i))
 ```
