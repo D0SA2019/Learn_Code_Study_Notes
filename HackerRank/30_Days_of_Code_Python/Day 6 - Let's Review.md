@@ -62,22 +62,27 @@ The even indices are 0 and 2, and the odd indices are 1 and 3. We then print a s
 ## Solution
 
 ```python
-# Solution 1 : for HackerRank
-for N in range(int(input())):
+T = input()
+for N in range(int(T)):
     S = input()
     print(S[::2], S[1::2])
+```
 
-# Solution 2 : for Terminal
-STDIN = input("Enter a word: ")
-word1 = ""
-word2 = ""
 
-for index1 in range(len(STDIN)):
-    if index1 % 2 == 0:
-        word1 = str(word1) + STDIN[index1]
-for index2 in range(len(STDIN)):
-    if index2 % 2 != 0:
-        word2 = str(word2) + STDIN[index2]
+## Solution 2
 
-print(word1, word2)
+```python
+N = int(input())
+
+for i in range(0, N):
+    string = input()
+    for j in range(0, len(string)):
+        if j % 2 == 0:
+            print(string[j], end='')
+    print(" ", end='')
+
+    for j in range(0, len(string)):
+        if j % 2 != 0:
+            print(string[j], end='')
+    print("")
 ```
