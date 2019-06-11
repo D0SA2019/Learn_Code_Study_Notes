@@ -362,3 +362,546 @@ print(square(3))
 <function square at 0x105c0b268>
 9
 ```
+
+#### Data Types
+
+If you are not sure what class (data type) a value falls into, Python has a function called `type` which can tell you.
+
+
+```python
+print(type("Hello World!"))
+print(type(17))
+print(type(3.2))
+```
+
+```
+<class 'str'>
+<class 'int'>
+<class 'float'>
+```
+
+What about values like `"17"` and `"3.2"`? They look like numbers, but they are in quotation marks like strings.
+
+
+```python
+print(type("17"))
+print(type("3.2"))
+```
+
+```
+<class 'str'>
+<class 'str'>
+```
+
+They’re strings!
+
+Strings in Python can be enclosed in either single quotes (`'`) or double quotes (`"`), or three of each (`'''` or `"""`)
+
+```python
+print(type('This is a string.'))
+print(type("And so it is."))
+print(type("""and this."""))
+print(type('''and even this.'''))
+```
+
+```
+<class 'str'>
+<class 'str'>
+<class 'str'>
+<class 'str'>
+```
+
+Double quoted strings can contain single quotes inside them, as in `"Bruce's beard"`, and single quoted strings can have double quotes inside them, as in `'The knights who say "Ni!"'`. Strings enclosed with three occurrences of either quote symbol are called triple quoted strings. They can contain either single or double quotes:
+
+```python
+print("Bruce's beard")
+print('She said "hi".')
+print('''"Oh no", she exclaimed, "Ben's bike is broken!"''')
+```
+
+```
+Bruce's beard
+She said "hi".
+"Oh no", she exclaimed, "Ben's bike is broken!"
+```
+
+Triple quoted strings can even span multiple lines:
+
+```python
+print("""This message will span
+several lines
+of the text.""")
+```
+
+```
+This message will span
+several lines
+of the text.
+```
+
+Python doesn’t care whether you use single or double quotes or the three-of-a-kind quotes to surround your strings. Once it has parsed the text of your program or command, the way it stores the value is identical in all cases, and the surrounding quotes are not part of the value.
+
+```python
+print('This is a string.')
+print("""And so it is.""")
+```
+
+```
+This is a string.
+And so it is.
+```
+
+So the Python language designers usually chose to surround their strings by single quotes. What do you think would happen if the string already contained single quotes?
+
+When you type a large integer, you might be tempted to use commas between groups of three digits, as in `42,000`. This is not a legal integer in Python, but it does mean something else, which is legal:
+
+```python
+print(42,500)
+print(42.500)
+print(42500)
+```
+
+```
+42 500
+42.5
+42500
+```
+
+Well, that’s not what we expected at all! Because of the comma, Python chose to treat this as a pair of values. In fact, a print statement can print any number of values as long as you separate them by commas. Notice that the values are separated by spaces when they are displayed.
+
+```python
+print(42, 17, 56, 34, 11, 4.35, 32)
+print(3.4, "hello, 45")
+```
+
+```
+42 17 56 34 11 4.35 32
+3.4 hello, 45
+```
+
+Remember not to put commas or spaces in your integers, no matter how big they are. Also revisit what we said in the previous chapter: formal languages are strict, the notation is concise, and even the smallest change might mean something quite different from what you intended.
+
+
+#### Type Conversion Functions
+
+Sometimes it is necessary to convert values from one type to another. Python provides a few simple functions that will allow us to do that. The functions `int`, `float` and `str` will (attempt to) convert their arguments into types `int`, `float` and `str` respectively. We call these type conversion functions.
+
+The `int` function can take a floating point number or a string, and turn it into an int. For floating point numbers, it discards the decimal portion of the number - a process we call truncation towards zero on the number line. Let us see this in action:
+
+```python
+print(3.14, int(3.14))
+print(3.9999, int(3.9999))
+print(-3.9999, int(-3.9999))
+print("2345", int("2345"))
+print(17, int(17))
+print(int("23bottless"))
+```
+
+**Output**:
+
+```
+3.14 3
+3.9999 3
+-3.9999 -3
+2345 2345
+17 17
+Traceback (most recent call last):
+    print(int("23bottless"))
+ValueError: invalid literal for int() with base 10: '23bottless'
+```
+
+The last case shows that a string has to be a syntactically legal number, otherwise you’ll get one of those pesky runtime errors. Modify the example by deleting the `bottles` and rerun the program. You should see the integer `23`.
+
+The type converter `float` can turn an integer, a float, or a syntactically legal string into a float.
+
+```python
+print(float("123.45"))
+print(type(float("123.45")))
+```
+
+**Output**:
+
+```
+123.45
+<class 'float'>
+```
+
+The type converter `str` turns its argument into a string. Remember that when we print a string, the quotes are removed in the output window. However, if we print the type, we can see that it is definitely `str`.
+
+```python
+print(str(17))
+print(str(123.45))
+print(type(str(123.45)))
+```
+
+**Output**:
+
+```
+17
+123.45
+<class 'str'>
+```
+
+One common operation where you might need to do a type conversion is when you are concatenating several strings together but want to include a numeric value as part of the final string. Because we can’t concatenate a string with an integer or floating point number, we will often have to convert numbers to strings before concatenating them.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/type_cast.gif)
+
+
+#### Variables
+
+One of the most powerful features of a programming language is the ability to manipulate **variables**. A variable is a name that refers to a value.
+
+**Assignment statements** create new variables and also give them values to refer to.
+
+```python
+message = "What's up, Doc?"
+n = 17
+pi = 3.14159
+```
+
+This example makes three assignments. The first assigns the string value `"What's up, Doc?"` to a new variable named `message`. The second assigns the integer `17` to `n`, and the third assigns the floating-point number `3.14159` to a variable called `pi`.
+
+The **assignment token**, =, should not be confused with equality (we will see later that equality uses the `==` token). The assignment statement links a name, on the left hand side of the operator, with a value, on the right hand side. This is why you will get an error if you enter:
+
+```python
+17 = n
+```
+
+**Tip** : When reading or writing code, say to yourself “n is assigned 17” or “n gets the value 17” or “n is a reference to the object 17” or “n refers to the object 17”. Don’t say “n equals 17”.
+
+A common way to represent variables on paper is to write the name with an arrow pointing to the variable’s value. This kind of figure, known as a **reference diagram**, is often called a **state snapshot** because it shows what state each of the variables is in at a particular instant in time. (Think of it as the variable’s state of mind). This diagram shows the result of executing the assignment statements shown above.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/refdiagram1.png)
+
+If your program includes a variable in any expression, whenever that expression is executed it will produce the value that is linked to the variable at the time of execution. In other words, evaluating a variable looks up its value.
+
+```python
+message = "What's up, Doc?"
+n = 17
+pi = 3.14159
+
+print(message)
+print(n)
+print(pi)
+```
+
+**Output**:
+
+```
+What's up, Doc?
+17
+3.14159
+```
+
+We use variables in a program to “remember” things, like the current score at the football game. But variables are variable. This means they can change over time, just like the scoreboard at a football game. You can assign a value to a variable, and later assign a different value to the same variable.
+
+
+**Note** : This is different from math. In algebra, if you give `x` the value 3, it cannot change to refer to a different value half-way through your calculations!
+
+To see this, read and then run the following program. You’ll notice we change the value of `day` three times, and on the third assignment we even give it a value that is of a different type.
+
+![](https://media.giphy.com/media/dUm64hoCJWNYp345iy/giphy.gif)
+
+A great deal of programming is about having the computer remember things. For example, we might want to keep track of the number of missed calls on your phone. Each time another call is missed, we will arrange to update or change the variable so that it will always reflect the correct value.
+
+Any place in a Python program where a number or string is expected, you can put a variable name instead. The python interpreter will substitute the value for the variable name.
+
+For example, we can find out the data type of the current value of a variable by putting the variable name inside the parentheses following the function name `type`.
+
+```python
+message = "What's up, Doc?"
+n = 17
+pi = 3.14159
+
+print(type(message))
+print(type(n))
+print(type(pi))
+```
+
+**Output**:
+
+```
+<class 'str'>
+<class 'int'>
+<class 'float'>
+```
+
+**Note** : If you have programmed in another language such as Java or C++, you may be used to the idea that variables have types that are declared when the variable name is first introduced in a program. Python doesn’t do that. Variables don’t have types in Python; values do. That means that it is acceptable in Python to have a variable name refer to an integer and later have the same variable name refer to a string. This is almost never a good idea, because it will confuse human readers (including you), but the Python interpreter will not complain.
+
+#### Variable Names and Keywords
+
+Variable names can be arbitrarily long. They can contain both letters and digits, but they have to begin with a letter or an underscore. Although it is legal to use uppercase letters, by convention we don’t. If you do, remember that case matters. `Bruce` and `bruce` are different variables.
+
+**Caution** : Variable names can never contain spaces.
+
+The underscore character (`_`) can also appear in a name. It is often used in names with multiple words, such as `my_name` or `price_of_tea_in_china`. There are some situations in which names beginning with an underscore have special meaning, so a safe rule for beginners is to start all names with a letter.
+
+If you give a variable an illegal name, you get a syntax error. In the example below, each of the variable names is illegal.
+
+```python
+76trombones = "big parade"
+more$ = 1000000
+class = "Computer Science 101"
+```
+
+`76trombones` is illegal because it does not begin with a letter. `more$` is illegal because it contains an illegal character, the dollar sign. But what’s wrong with `class`?
+
+It turns out that `class` is one of the Python keywords. Keywords define the language’s syntax rules and structure, and they cannot be used as variable names. Python has thirty-something keywords (and every now and again improvements to Python introduce or eliminate one or two):
+
+| | | | | | |
+|--|--|--|--|--|--|
+| `and` | `as` | `assert` | `break` | `class` | `continue` |
+| `def` | `del` | `elif` | `else` | `except` | `exec` |
+| `finally` | `for` | `from` | `global` | `if` | `import` |
+| `in` | `is` | `lambda` | `nonlocal` | `not` | `or` |
+| `pass` | `raise` | `return` | `try` | `while` | `with` |
+| `yield` | `True` | `False` | `None` | | |
+
+You might want to keep this list handy. If the interpreter complains about one of your variable names and you don’t know why, see if it is on this list.
+
+
+#### Choosing the Righ Variable Name
+Programmers generally choose names for their variables that are meaningful to the human readers of the program — they help the programmer document, or remember, what the variable is used for. Beginning programmers sometimes think it is funny to use strange or obscene names for their variables. This is not good practice and will not amuse your professor. Get in the habit of using meaningful names right away.
+
+**Caution**
+
+Beginners sometimes confuse “meaningful to the human readers” with “meaningful to the computer”. So they’ll wrongly think that because they’ve called some variable `average` or `pi`, it will somehow automagically calculate an average, or automagically associate the variable pi with the value 3.14159. No! The computer doesn’t attach semantic meaning to your variable names.
+
+So you’ll find some instructors who deliberately don’t choose meaningful names when they teach beginners — not because they don’t think it is a good habit, but because they’re trying to reinforce the message that you, the programmer, have to write some program code to calculate the average, or you must write an assignment statement to give a variable the value you want it to have.
+
+
+#### Reassignment
+
+As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
+
+```python
+bruce = 5
+print(bruce)
+
+bruce = 7
+print(bruce)
+```
+
+**Output**:
+
+```
+5
+7
+```
+
+The first time `bruce` is printed, its value is 5, and the second time, its value is 7. The assignment statement changes the value (the object) that `bruce` refers to.
+
+Here is what reassignment looks like in a reference diagram:
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/reassign1.png)
+
+It is important to note that in mathematics, a statement of equality is always true. If `a is equal to b` now, then `a will always equal to b`. In Python, an assignment statement can make two variables refer to the same object and therefore have the same value. They appear to be equal. However, because of the possibility of reassignment, they don’t have to stay that way:
+
+```python
+a = 5
+b = a
+print(a, b)
+
+a = 3
+print(a, b)
+```
+
+**Output**:
+
+```
+5 5
+3 5
+```
+
+Line 4 changes the value of `a` but does not change the value of `b`, so they are no longer equal. We will have much more to say about equality in a later chapter.
+
+**Developing your mental model of How Python Evaluates**
+
+Its important to start to develop a good mental model of the steps the Python interpreter takes when evaluating an assignment statement. In an assignment statement, the interpreter first evaluates the code on the right hand side of the assignment operator. It then gives a name to whatever that is.
+
+**Note** : In some programming languages, a different symbol is used for assignment, such as `<-` or `:=`. The intent is that this will help to avoid confusion. Python chose to use the tokens `=` for assignment, and `==` for equality. This is a popular choice also found in languages like C, C++, Java, and C#.
+
+
+#### Statements and Expressions
+
+A statement is an instruction that the Python interpreter can execute. You have only seen the assignment statement so far. Some other kinds of statements that you’ll see in future chapters are `while` statements, `for` statements, `if` statements, and `import` statements. (There are other kinds too!)
+
+An **expression** is a combination of literals, variable names, operators, and calls to functions. Expressions need to be evaluated. The result of evaluating an expression is a value or object.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/expression_value_type.png)
+
+If you ask Python to `print` an expression, the interpreter **evaluates** the expression and displays the result.
+
+```python
+print(1 + 1 + (2 * 3))
+print(len("hello"))
+```
+
+**Output** :
+
+```
+8
+5
+```
+
+In this example `len` is a built-in Python function that returns the number of characters in a string.
+
+The evaluation of an expression produces a value, which is why expressions can appear on the right hand side of assignment statements. A literal all by itself is a simple expression, and so is a variable.
+
+```python
+y = 3.14
+x = len("hello")
+print(x)
+print(y)
+```
+
+**Output** :
+
+```
+5
+3.14
+```
+
+In a program, anywhere that a literal value (a string or a number) is acceptable, a more complicated expression is also acceptable. Here are all the kinds of expressions we’ve seen so far:
+
+| Type of Expression | Examples |
+|--|--|
+| *literal* | `“Hello”` or `3.14` |
+| *variable name* | `x` or `len` |
+| *operator expression* | `<expression> operator-name <expression>` |
+| *function call expressions* | `<expression>(<expressions separated by commas>)` |
+
+Notice that operator expressions (like `+` and `*`) have sub-expressions before and after the operator. Each of these can themselves be simple or complex expressions. In that way, you can build up to having pretty complicated expressions.
+
+```python
+print(2 * len("hello") + len("goodbye"))
+```
+
+**Output** :
+
+```
+17
+```
+
+Similarly, when calling a function, instead of putting a literal inside the parentheses, a complex expression can be placed inside the parentheses.
+
+```python
+def square(x):
+	return x * x
+
+def sub(x, y):
+	return x - y
+
+
+x = 2
+y = 1
+
+print(square(y + 3))
+print(square(y + square(x)))
+print(sub(square(y), square(x)))
+```
+
+**Output** :
+
+```
+16
+25
+-3
+```
+
+With a function call, it’s even possible to have a complex expression before the left parenthesis, as long as that expression evaluates to a function object. For now, though, we will just use variable names (like square, sub, and len) that are directly bound to function objects.
+
+It is important to start learning to read code that contains complex expressions. The Python interpreter examines any line of code and parses it into components. For example, if it sees an = symbol, it will try to treat the whole line as an assignment statement. It will expect to see a valid variable name to the left of the =, and will parse everything to the right of the = as an expression. It will try to figure out whether the right side is a literal, a variable name, an operator expression, or a function call expression. If it’s an operator expression, it will further try to parse the sub-expressions before and after the operator. And so on. You should learn to parse lines of code in the same way.
+
+In order to evaluate an operator expression, the Python interpreter first completely evaluates the expression before the operator, then the one after, then combines the two resulting values using the operator. In order to evaluate a function call expression, the interpreter evaluates the expression before the parentheses (i.e., it looks up the name of the function). Then it tries to evaluate each of the expressions inside the parentheses. There may be more than one, separated by commas. The values of those expressions are passed as inputs to the function when the function is called.
+
+If a function call expression is a sub-expression of some more complicated expression, as `square(x)` is in `sub(square(y), square(x))`, then the return value from `square(x)` is passed as an input to the `sub` function. This is one of the tricky things that you will have to get used to working out when you read (or write) code. In this example, the `square` function is called (twice) before the `sub` function is called, even though the `sub` function comes first when reading the code from left to right.
+
+
+#### Updating Variables
+
+One of the most common forms of reassignment is an update where the new value of the variable depends on the old. For example,
+
+```python
+x = x + 1
+```
+
+This means get the current value of x, add one, and then update x with the new value. The new value of x is the old value of x plus 1. Although this assignment statement may look a bit strange, remember that executing assignment is a two-step process. First, evaluate the right-hand side expression. Second, let the variable name on the left-hand side refer to this new resulting object. The fact that `x` appears on both sides does not matter. The semantics of the assignment statement makes sure that there is no confusion as to the result.
+
+```python
+x = 6
+print(x)
+x = x + 1
+print(x)
+```
+**Output**:
+```
+6
+7
+```
+
+If you try to update a variable that doesn’t exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the name on the left. Before you can update a variable, you have to initialize it, usually with a simple assignment. In the above example, `x` was initialized to 6.
+
+Updating a variable by adding something to it is called an **increment**; subtracting is called a **decrement**. Sometimes programmers talk about incrementing or decrementing without specifying by how much; when they do they usually mean by 1. Sometimes programmers also talk about **bumping** a variable, which means the same as incrementing it by 1.
+
+Incrementing and decrementing are such common operations that programming languages often include special syntax for it. In Python `+=` is used for incrementing, and `-=` for decrementing. In some other languages, there is even a special syntax `++` and `--` for incrementing or decrementing by 1. Python does not have such a special syntax. To increment `x` by 1 you have to write `x += 1` or `x = x + 1`.
+
+```python
+x = 6
+print(x)
+x += 3
+print(x)
+x -= 1
+print(x)
+```
+
+**Output**:
+```
+6
+9
+8
+```
+
+Imagine that we wanted to not increment by one each time but instead add together the numbers one through ten, but only one at a time.
+
+
+```python
+s = 1
+print(s)
+s = s + 2
+print(s)
+s = s + 3
+print(s)
+s = s + 4
+print(s)
+s = s + 5
+print(s)
+s = s + 6
+print(s)
+s = s + 7
+print(s)
+s = s + 8
+print(s)
+s = s + 9
+print(s)
+s = s + 10
+print(s)
+```
+
+**Output**:
+```
+1
+3
+6
+10
+15
+21
+28
+36
+45
+55
+```
+
+After the initial statement, where we assign `s` to 1, we can add the current value of `s` and the next number that we want to add (2 all the way up to 10) and then finally reassign that that value to `s` so that the variable is updated after each line in the code.
+
+This will be tedious when we have many things to add together. Later you’ll read about an easier way to do this kind of task.
