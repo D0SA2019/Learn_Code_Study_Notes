@@ -24,11 +24,26 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.7_Variables.md)
 	- [Statements and Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.8_Statements_and_Expressions.md)
 	- [Updating Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.9_Updating_Variables.md)
-	- Hard-Coding
-	- Input
+	- [Hard-Coding](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.10_Hard_Coding.md)
+	- [Input](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.11_Input.md)
+	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.12_Chapter_Assessment.md)
 * Turtle Graphics
+	- Introduction - Objects and Turtle Graphics
+	- Our First Turtle Program
+	- Instances: A Herd of Turtles
+	- Object Oriented Concepts
+	- Repetition with a For Loop
+	- More Turtle Methods
+	- Importing Modules
 * The Way of the Programmer
-
+	- Introduction - Debugging
+	- Syntax, Runtime, and Semantic Errors
+	- Know Your Error Messages
+	- Incremental Programming
+	- Common Errors
+	- Practice Assignment - Drawing with Turtle
+	- Gallery Tool: Turtle Drawing
+	- Chapter Assignments and Exercises
 #### Week 2 : Sequences and Iteration
 * Lists and Strings
 * Iteration
