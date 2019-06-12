@@ -45,7 +45,45 @@ if __name__ == '__main__':
     arr = list(map(int, input().rstrip().split()))
 ```
 
-## Solution
+
+## Solution 1
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+    print(*reversed(arr))
+```
+
+
+## Solution 2
+
+```python
+import math
+import os
+import random
+import re
+import sys
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+    print(*arr[::-1])
+```
+
+
+
+## Solution 3
 
 ```python
 import math
@@ -64,5 +102,4 @@ if __name__ == '__main__':
         rev.append(i)
     A = " ".join(str(x) for x in rev)
     print(A)
-
 ```
