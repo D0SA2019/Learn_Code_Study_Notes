@@ -252,3 +252,121 @@ print(s)
 s = s + 10
 print(s)
 print("============================================")
+print("================ 1.11.Input ================")
+print("--------------------------------------------")
+n = input("Please enter your name: ")
+print("Hello", n)
+
+print("")
+
+str_seconds = input("Please enter the number of seconds you wish to convert: ")
+total_secs = int(str_seconds)
+
+hours = total_secs // 3600
+secs_still_remaining = total_secs % 3600
+minutes = secs_still_remaining // 60
+secs_finally_remaining = secs_still_remaining % 60
+
+print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
+print("============================================")
+print("========= 1.12.Chapter Assessment ==========")
+print("--------------------------------------------")
+print(5 ** 2)
+print(9 * 5)
+print(15 / 12)
+print(12 / 15)
+print(15 // 12)
+print(5 % 2)
+print(9 % 5)
+print(15 % 12)
+print(12 % 15)
+print(6 % 6)
+print(0 % 7)
+
+print("")
+
+print(2 + (3 - 1) * 10 / 5 * (2 + 3))
+
+print("")
+
+time_now = int(input("What time now? "))
+time_wait = int(input("How much time to wait? "))
+
+clock = (time_now + time_wait) % 24
+print(clock)
+
+print("")
+
+holiday_start = int(input("Day of starting your holiday? "))
+holiday_stay = int(input("How many days stay on holiday? "))
+
+return_day = (holiday_start + holiday_stay) % 7
+print(return_day)
+
+print("")
+
+w1 = "All"
+w2 = "work"
+w3 = "and"
+w4 = "no"
+w5 = "play"
+w6 = "makes"
+w7 = "Jack"
+w8 = "a"
+w9 = "dull"
+w10 = "boy."
+
+print(w1, w2, w3, w4, w5, w6, w7, w8, w9, w10)
+
+print("")
+
+print(6 * (1 - 2))
+
+print("")
+
+P = 10000
+n = 12
+r = 0.08
+t = int(input("How many years? "))
+
+A = P * ((1 + (r / n)) ** (n * t))
+print(A)
+
+print("")
+
+r = int(input("Enter the radius: "))
+pi = 3.14
+
+A = pi * (r ** 2)
+print("The area of the circle is ", A)
+
+print("")
+
+w = int(input("What's the width? "))
+l = int(input("What's the lenght? "))
+
+A = w * l
+print("The area of the rectangle is", A)
+
+print("")
+
+driven_mile = int(input("Miles? "))
+used_gallon = int(input("Gallon? "))
+
+mpg = driven_mile / used_gallon
+print("MPG of the car is", mpg)
+
+print("")
+
+c = int(input("What's the temperature on Celcius? "))
+f = (((9 / 5)* c )+ 32)
+
+print("It's", f, "Fahrenheit")
+
+print("")
+
+f = int(input("What's the temperature on Fahrenheit? "))
+c = (5 / 9) * (f - 32)
+
+print("It's", c, "Celcius")
+print("============================================")

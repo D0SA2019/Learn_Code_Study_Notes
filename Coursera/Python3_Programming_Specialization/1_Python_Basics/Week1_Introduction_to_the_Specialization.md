@@ -905,3 +905,393 @@ print(s)
 After the initial statement, where we assign `s` to 1, we can add the current value of `s` and the next number that we want to add (2 all the way up to 10) and then finally reassign that that value to `s` so that the variable is updated after each line in the code.
 
 This will be tedious when we have many things to add together. Later you’ll read about an easier way to do this kind of task.
+
+
+#### Hard-Coding
+
+As you begin programming, you’ll see that there are many ways to solve problems. You’ll also find that one of the thrills of programming is how easily you can do things correctly that humans could easily make errors on. For example, you’ll learn how to write just a very small bit of code to find the 1047th character in a sentence that might be thousands of letters long, and you’ll learn how to do the exact same computation on many different pieces of data.
+
+We’ll often tell you in this textbook not to hard-code answers. What does that mean?
+
+Some things in programming you can only do by typing them out. As you’ve seen, when you have to assign a value to a variable, you simply type something like `xyz = 6`. No other way.
+
+But in most cases, it’s best not to do computation in your head or write complete answers to programming problems out by hand. That’s where **hard-coding** comes in. “Don’t hard code” basically means, you should rely on your code, your logic, your program, and you should not write things out by hand or do computation in your head – even if you can do so easily.
+
+When you are writing code or working on the answer to a programming exericse, you should ask yourself: Would my answer be correct even if the provided variables had different values? If the answer to that question is no, you’re probably hard- coding, which you should avoid – and there’s probably at least a slightly more concise way to construct your answer!
+
+For example, in this following code, if you’re asked in an exercise to create a variable `zx` and assign it the value of the sum of the value of `y` and the value of `x`, writing `zx = 55` is hard-coding.
+
+```python
+x = 20
+y = 35
+abc = 62
+```
+
+The operation `20 + 35` may be easy math to do in your head or with a calculator, but when you learn to program, you want to train yourself to notice useful patterns of how to solve problems, which will make your life easier (perhaps beyond programming, even).
+
+The correct way to answer that sort of exercise would be to write: `zx = y` + x (or `zx = x + y`, as you were just reminded of the order of operations). That is not hard-coding, and it will be correct no matter what the values of `x` and `y` are.
+
+In the code above, if the value of `x` were `40`, `55` would not be the correct value for `zx` to have. But `zx = y + x` would still be absolutely correct.
+
+Try as much as you can not to rely on your brilliant but fallible human brain to do computation when you program – use your brain to determine how to write the correct code to solve the problem for you!
+
+#### Input
+
+Our programs get more interesting if they don’t do exactly the same thing every time they run. One way to make them more interesting is to get input from the user. Luckily, in Python there is a built-in function to accomplish this task. It is called `input`.
+
+```python
+n = input("Please enter your name: ")
+```
+
+The input function allows the programmer to provide a **prompt string**. In the example above, it is “Please enter your name: “. When the function is evaluated, the prompt is shown (in the browser, look for a popup window). The user of the program can type some text and press `return`. When this happens the text that has been entered is returned from the `input` function, and in this case assigned to the variable `n`. Run this example a few times and try some different names in the input box that appears.
+
+
+```python
+n = input("Please enter your name: ")
+print("Hello", n)
+```
+
+**Output** :
+
+```
+Please enter your name: Heval
+Hello Heval
+```
+
+It is very important to note that the `input` function returns a string value. Even if you asked the user to enter their age, you would get back a string like `"17"`. It would be your job, as the programmer, to convert that string into an `int` or a `float`, using the int or float converter functions we saw earlier.
+
+
+**Note** :We often use the word “input” (or, synonymously, argument) to refer to the values that are passed to any function. Do not confuse that with the `input` function, which asks the user of a program to type in a value. Like any function, `input` itself takes an input argument and produces an output. The input is a character string that is displayed as a prompt to the user. The output is whatever character string the user types.
+
+This is analogous to the potential confusion of function “outputs” with the contents of the output window. Every function produces an output, which is a Python value. Only the print function puts things in the output window. Most functions take inputs, which are Python values. Only the input function invites users to type something.
+
+
+Here is a program that turns a number of seconds into more human readable counts of hours, minutes, and seconds. A call to `input()` allows the user to enter the number of seconds. Then we convert that string to an integer. From there we use the division and modulus operators to compute the results.
+
+
+```python
+str_seconds = input("Please enter the number of seconds you wish to convert: ")
+total_secs = int(str_seconds)
+
+hours = total_secs // 3600
+secs_still_remaining = total_secs % 3600
+minutes = secs_still_remaining // 60
+secs_finally_remaining = secs_still_remaining % 60
+
+print("Hrs=", hours, "mins=", minutes, "secs=", secs_finally_remaining)
+```
+
+**Output** :
+
+```
+Please enter the number of seconds you wish to convert: 28329
+Hrs= 7 mins= 52 secs= 9
+```
+
+The variable `str_seconds` will refer to the string that is entered by the user. As we said above, even though this string may be `7684`, it is still a string and not a number. To convert it to an integer, we use the int function. The result is referred to by `total_secs`. Now, each time you run the program, you can enter a new value for the number of seconds to be converted.
+
+
+#### Chapter Assessments & Exercises
+
+#### Assessments
+
+**A1**. There is a function we are providing in for you in this problem called square. It takes one integer and returns the square of that integer value. Write code to assign a variable called xyz the value 5*5 (five squared). Use the square function, rather than just multiplying with `*`.
+
+
+```python
+xyz = square(5)
+```
+
+-----
+
+**A2**. Write code to assign the number of characters in the string `rv` to a variable `num_chars`.
+
+
+```python
+rv = """Once upon a midnight dreary, while I pondered, weak and weary,
+    Over many a quaint and curious volume of forgotten lore,
+    While I nodded, nearly napping, suddenly there came a tapping,
+    As of some one gently rapping, rapping at my chamber door.
+    'Tis some visitor, I muttered, tapping at my chamber door;
+    Only this and nothing more."""
+
+# Write your code here!
+num_chars = len(rv)
+```
+
+----
+----
+
+#### Exercises
+
+**Q1**. Evaluate the following numerical expressions in your head, then use the active code window to check your results:
+
+* 5 ** 2
+* 9 * 5
+* 15 / 12
+* 12 / 15
+* 15 // 12
+* 12 // 15
+* 5 % 2
+* 9 % 5
+* 15 % 12
+* 12 % 15
+* 6 % 6
+* 0 % 7
+
+
+```python
+print(5 ** 2)
+print(9 * 5)
+print(15 / 12)
+print(12 / 15)
+print(15 // 12)
+print(5 % 2)
+print(9 % 5)
+print(15 % 12)
+print(12 % 15)
+print(6 % 6)
+print(0 % 7)
+```
+
+**Output** :
+
+```
+25
+45
+1.25
+0.8
+1
+1
+4
+3
+12
+0
+0
+```
+
+----
+
+**Q2**. What is the order of the arithmetic operations in the following expression. Evaluate the expression by hand and then check your work.
+
+
+```python
+2 + (3 - 1) * 10 / 5 * (2 + 3)
+
+print(2 + (3 - 1) * 10 / 5 * (2 + 3))
+```
+
+**Output** :
+
+```
+22.0
+```
+----
+
+**Q3**. Many people keep time using a 24 hour clock (11 is 11am and 23 is 11pm, 0 is midnight). If it is currently 13 and you set your alarm to go off in 50 hours, it will be 15 (3pm). Write a Python program to solve the general version of the above problem. Ask the user for the time now (in hours), and then ask for the number of hours to wait for the alarm. Your program should output what the time will be on the clock when the alarm goes off.
+
+
+```python
+time_now = int(input("What time now? "))
+time_wait = int(input("How much time to wait? "))
+
+clock = (time_now + time_wait) % 24
+print(clock)
+```
+
+**Output** :
+
+```
+What time now? 12
+How much time to wait? 17
+5
+```
+----
+
+**Q4**. It is possible to name the days 0 thru 6 where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6). Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+
+
+```python
+holiday_start = int(input("Day of starting your holiday? "))
+holiday_stay = int(input("How many days stay on holiday? "))
+
+return_day = (holiday_start + holiday_stay) % 7
+print(return_day)
+```
+
+**Output** :
+
+```
+Day of starting your holiday? 3
+How many days stay on holiday? 10
+6
+```
+----
+**Q5**. Take the sentence: *All work and no play makes Jack a dull boy.* Store each word in a separate variable, then print out the sentence on one line using `print`.
+
+
+```python
+w1 = "All"
+w2 = "work"
+w3 = "and"
+w4 = "no"
+w5 = "play"
+w6 = "makes"
+w7 = "Jack"
+w8 = "a"
+w9 = "dull"
+w10 = "boy."
+
+print(w1, w2, w3, w4, w5, w6, w7, w8, w9, w10)
+```
+
+**Output** :
+
+```
+All work and no play makes Jack a dull boy.
+```
+----
+**Q6**. Add parentheses to the expression `6 * 1 - 2` to change its value from 4 to -6.
+
+
+```python
+print(6 * (1 - 2))
+```
+
+**Output** :
+
+```
+-6
+```
+
+----
+**Q7**. The formula for computing the final amount if one is earning compound interest is given on Wikipedia as
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/compoundInterest.png)
+
+Write a Python program that assigns the principal amount of 10000 to variable `P`, assign to `n` the value 12, and assign to `r` the interest rate of 8% (0.08). Then have the program prompt the user for the number of years, `t`, that the money will be compounded for. Calculate and print the final amount after `t` years.
+
+```python
+P = 10000
+n = 12
+r = 0.08
+t = int(input("How many years? "))
+
+A = P * ((1 + (r / n)) ** (n * t))
+print(A)
+```
+
+**Output** :
+
+```
+How many years? 2
+11728.879317453097
+```
+
+
+----
+**Q8**. Write a program that will compute the area of a circle. Prompt the user to enter the radius and print a nice message back to the user with the answer.
+
+```python
+r = int(input("Enter the radius: "))
+pi = 3.14
+
+A = pi * (r ** 2)
+print("The area of the circle is ", A)
+```
+
+**Output** :
+
+```
+Enter the radius: 3
+The area of the circle is  28.26
+```
+
+----
+**Q9**. Write a program that will compute the area of a rectangle. Prompt the user to enter the width and height of the rectangle. Print a nice message with the answer.
+
+```python
+w = int(input("What's the width? "))
+l = int(input("What's the lenght? "))
+
+A = w * l
+print("The area of the rectangle is", A)
+```
+
+**Output** :
+
+```
+What's the width? 2
+What's the lenght? 4
+The area of the rectangle is 8
+```
+
+----
+**Q10**. Write a program that will compute MPG for a car. Prompt the user to enter the number of miles driven and the number of gallons used. Print a nice message with the answer.
+
+```python
+driven_mile = int(input("Miles? "))
+used_gallon = int(input("Gallon? "))
+
+mpg = driven_mile / used_gallon
+print("MPG of the car is", mpg)
+```
+
+**Output** :
+
+```
+Miles? 200
+Gallon? 18
+MPG of the car is 11.11111111111111
+```
+
+----
+**Q11**. Write a program that will convert degrees celsius to degrees fahrenheit.
+
+```python
+c = int(input("What's the temperature on Celcius? "))
+f = (((9 / 5)* c )+ 32)
+
+print("It's", f, "Fahrenheit")
+```
+
+**Output** :
+
+```
+What's the temperature on Celcius? 30
+It's 86.0 Fahrenheit
+```
+
+----
+**Q12**. Write a program that will convert degrees fahrenheit to degrees celsius.
+
+```python
+f = int(input("What's the temperature on Fahrenheit? "))
+c = (5 / 9) * (f - 32)
+
+print("It's", c, "Celcius")
+```
+
+**Output** :
+
+```
+What's the temperature on Fahrenheit? 86
+It's 30.0 Celcius
+```
+
+----
+**Q13**. Piece together the code so that a user is asked for two numbers, and then the sum of those two numbers is printed out.
+
+![](http://i66.tinypic.com/2vbnbf5.png)
+
+
+----
+**Q14**. Write a program that will convert gallons to liters. This program will also need to get input from a user to see how many gallons should be converted and the result should be printed to the user.
+
+![](http://i63.tinypic.com/fvwz11.png)
+
+
+----
+**Q15**. Write a program that will convert table spoons to teaspons. This program will also need to get input from a user to see how many tablespoons should be converted and the result should be printed to the user.
+
+![](http://i68.tinypic.com/15ve4p.png)
