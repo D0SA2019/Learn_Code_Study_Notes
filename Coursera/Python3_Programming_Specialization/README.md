@@ -28,12 +28,11 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Input](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.11_Input.md)
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.12_Chapter_Assessment.md)
 * Turtle Graphics
-	- Introduction - Objects and Turtle Graphics
-	- Our First Turtle Program
-	- Instances: A Herd of Turtles
-	- Object Oriented Concepts
-	- Repetition with a For Loop
-	- More Turtle Methods
+	- [Our First Turtle Program](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.13_Our_First_Turtle_Program.md)
+	- [Instances: A Herd of Turtles](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.14_Instances_A_Herd_of_Turtles.md)
+	- [Object Oriented Concepts](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.15_Object_Oriented_Concepts.md)
+	- [Repetition with a For Loop](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.16_Repetition_with_a_For_Loop.md)
+	- [More Turtle Methods](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.17_More_Turtle_Methods.md)
 	- Importing Modules
 * The Way of the Programmer
 	- Introduction - Debugging
