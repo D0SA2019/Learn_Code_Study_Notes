@@ -1295,3 +1295,417 @@ It's 30.0 Celcius
 **Q15**. Write a program that will convert table spoons to teaspons. This program will also need to get input from a user to see how many tablespoons should be converted and the result should be printed to the user.
 
 ![](http://i68.tinypic.com/15ve4p.png)
+
+
+----
+
+### Turtle Graphics
+
+#### Our First Turtle Program
+There are many modules in Python that provide very powerful features that we can use in our own programs. Some of these can send email or fetch web pages. Others allow us to perform complex mathematical calculations. In this chapter we will introduce a module that allows us to create a data object called a turtle that can be used to draw pictures.
+
+Turtle graphics, as it is known, is based on a very simple metaphor. Imagine that you have a turtle that understands English. You can tell your turtle to do simple commands such as go forward and turn right. As the turtle moves around, if its tail is down touching the ground, it will draw a line (leave a trail behind) as it moves. If you tell your turtle to lift up its tail it can still move around but will not leave a trail. As you will see, you can make some pretty amazing drawings with this simple capability.
+
+**Note** : The turtles are fun because they allow us to visualize what our code is doing, but the real purpose of the chapter is to teach ourselves a little more Python and to develop our theme of computational thinking. You’ll first draw simple geometric shapes with the turtles, and then we’ll summarize the concepts and syntax you’ve learned, in particular, classes, instances, and method invocations. These concepts are the building blocks of object-oriented programming, a paradigm for structuring a program that is widespread in every modern programming language.
+
+
+Let’s try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name alex, but remember that you can choose any name you wish as long as you follow the naming rules from the previous chapter.
+
+The program as shown will only draw the first two sides of the rectangle. After line 4 you will have a straight line going from the center of the drawing canvas towards the right. After line 6, you will have a canvas with a turtle and a half drawn rectangle.
+
+```python
+import turtle             # allows us to use the turtles library
+wn = turtle.Screen()      # creates a graphics window
+alex = turtle.Turtle()    # create a turtle named alex
+alex.forward(150)         # tell alex to move forward by 150 units
+alex.left(90)             # turn by 90 degrees
+alex.forward(75)          # complete the second side of a rectangle
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/LO1tp6QwEsQZdKmwo5/giphy.gif)
+
+Here are a couple of things you’ll need to understand about this program.
+
+The first line tells Python to load a **module** named `turtle`. That module brings us two new types that we can use: the `Turtle` type, and the `Screen` type. The dot notation `turtle.Turtle` means *“The Turtle type that is defined within the turtle module”*. (Remember that Python is case sensitive, so the module name, `turtle`, with a lowercase `t`, is different from the type `Turtle` because of the uppercase `T`.)
+
+We then create and open what the turtle module calls a screen (we would prefer to call it a window, or in the case of this web version of Python simply a canvas), which we assign to variable `wn`. Every window contains a canvas, which is the area inside the window on which we can draw.
+
+In line 3 we create a turtle. The variable `alex` is made to refer to this turtle. These first three lines set us up so that we are ready to do some drawing.
+
+In lines 4-6, we instruct the object alex to move and to turn. We do this by invoking or activating alex’s methods — these are the instructions that all turtles know how to respond to.
+
+
+**Mixed up programs**
+
+**E1** : The following program uses a turtle to draw a capital L as shown in the picture to the left of this text, image of a navigational compass and a letter L which is drawn by Turtle but the lines are mixed up. The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle. Remember that the turtle starts off facing east when it is created. The turtle should turn to face south and draw a line that is 150 pixels long and then turn to face east and draw a line that is 75 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TurtleL4.png)
+
+```python
+import turtle
+window = turtle.Screen()
+ella = turtle.Turtle()
+ella.right(90)
+ella.forward(150)
+ella.left(90)
+ella.forward(75)
+```
+
+
+**E2** : The following program uses a turtle to draw a checkmark as shown to the left, image of a navigational compass and a checkmark which is drawn by Turtle. but the lines are mixed up. The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle. The turtle should turn to face southeast, draw a line that is 75 pixels long, then turn to face northeast, and draw a line that is 150 pixels long. We have added a compass to the picture to indicate the directions north, south, west, and east. Northeast is between north and east. Southeast is between south and east.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TurtleCheckmark4.png)
+
+```python
+import turtle
+window = turtle.Screen()
+maria = turtle.Turtle()
+maria.right(45)
+maria.forward(75)
+maria.left(90)
+maria.forward(150)
+```
+
+**E3** : The following program uses a turtle to draw a single line to the west as shown to the left, image of a line moving in west direction drawn by Turtle. Turtle uses following steps: left turn of 180 degrees, and 75 pixels long line but the program lines are mixed up. The program should do all necessary set-up: import the turtle module, get the window to draw on, and create the turtle. The turtle should then turn to face west and draw a line that is 75 pixels long.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TurtleLineToWest.png)
+
+```python
+import turtle
+window = turtle.Screen()
+jamal = turtle.Turtle()
+jamal.left(180)
+jamal.forward(75)
+```
+
+
+An object can have various methods — things it can do — and it can also have **attributes** — (sometimes called properties). For example, each turtle has a color attribute. The method invocation `alex.color("red")` will make alex red and the line that it draws will be red too.
+
+The color of the turtle, the width of its pen(tail), the position of the turtle within the window, which way it is facing, and so on are all part of its current state. Similarly, the window object has a background color which is part of its state.
+
+Quite a number of methods exist that allow us to modify the turtle and window objects. In the example below, we show just show a couple and have only commented those lines that are different from the previous example. Note also that we have decided to call our turtle object tess.
+
+
+```python
+import turtle
+
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")        # set the window background color
+
+tess = turtle.Turtle()
+tess.color("blue")              # make tess blue
+tess.pensize(3)                 # set the width of her pen
+
+tess.forward(50)
+tess.left(120)
+tess.forward(50)
+
+wn.exitonclick()                # wait for a user click on the canvas
+```
+
+![](https://media.giphy.com/media/KbwTqwDA5I3yBk18XB/giphy.gif)
+
+The last line plays a very important role. The wn variable refers to the window shown above. When we invoke its `exitonclick` method, the program pauses execution and waits for the user to click the mouse somewhere in the window. When this click event occurs, the response is to close the turtle window and exit (stop execution of) the Python program.
+
+Each time we run this program, a new drawing window pops up, and will remain on the screen until we click on it.
+
+**Extend this program …**
+
+1. Modify this program so that before it creates the window, it prompts the user to enter the desired background color.It should store the user’s responses in a variable, and modify the color of the window according to the user’s wishes. (Hint: you can find a list of permitted color names at https://www.w3schools.com/colors/colors_names.asp. It includes some quite unusual ones, like “PeachPuff” and “HotPink”.)
+2. Do similar changes to allow the user, at runtime, to set tess’ color.
+3. Do the same for the width of tess’ pen. Hint: your dialog with the user will return a string, but tess’ `pensize` method expects its argument to be an `int`. That means you need to convert the string to an int before you pass it to `pensize`.
+
+
+#### Instances: A Herd of Turtles
+Just like we can have many different integers in a program, we can have many turtles. Each of them is an independent object and we call each one an **instance** of the Turtle type (class). Each instance has its own attributes and methods — so alex might draw with a thin pink pen and be at some position, while tess might be going in her own direction with a fat black pen. So here is what happens when alex completes a square and tess completes her triangle:
+
+```python
+import turtle
+wn = turtle.Screen()             # Set up the window and its attributes
+wn.bgcolor("lightgreen")
+
+
+tess = turtle.Turtle()           # create tess and set his pen width
+tess.pensize(5)
+
+alex = turtle.Turtle()           # create alex
+alex.color("hotpink")            # set his color
+
+tess.forward(80)                 # Let tess draw an equilateral triangle
+tess.left(120)
+tess.forward(80)
+tess.left(120)
+tess.forward(80)
+tess.left(120)                   # complete the triangle
+
+tess.right(180)                  # turn tess around
+tess.forward(80)                 # move her away from the origin so we can see alex
+
+alex.forward(50)                 # make alex draw a square
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+
+wn.exitonclick()
+```
+
+**Output** :
+
+![](http://i67.tinypic.com/nq4u93.png)
+
+Here are some How to think like a computer scientist observations:
+
+* There are 360 degrees in a full circle. If you add up all the turns that a turtle makes, no matter what steps occurred between the turns, you can easily figure out if they add up to some multiple of 360. This should convince you that alex is facing in exactly the same direction as he was when he was first created. (Geometry conventions have 0 degrees facing East and that is the case here too!)
+* We could have left out the last turn for alex, but that would not have been as satisfying. If you’re asked to draw a closed shape like a square or a rectangle, it is a good idea to complete all the turns and to leave the turtle back where it started, facing the same direction as it started in. This makes reasoning about the program and composing chunks of code into bigger programs easier for us humans!
+* We did the same with tess: she drew her triangle and turned through a full 360 degress. Then we turned her around and moved her aside. Even the blank line 18 is a hint about how the programmer’s mental chunking is working: in big terms, tess’ movements were chunked as “draw the triangle” (lines 12-17) and then “move away from the origin” (lines 19 and 20).
+* One of the key uses for comments is to record your mental chunking, and big ideas. They’re not always explicit in the code.
+* And, uh-huh, two turtles may not be enough for a herd, but you get the idea!
+
+
+**Mixed up programs**
+
+**E1** : The following program has one turtle, "jamal", draw a capital L in blue and then another, "tina", draw a line to the west in orange as shown to the left, image of a capital letter L in blue color drawn by one Turtle and a line to the west in orange color drawn by another Turtle. Both the Turtles have same starting point.. The program should do all set-up, have "jamal" draw the L, and then have "tina" draw the line. Finally, it should set the window to close when the user clicks in it.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TwoTurtles1.png)
+
+```python
+import turtle
+wn = turtle.Screen()
+
+jamal = turtle.Turtle()
+jamal.pensize(10)
+jamal.color("blue")
+jamal.right(90)
+jamal.forward(150)
+jamal.left(90)
+jamal.forward(75)
+
+tina = turtle.Turtle()
+tina.pensize(10)
+tina.color("orange")
+tina.left(180)
+tina.forward(75)
+
+wn.exitonclick()
+```
+
+
+**E2** : The following program has one turtle, "jamal", draw a line to the north in blue and then another, "tina", draw a line to the east in orange as shown to the left, image of a line to the north in blue color drawn by one Turtle and a line to the east in orange drawn by another Turtle. Both the Turtles have a same starting point.. The program should import the turtle module, get the window to draw on, create the turtle "jamal", have it draw a line to the north, then create the turtle "tina", and have it draw a line to the east. Finally, it should set the window to close when the user clicks in it.
+
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TwoTurtlesL.png)
+
+```python
+import turtle
+wn = turtle.Screen()
+
+jamal = turtle.Turtle()
+jamal.pensize(10)
+jamal.color("blue")
+jamal.pensize(10)
+jamal.left(90)
+jamal.forward(150)
+
+tina = turtle.Turtle()
+tina.pensize(10)
+tina.color("orange")
+tina.forward(150)
+
+wn.exitonclick()
+```
+
+#### Object Oriented Concepts
+It’s been fun drawing things with the turtles. In the process, we’ve slipped in some new concepts and terms. Let’s pull them out and examine them a little more carefully.
+
+**User-fedined Classes**
+
+First, just as Python provides a way to define new functions in your programs, it also provides a way to define new classes of objects. Later in the course you will learn how to define functions, and much later, new classes of objects. For now, you just need to understand how to use them.
+
+**Instances**
+
+Given a class like `Turtle` or `Screen`, we create a new instance with a syntax that looks like a function call, `Turtle()`. The Python interpreter figures out that Turtle is a class rather than a function, and so it creates a new instance of the class and returns it. Since the Turtle class was defined in a separate module, (confusingly, also named turtle), we had to refer to the class as turtle.Turtle. Thus, in the programs we wrote `turtle.Turtle()` to make a new turtle. We could also write `turtle.Screen()` to make a new window for our turtles to paint in.
+
+
+**Attributes**
+
+Each instance can have attributes, sometimes called **instance variables**. These are just like other variables in Python. We use assignment statements, with an =, to assign values to them. Thus, if alex and tess are variables bound to two instances of the class Turtle, we can assign values to an attribute, and we can look up those attributes. For example, the following code would print out 1100.
+
+```python
+alex.price = 500
+tess.price = 600
+print(alex.price + tess.price)
+```
+
+**Methods**
+
+Classes have associated **methods**, which are just a special kind of function. Consider the expression `alex.forward(50)` The interpreter first looks up alex and finds that it is an instance of the class Turtle. Then it looks up the attribute forward and finds that it is a method. Since there is a left parenthesis directly following, the interpreter invokes the method, passing 50 as a parameter.
+
+The only difference between a method invocation and other function calls is that the object instance itself is also passed as a parameter. Thus `alex.forward(50)` moves alex, while `tess.forward(50)` moves tess.
+
+Some of the methods of the Turtle class set attributes that affect the actions of other methods. For example, the method pensize changes the width of the drawing pen, and the color method changes the pen’s color.
+
+Methods return values, just as functions do. However, none of the methods of the Turtle class that you have used return useful values the way the `len` function does. Thus, it would not make sense to build a complex expression like `tess.forward(50) + 75`. It could make sense, however to put a complex expression inside the parentheses: `tess.forward(x + y)`
+
+
+#### Repetition with a For Loop
+
+Some of the programs we’ve seen so far are a bit tedious to type. If we want to make a repetitive pattern in our drawings, then it can take many lines of code. Thankfully, Python has a few ways for making this kind of task easier. For now you’ll get a brief preview of a helpful control structure and function in Python which you will learn about later.
+
+The control structure is called a for loop. If you’ve learned other programming languages then you may be familiar with what it does but the structure may be new. A for loop allows Python to execute a program in a non-linear fashion. Instead of evaluating the code line by line until it reaches the end, once the program reaches a for loop, it will tell the program to execute a set of lines for n number of times. Once the program has executed the code insde of the for loop n number of times, the program will then continue to evaluate and execute whatever is below the for loop.
+
+This is where the `range` function comes into play. Using the `range` function, you can specify how many times the contents inside of the for loop will execute. Here is a simple demonstration below of how this will work.
+
+```python
+print("This will execute first")
+
+for _ in range(3):
+	print("This line will execute three times")
+	print("This line will also execute three times")
+
+print("Now we are outside of the for loop!")
+```
+
+**Output** :
+
+```
+This will execute first
+This line will execute three times
+This line will also execute three times
+This line will execute three times
+This line will also execute three times
+This line will execute three times
+This line will also execute three times
+Now we are outside of the for loop!
+```
+
+There are a few things to notice here for when you use this later on. First, is that the two print statements on line 4 and 5 are executed three times, but we don’t print line 4 three times and then print line 5 three times. Instead, we print line 4, then line 5. Once that is done the for loop iterates, or brings the program back to the beginning of the for loop, and continues to print out lines 4 and 5 again until it has printed them both a total of three times.
+
+Second, these lines were printed the same number as is inside the `range` function. If we wanted to print them more or fewer times, then we would just need to change the number inside of the parentheses on line 3.
+
+Finally, the whitespace is important here. All of the statements that were printed out multiple times were indented under the for loop. Once we stopped indenting those lines, then the program was outside of the for loop and it would continue to execute linearly. If you’d like to watch the execution, checkout the code above in codelens!
+
+Now it’s time to combine this with the Turtle module. We can do a lot of cool stuff if we combine these two things! Below is code to do just that. Try to predict what the program will do before running it.
+
+
+```python
+import turtle
+wn = turtle.Screen()
+
+elan = turtle.Turtle()
+
+distance = 50
+for _ in range(10):
+    elan.forward(distance)
+    elan.right(90)
+    distance = distance + 10
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/dt6osHbZoVmVhv1lVb/giphy.gif)
+
+
+#### More Turtle Methods
+
+Here are a few more things that you might find useful as you write programs that use turtles.
+
+Turtle methods can use negative angles or distances. So tess.forward(-100) will move tess backwards, and tess.left(-30) turns her to the right. Additionally, because there are 360 degrees in a circle, turning 30 to the left will leave you facing in the same direction as turning 330 to the right! (The on-screen animation will differ, though — you will be able to tell if tess is turning clockwise or counter-clockwise!)
+
+This suggests that we don’t need both a left and a right turn method — we could be minimalists, and just have one method. There is also a backward method. (If you are very nerdy, you might enjoy saying alex.backward(-100) to move alex forward!)
+
+Reviewing a few basic facts about geometry and number lines, like we’ve done here is a good start if we’re going to play with turtles.
+
+A turtle’s pen can be picked up or put down. This allows us to move a turtle to a different place without drawing a line. The methods are `up` and `down`. Note that the methods `penup` and `pendown` do the same thing.
+
+```python
+alex.up()
+alex.forward(100)     # this moves alex, but no line is drawn
+alex.down()
+```
+
+Every turtle can have its own shape. The ones available “out of the box” are `arrow`, `blank`, `circle`, `classic`, `square`, `triangle`, `turtle`.
+
+```python
+...
+alex.shape("turtle")
+...
+```
+
+You can speed up or slow down the turtle’s animation speed. (Animation controls how quickly the turtle turns and moves forward). Speed settings can be set between 1 (slowest) to 10 (fastest). But if you set the speed to 0, it has a special meaning — turn off animation and go as fast as possible.
+
+```python
+alex.speed(10)
+```
+
+A turtle can “stamp” its footprint onto the canvas, and this will remain after the turtle has moved somewhere else. Stamping works even when the pen is up.
+
+
+```python
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess = turtle.Turtle()
+tess.color("blue")
+tess.shape("turtle")
+
+dist = 5
+tess.up()                     # this is new
+for _ in range(30):    # start with size = 5 and grow by 2
+    tess.stamp()                # leave an impression on the canvas
+    tess.forward(dist)          # move tess along
+    tess.right(24)              # and turn her
+    dist = dist + 2
+wn.exitonclick()
+```
+
+![](https://media.giphy.com/media/H47RYWmB0yogcUiKT6/giphy.gif)
+
+If you are curious about how far the turtle is traveling each time the for loop iterates, you can add a print statement inside of the for loop to print out the value of `dist`.
+
+One more thing to be careful about. All except one of the shapes you see on the screen here are footprints created by `stamp`. But the program still only has one turtle instance — can you figure out which one is the real tess? (Hint: if you’re not sure, write a new line of code after the `for` loop to change tess’ color, or to put her pen down and draw a line, or to change her shape, etc.)
+
+**Mixed up program**
+
+**E1** : The following program uses the stamp method to create a circle of turtle shapes as shown to the left, image of a circle of turtle shapes but the lines are mixed up. The program should do all necessary set-up, create the turtle, set the shape to "turtle", and pick up the pen. Then the turtle should repeat the following ten times: go forward 50 pixels, leave a copy of the turtle at the current position, reverse for 50 pixels, and then turn right 36 degrees. After the loop, set the window to close when the user clicks in it.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/TurtleCircle.png)
+
+```python
+import turtle
+wn = turtle.Screen()
+jose = turtle.Turtle()
+jose.shape("turtle")
+jose.penup()
+
+for size in range(10):
+	jose.forward(50)
+	jose.stamp()
+	jose.forward(-50)
+	jose.right(36)
+
+wn.exitonclick()
+```
+
+**E2** : The following program uses the stamp method to create a line of turtle shapes as shown to the left, image of a line of turtle shapes but the lines are mixed up. The program should do all necessary set-up, create the turtle, set the shape to "turtle", and pick up the pen. Then the turtle should repeat the following three times: go forward 50 pixels and leave a copy of the turtle at the current position. After the loop, set the window to close when the user clicks in it.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/Turtle3Stamp.png)
+
+```python
+import turtle
+wn = turtle.Screen()
+nikea = turtle.Turtle()
+nikea.shape("turtle")
+nikea.penup()
+
+for size in range(3):
+	nikea.forward(50)
+	nikea.stamp()
+
+wn.exitonclick()
+```

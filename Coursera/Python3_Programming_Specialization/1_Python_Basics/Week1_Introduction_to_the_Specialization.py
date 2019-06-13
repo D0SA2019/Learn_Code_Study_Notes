@@ -370,3 +370,153 @@ c = (5 / 9) * (f - 32)
 
 print("It's", c, "Celcius")
 print("============================================")
+print("====== 1.13.Our First Turtle Program =======")
+print("--------------------------------------------")
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+alex.forward(150)
+alex.left(90)
+alex.forward(75)
+wn.clearscreen()
+
+print("")
+
+ella = turtle.Turtle()
+ella.speed(1)
+ella.right(90)
+ella.forward(150)
+ella.left(90)
+ella.forward(75)
+wn.clearscreen()
+
+print("")
+
+maria = turtle.Turtle()
+maria.speed(1)
+maria.right(45)
+maria.forward(75)
+maria.left(90)
+maria.forward(150)
+wn.clearscreen()
+
+print("")
+
+jamal = turtle.Turtle()
+jamal.speed(1)
+jamal.left(180)
+jamal.forward(75)
+wn.clearscreen()
+
+print("")
+
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()
+tess.speed(1)
+tess.color("blue")
+tess.pensize(3)
+
+tess.forward(50)
+tess.left(120)
+tess.forward(50)
+
+wn.clearscreen()
+print("============================================")
+print("===== 1.14.Instances A Herd of Turtles =====")
+print("--------------------------------------------")
+wn.bgcolor("lightgreen")
+
+tess = turtle.Turtle()
+tess.speed(1)
+tess.pensize(5)
+
+alex = turtle.Turtle()
+alex.speed(1)
+alex.color("hotpink")
+
+tess.forward(80)
+tess.left(120)
+tess.forward(80)
+tess.left(120)
+tess.forward(80)
+tess.left(120)
+tess.right(180)
+tess.forward(80)
+
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+alex.forward(50)
+alex.left(90)
+
+wn.clearscreen()
+
+print("")
+
+jamal = turtle.Turtle()
+jamal.speed(1)
+jamal.pensize(10)
+jamal.color("blue")
+jamal.right(90)
+jamal.forward(150)
+jamal.left(90)
+jamal.forward(75)
+
+tina = turtle.Turtle()
+tina.speed(1)
+tina.pensize(10)
+tina.color("orange")
+tina.left(180)
+tina.forward(75)
+
+wn.clearscreen()
+
+print("")
+
+jamal = turtle.Turtle()
+jamal.speed(1)
+jamal.pensize(10)
+jamal.color("blue")
+jamal.pensize(10)
+jamal.left(90)
+jamal.forward(150)
+
+tina = turtle.Turtle()
+tina.pensize(10)
+tina.color("orange")
+tina.forward(150)
+
+wn.clearscreen()
+print("============================================")
+print("====== 1.15.Object Oriented Concepts =======")
+print("--------------------------------------------")
+alex.price = 500
+tess.price = 600
+print(alex.price + tess.price)
+print("============================================")
+print("===== 1.16.Repetition with a For Loop ======")
+print("--------------------------------------------")
+print("This will execute first")
+
+for _ in range(3):
+	print("This line will execute three times")
+	print("This line will also execute three times")
+
+print("Now we are outside of the for loop!")
+
+print("")
+
+elan = turtle.Turtle()
+elan.speed(1)
+
+distance = 50
+for _ in range(10):
+    elan.forward(distance)
+    elan.right(90)
+    distance = distance + 10
+print("============================================")
