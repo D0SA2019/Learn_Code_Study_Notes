@@ -33,11 +33,11 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Object Oriented Concepts](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.15_Object_Oriented_Concepts.md)
 	- [Repetition with a For Loop](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.16_Repetition_with_a_For_Loop.md)
 	- [More Turtle Methods](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.17_More_Turtle_Methods.md)
-	- Importing Modules
+	- [Importing Modules](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.18_Importing_Modules.md)
+	- [The `random` module](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.19_The_random_module.md)
 * The Way of the Programmer
-	- Introduction - Debugging
-	- Syntax, Runtime, and Semantic Errors
-	- Know Your Error Messages
+	- [Syntax, Runtime, and Semantic Errors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.20_Syntax_Runtime_and_Semantic_Errors.md)
+	- [Know Your Error Messages](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.21_Know_Your_Error_Messages.md)
 	- Incremental Programming
 	- Common Errors
 	- Practice Assignment - Drawing with Turtle
