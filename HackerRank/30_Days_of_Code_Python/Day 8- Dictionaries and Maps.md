@@ -59,7 +59,43 @@ Query 2: harry
 Harry is one of the keys in our dictionary, so we print harry=12299933.
 
 
-## Solution
+## Solution 1
+
+```python
+n = int(input())
+friends = {}
+
+for person in range(n):
+    name, phone = map(str, input().split())
+    friends[name] = phone
+
+for ask in range(n):
+    query = input()
+    if query in friends.keys():
+        print("{}={}".format(query, friends[query]))
+    else:
+        print("Not found")
+```
+
+## Solution 2
+
+```python
+n = int(input())
+friends = {}
+
+for person in range(n):
+    name, phone = input().split()
+    friends[name] = phone
+
+for ask in range(n):
+    query = input()
+    if query in friends.keys():
+        print("{}={}".format(query, friends[query]))
+    else:
+        print("Not found")
+```
+
+## Solution 3
 
 ```python
 n = input("")
