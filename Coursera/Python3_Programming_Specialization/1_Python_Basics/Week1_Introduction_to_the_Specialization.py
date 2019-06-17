@@ -251,6 +251,7 @@ s = s + 9
 print(s)
 s = s + 10
 print(s)
+'''
 print("============================================")
 print("================ 1.11.Input ================")
 print("--------------------------------------------")
@@ -519,4 +520,37 @@ for _ in range(10):
     elan.forward(distance)
     elan.right(90)
     distance = distance + 10
+print("============================================")
+print("========== 1.19.The random module ==========")
+print("--------------------------------------------")
+import random
+
+prob = random.random()
+print(prob)
+
+diceThrow = random.randrange(1,7)
+print(diceThrow)
+
+print("")
+
+prob = random.random()
+result = prob * 5
+print(result)
+
+print("")
+
+for num in range(10):
+	num = random.random()
+	print(num)
+
+print("")
+
+for num in range(10):
+	num = random.randrange(25, 35)
+	print(num)
+'''
+print("============================================")
+print("= 1.20.Syntax, Runtime and Semantic Errors =")
+print("--------------------------------------------")
+
 print("============================================")
