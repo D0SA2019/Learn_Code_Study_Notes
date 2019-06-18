@@ -2140,3 +2140,372 @@ print(final_time_int)
 Run the program but instead of typing in anything to the dialog box just click OK. You should see the following error message: `ValueError: invalid literal for int() with base 10: '' on line: 4` This error is not because you have made a mistake in your program. Although sometimes we do want to check the user input to make sure its valid, but we don’t have all the tools we need for that yet. The error happens because the user did not give us something we can convert to an integer, instead we gave it an empty string. Try running the program again. Now this time enter “ten” instead of the number 10. You will get a similar error message.
 
 ValueErrors are not always caused by user input error, but in this program that is the case. We’ll look again at ValueErrors again when we get to more complicated programs. For now it is worth repeating that you need to keep track of the restrictions needed for your variables, and understand what your function is expecting. You can do this by writing comments in your code, or by naming your variables in a way that reminds you of their proper form.
+
+
+#### Incremental Programming
+By now you’ve likely come across occasions where your code will be long or complex. If you approach problems like this by writing out all the code and then running it, you’ll likely find yourself frustrated by the debugging process. There are ways to make programming easier though!
+
+1. **Start Small** : This is probably the single biggest piece of advice for programmers at every level. Of course it’s tempting to sit down and crank out an entire program at once. But, when the program – inevitably – does not work then you have a myriad of options for things that might be wrong. Where to start? Where to look first? How to figure out what went wrong? I’ll get to that in the next section. So, start with something really small. Maybe just two lines and then make sure that runs ok. Hitting the run button is quick and easy, and gives you immediate feedback about whether what you have just done is ok or not. Another immediate benefit of having something small working is that you have something to turn in. Turning in a small, incomplete program, is almost always better than nothing.
+
+2. **Keep it working** : Once you have a small part of your program working the next step is to figure out something small to add to it. If you keep adding small pieces of the program one at a time, it is much easier to figure out what went wrong, as it is most likely that the problem is going to be in the new code you have just added. Less new code means its easier to figure out where the problem is.
+
+This notion of ***Get something working and keep it working*** is a mantra that you can repeat throughout your career as a programmer. It’s a great way to avoid the frustrations mentioned above. Think of it this way. Every time you have a little success, your brain releases a tiny bit of chemical that makes you happy. So, you can keep yourself happy and make programming more enjoyable by creating lots of small victories for yourself.
+
+
+```python
+import turtle
+import math
+
+wn = turtle.Screen()
+bob = turtle.Turtle()
+bob.right(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.left(90)
+bob.forward(50)
+bob.right(135)
+dist = math.sqrt(50*50/2)
+bob.forward(dist)
+bob.right(90)
+bob.forward(dist)
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/d8iOd4EANFdxXNyLXp/giphy.gif)
+
+#### Common Errors
+Below we’ll describe common errors that beginning programmers encounter when writing turtle code. Some of these errors can be applied to other instances as well!
+
+**1. Forgetting a Parenthesis**
+
+```
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+
+alex.forward(50			# here is the error
+alex.right(90)
+```
+
+When you run the example above you’ll see how an error occurs. This is because we accidentally left off the “)” when we tell alex to move forward. This is a common error for programmers of any skill level - it’s easy to miss one and not notice! If you get a syntax error like this or - expecially in this textbook - one that says there was bad syntax on a line that isn’t visible to you then likely you’re missing a parenthesis, quotation, or bracket.
+
+
+**2. Issues with Variable Names**
+
+Sometimes we misspell a variable name, either by making it capitalized when it wasn’t previously capitalized or swiching letters around. Other times we accidentally refer to the wrong variable name. Checkout the code below for some examples.
+
+```python
+import turtle
+wn = turtle.Screen()
+alex = Turtle.turtle()      #switched turtle and Turtle
+
+alex.forward(50)
+alex.right(90)
+```
+
+```python
+import turtle
+wn = turtle.Screen()
+june = turtle.Turtle()
+
+june.forward(50)
+right.june(90)             #switched the variable for jane with the direction to turn in
+```
+
+```python
+import turtle
+wn = turtle.Screen()
+june = turtle.Turtle()
+
+june.forward(50)
+June.right(90)            #capitalized the variable June even though all others were lowercase
+```
+
+**3. Incorrect Arguments**
+
+We can also incorrectly provide arguments to a method or function. When that happens, you’ll see an error message like the one below.
+
+```python
+import turtle
+wn = turtle.Screen()
+june = turtle.Turtle()
+
+for _ in range():
+    june.color("green", "yellow")
+    june.forward("50")
+    june.right(90)
+```
+
+We wanted to iterate and draw a square, but we forgot to specify how many times we should iterate over the for loop. As a result, we ran into an error because the range function requires at least one argument.
+
+#### Chapter Assessments & Exercises
+
+#### Assessments
+
+**A1**. Write code to draw a regular pentagon (a five-sided figure with all sides the same length).
+
+
+```python
+import turtle
+sc = turtle.Screen()
+
+steve = turtle.Turtle()
+
+for line in range(5):
+    steve.left(72)
+    steve.forward(50)
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/WOBjD31FA8VQ8mUpxr/giphy.gif)
+
+-----
+
+**A2**. Write a program that uses the turtle module to draw something. It doesn’t have to be complicated, but draw something different than we have done in the past. (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting .speed(10) for the turtle to draw fast, or .speed(0) for it to draw super fast with no animation.)
+
+
+```python
+import turtle
+sc = turtle.Screen()
+
+steve = turtle.Turtle()
+steve.left(180)
+steve.forward(60)
+steve.left(90)
+steve.forward(30)
+steve.left(90)
+steve.forward(60)
+steve.right(90)
+steve.forward(30)
+steve.right(90)
+steve.forward(60)
+
+steve.penup()
+steve.forward(30)
+steve.pendown()
+steve.right(90)
+steve.forward(90)
+steve.right(90)
+steve.forward(120)
+steve.right(90)
+steve.forward(120)
+steve.right(90)
+steve.forward(120)
+steve.right(90)
+steve.forward(30)
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/KEMegV0xfyEdRl0qh4/giphy.gif)
+
+----
+----
+
+#### Exercises
+
+**Q1**. What are correct ways to tell a turtle named Tex to move forward 20 pixels? Select as many as apply.
+
+A. Tex.forward(20) ✅ <br>
+B. forward() + 20<br>
+C. forward(20)<br>
+D. forward(20).Tex<br>
+E. Tex.forward(10 + 10) ✅<br>
+
+
+----
+
+**Q2**. Which is the correct way to make a new instance of the Turtle class?
+
+A. turtle(Turtle)<br>
+B. turtle.Turtle() ✅ <br>
+C. Turtle.turtle()<br>
+D. Turtle(turtle)<br>
+
+----
+
+**Q3**. What does each instance of the Turtle class represent?
+
+A. The turtle class. <br>
+B. The same turtle that is used in each drawing your programs make. <br>
+C. A unique 'turtle' that you can use to draw. ✅ <br>
+
+----
+
+**Q4**. Select all of the following things that methods can do:
+
+A. Change the value of an attribute. ✅<br>
+B. Return values. ✅<br>
+C. Create new attributes of an instance and set their values. ✅<br>
+D. Delete object instances. <br>
+E. None of the above. <br>
+
+----
+**Q5**. For an instance of a class that is assigned to the variable `student`, what is the proper way to refer to the `title` attribute/instance variable?
+
+A. student.title() <br>
+B. title.student() <br>
+C. title.student <br>
+D. student(title) <br>
+E. student.title ✅<br>
+
+----
+**Q6**. What is the name of jane’s attribute (not method) that is referred to in the following code?
+
+
+```python
+import turtle
+
+jane = turtle.Turtle()
+jane.forward(20)
+print(jane.x)
+```
+
+**Answer => x**
+
+----
+**Q7**. What are the names of the instances in the following code? Please put one instance per blank space and enter them in the order that the computer would read them.
+
+
+```python
+import turtle
+wn = turtle.Screen()
+
+jazz = turtle.Turtle()
+jazz.forward(50)
+jazz.right(90)
+pop = turtle.Turtle()
+pop.left(180)
+pop.forward(76)
+```
+
+**Answer => wn jazz pop**
+
+---
+**Q8**. Write a program that prints `We like Python's turtles!` 100 times.
+
+
+```python
+for line in range(100):
+    print("We like Python's turtles!")
+```
+
+
+---
+**Q9**. Use for loops to make a turtle draw these regular polygons (regular means all sides the same lengths, all angles the same):
+
+* An equilateral triangle
+* A square
+* A hexagon (six sides)
+* An octagon (eight sides)
+
+
+```python
+import turtle
+sc = turtle.Screen()
+
+steve = turtle.Turtle()
+
+
+for line in range(3):
+    steve.forward(50)
+    steve.left(120)
+
+
+steve.right(60)
+steve.penup()
+steve.forward(30)
+steve.pendown()
+
+for line in range(4):
+    steve.forward(50)
+    steve.right(90)
+
+steve.right(120)
+steve.penup()
+steve.forward(150)
+steve.pendown()
+
+for line in range(5):
+    steve.right(72)
+    steve.forward(50)
+
+steve.penup()
+steve.right(90)
+steve.forward(150)
+steve.right(35)
+steve.pendown()
+
+for line in range(8):
+    steve.forward(50)
+    steve.right(45)
+
+```
+
+**Output**
+
+![](https://media.giphy.com/media/YnBdn7kXSHfDGaMPKb/giphy.gif)
+
+
+---
+**Q10**. Write a program to draw a shape like this:
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/star.png)
+
+```python
+import turtle
+
+sc = turtle.Screen()
+steve = turtle.Turtle()
+
+for line in range(5):
+    steve.right(144)
+    steve.forward(70)
+```
+
+**Output**
+
+![](https://media.giphy.com/media/LO2gahyLT17BxL58UY/giphy.gif)
+
+---
+**Q11**. Write a program to draw a face of a clock that looks something like this:
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/tess_clock1.png)
+
+```python
+import turtle
+
+sc = turtle.Screen()
+steve = turtle.Turtle()
+
+for line in range(5):
+    steve.right(144)
+    steve.forward(70)
+```
+
+**Output**
+
+![](https://media.giphy.com/media/VbcbhFwmuBNeREiMWH/giphy.gif)
+
+
+---
+**Q12**. Create a turtle and assign it to a variable. When you print its type, what do you get?
+
+
+```python
+import turtle
+
+steve = turtle.Turtle()
+print(type(steve))
+```
+
+**Output**
+
+```
+<class '__main__.Turtle'>
+```
