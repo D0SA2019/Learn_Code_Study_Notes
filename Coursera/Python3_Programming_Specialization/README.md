@@ -11,7 +11,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 ----
 
 ## Course 1 : Python Basics ⏳
-#### Week 1 : General Introduction ⏳
+#### Week 1 : General Introduction ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.py))***
 
 * [Welcome to Python Basics!](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.1_Welcome_to_Python_Basics.md)
@@ -38,21 +38,20 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 * The Way of the Programmer
 	- [Syntax, Runtime, and Semantic Errors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.20_Syntax_Runtime_and_Semantic_Errors.md)
 	- [Know Your Error Messages](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.21_Know_Your_Error_Messages.md)
-	- Incremental Programming
-	- Common Errors
-	- Practice Assignment - Drawing with Turtle
-	- Gallery Tool: Turtle Drawing
-	- Chapter Assignments and Exercises
-#### Week 2 : Sequences and Iteration
+	- [Incremental Programming](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.22_Incremental_Programming.md)
+	- [Common Errors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.23_Common_Errors.md)
+	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.24_Chapter_Assessment.md)
+
+#### Week 2 : Sequences and Iteration ⏳
 * Lists and Strings
 * Iteration
 * The Way of the Programmer
 
-#### Week 3 : Booleans and Conditionals
+#### Week 3 : Booleans and Conditionals 🔜
 * Boolean Expressions
 * Conditional Execution
 
-#### Week 4 : Sequence Mutation and Accumulation Patterns
+#### Week 4 : Sequence Mutation and Accumulation Patterns 🔜
 * Sequence Mutation
 * Methods on Strings and Lists
 * Accumulating Lists and Strings
