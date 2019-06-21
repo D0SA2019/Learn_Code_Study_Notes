@@ -43,7 +43,17 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.24_Chapter_Assessment.md)
 
 #### Week 2 : Sequences and Iteration ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.py))***
+
 * Lists and Strings
+	- [Strings and Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.1_Strings_and_Lists.md)
+	- [The Index Operator](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.2_The_Index_Operator.md)
+	- [Length](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.3_%20Length.md)
+	- [The Slice Operator](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.4_The_Slice_Operator.md)
+	- [Concatenation and Repetition](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.5_Concatenation_and_Repetition.md)
+	- [Cound and Index](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.6_Count_and_Index.md)
+	- [Split and Join](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.7_Split_and_Join.md)
+	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.8_Chapter_Assessment.md)
 * Iteration
 * The Way of the Programmer
 
