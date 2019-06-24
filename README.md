@@ -9,11 +9,10 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 
 ---------------
 
-## [CodeCademy](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy)
-1. [Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
-2. [Learn How to Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_How_to_Code) ✅
-3. [Introduction to HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/%20Introduction_to_HTML) ✅
-4. [Learn SQL](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_SQL) ⏳
+## [HackerRank](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank)
+1. [30 Days of Code : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python) ⏳
+2. [Language Proficiency : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency) 🔜
+
 ---------------
 
 ## [Coursera](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera)
@@ -31,7 +30,15 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 	* Course 4 : Python Classes and Inheritance 🔜
 	* Course 5 : Python Project: pillow, tesseract, and opencv 🔜
 
-	---------------
+---------------
+
+## [CodeCademy](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy)
+1. [Learn Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Python) ✅
+2. [Learn How to Code](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_How_to_Code) ✅
+3. [Introduction to HTML](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/%20Introduction_to_HTML) ✅
+4. [Learn SQL](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_SQL) ⏳
+
+---------------	
 
 ## [Lynda](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda)
 1. [Lynda Become Wordpress Developer (Path Courses)](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Lynda/Become_Wordpress_Developer_path) ⏳
@@ -71,12 +78,6 @@ You can find my notes and snippets on Python, Data Science, PHP, JavaScript, Jav
 11. Python
 12. Node.js
 13. JAVA
-
----------------
-
-## [HackerRank](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank)
-1. [30 Days of Code : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/30_Days_of_Code_Python) ⏳
-2. [Language Proficiency : Python](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/HackerRank/Python_Language_Proficiency) 🔜
 
 ---------------
 
