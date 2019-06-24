@@ -299,3 +299,190 @@ print(num_lst)
 sent = "The bicentennial for our university was in 2017"
 wrds = sent.split()
 print(wrds)
+
+print("============================================")
+print("============ 2.9. The For Loop =============")
+print("--------------------------------------------")
+
+for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+	print("Hi", name, "Please come to my party on Saturday!")
+
+print("")
+
+for achar in "Go Spot Go":
+	print(achar)
+
+print("")
+
+s = "python rocks"
+for ch in s:
+	print("HELLO")
+
+print("")
+
+s = "python rocks"
+for ch in s[3:8]:
+	print("HELLO")
+
+print("")
+
+fruits = ["apple", "orange", "banana", "cherry"]
+
+for afruit in fruits:
+	print(afruit)
+
+
+print("")
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+
+for i in [0,1,2,3]:
+	alex.forward(50)
+	alex.left(90)
+
+wn.clear()
+
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+
+for aColor in ["yellow", "red", "purple", "blue"]:
+	alex.color(aColor)
+	alex.forward(50)
+	alex.left(90)
+
+#wn.exitonclick()
+
+print("")
+
+p = [3, 4, "Me", 3, [], "Why", 0, "Tell", 9.3]
+for ch in p:
+	print(ch)
+
+print("============================================")
+print("============ 2.10. The For Loop ============")
+print("============ and range Function ============")
+print("--------------------------------------------")
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+accum = 0
+for w in nums:
+	accum = accum + w
+print(accum)
+
+print("")
+
+print("range(5)")
+for i in range(5):
+	print(i)
+
+print("range(0,5)")
+for i in range(0,5):
+	print(i)
+
+print("range(1,5)")
+for i in range(1,5):
+	print(i)
+
+print(list(range(5)))
+print(list(range(0,5)))
+
+print(range(5))
+
+print("")
+
+accum = 0
+for w in range(11):
+	accum = accum + w
+print(accum)
+
+sec_accum = 0
+for w in range(1,11):
+	sec_accum = sec_accum + w
+print(sec_accum)
+
+
+print("")
+
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+count = 0
+for w in nums:
+	count = count + 1
+print(count)
+
+
+print("")
+
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for w in nums :
+	accum = 0
+	accum = accum + w
+print(accum)
+
+
+n = int(input("How many odd numbers would you like to add together?"))
+thesum = 0
+oddnumber = 1
+
+for counter in range(n):
+	thesum = thesum + oddnumber
+	oddnumber = oddnumber + 2
+	print(oddnumber)
+print(thesum)
+
+print("")
+
+numbers = list(range(53))
+print(numbers)
+
+print("")
+
+str1 = "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
+numbs = 0
+for char in str1:
+    numbs += 1
+print(numbs)
+
+numbers = list(range(41))
+sum1 = 0
+for num in numbers:
+    sum1 += num
+print(sum1)
+
+print("============================================")
+print("==== 2.11. Traversal and the `for` Loop ====")
+print("================ By Index ==================")
+print("--------------------------------------------")
+for counter, item in enumerate(["apple", "pear", "apricot", "cherry", "peach"]):
+	print(counter, item)
+
+print("")
+
+x = range(5)
+print(type(x))
+print(x)
+print(list(x))
+
+print("")
+
+fruit = ["apple", "pear", "apricot", "cherry", "peach"]
+for n in range(len(fruit)):
+	print(n, fruit[n])
+
+print("")
+
+fruit = ["apple", "pear", "apricot", "cherry", "peach"]
+for idx in [0, 2, 4, 3, 1]:
+	print(fruit[idx])
+
+
+print("")
+
+s = "python"
+for idx in range(len(s)):
+	print(s[idx % 2])

@@ -1415,9 +1415,911 @@ print(wrds)
 ----
 
 
-
 ### Iteration
 
+#### 2.9. The For Loop
+
+Back when we drew the images with turtle it could be quite tedious. If we wanted to draw a square then we had to move then turn, move then turn, etc. etc. four times. If we were drawing a hexagon, or an octagon, or a polygon with 42 sides, it would have been a nightmare to duplicate all that code.
+
+A basic building block of all programs is to be able to repeat some code over and over again. We refer to this repetitive idea as **iteration**. In this section, we will explore some mechanisms for basic iteration.
+
+In Python, the for statement allows us to write programs that implement iteration. As a simple example, let’s say we have some friends, and we’d like to send them each an email inviting them to our party. We don’t quite know how to send email yet, so for the moment we’ll just print a message for each friend.
+
+
+```python
+for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+	print("Hi", name, "Please come to my party on Saturday!")
+```
+
+**Output** :
+
+```
+Hi Joe Please come to my party on Saturday!
+Hi Amy Please come to my party on Saturday!
+Hi Brad Please come to my party on Saturday!
+Hi Angelina Please come to my party on Saturday!
+Hi Zuki Please come to my party on Saturday!
+Hi Thandi Please come to my party on Saturday!
+Hi Paris Please come to my party on Saturday!
+```
+
+
+Take a look at the output produced when you press the `run` button. There is one line printed for each friend. Here’s how it works:
+
+* **name** in this `for` statement is called the **loop variable** or, alternatively, the **iterator variable**.
+* The list of names in the square brackets is the sequence over which we will iterate.
+* Line 2 is the **loop body**. The loop body is always indented. The indentation determines exactly what statements are “in the loop”. The loop body is performed one time for each name in the list.
+* On each *iteration* or *pass* of the loop, first a check is done to see if there are still more items to be processed. If there are none left (this is called the **terminating condition** of the loop), the loop has finished. Program execution continues at the next statement after the loop body.
+* If there are items still to be processed, the loop variable is updated to refer to the next item in the list. This means, in this case, that the loop body is executed here 7 times, and each time `name` will refer to a different friend.
+* At the end of each execution of the body of the loop, Python returns to the `for` statement, to see if there are more items to be handled.
+
+The overall syntax is `for <loop_var_name> in <sequence>:`
+
+* Between the words `for` and `in`, there must be a variable name for the loop variable. You can’t put a whole expression there.
+* A colon is required at the end of the line
+* After the word in and before the colon is an expression that must evaluate to a sequence (e.g, a string or a list or a tuple). It could be a literal, or a variable name, or a more complex expression.
+
+
+#### Flow of Execution of the `for` Loop
+
+As a program executes, the interpreter always keeps track of which statement is about to be executed. We call this the **control flow**, or the **flow of execution** of the program. When humans execute programs, they often use their finger to point to each statement in turn. So you could think of control flow as “Python’s moving finger”.
+
+
+Control flow until now has been strictly top to bottom, one statement at a time. We call this type of control **sequential**. Sequential flow of control is always assumed to be the default behavior for a computer program. The `for` statement changes this.
+
+
+Flow of control is often easy to visualize and understand if we draw a flowchart. This flowchart shows the exact steps and logic of how the `for` statement executes.
+
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/new_flowchart_for.png)
+
+While loops may not seem to be necessary when you’re iterating over a few items, it is extremely helpful when iterating over lots of items. Imagine if you needed to change what happened in the code block. On the left, when you use iteration, this is easy. On the right, when you have hard coded the process, this is more difficult.
+
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/iteration_vs_hardcoding.png)
+
+#### Strings and `for` loops
+
+
+Since a string is simply a sequence of characters, the `for` loop iterates over each character automatically.
+
+```python
+for achar in "Go Spot Go":
+	print("char")
+```
+
+**Output** :
+
+```
+G
+o
+
+S
+p
+o
+t
+
+G
+o
+```
+
+The loop variable `achar` is automatically reassigned each character in the string “Go Spot Go”. We will refer to this type of sequence iteration as **iteration by item**. Note that the for loop processes the characters in a string or items in a sequence one at a time from left to right.
+
+
+#### Lists and `for` loops
+
+It is also possible to perform **list traversal** using iteration by item. A list is a sequence of items, so the `for` loop iterates over each item in the list automatically.
+
+```python
+fruits = ["apple", "orange", "banana", "cherry"]
+
+for afruit in fruits:
+	print(afruit)
+```
+
+**Output** :
+
+```
+apple
+orange
+banana
+cherry
+```
+
+It almost reads like natural language: For (every) fruit in (the list of) fruits, print (the name of the) fruit.
+
+
+#### Iteration Simplifies our Turtle Program
+
+To draw a square we’d like to do the same thing four times — move the turtle forward some distance and turn 90 degrees. We previously used 8 lines of Python code to have alex draw the four sides of a square. This next program does exactly the same thing but, with the help of the for statement, uses just three lines (not including the setup code). Remember that the for statement will repeat the forward and left four times, one time for each value in the list.
+
+```python
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+
+for i in [0,1,2,3]:
+	alex.forward(50)
+	alex.left(90)
+
+wn.exitonclick()
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/JNsxfnGjDxXiBFfah9/giphy.gif)
+
+
+While “saving some lines of code” might be convenient, it is not the big deal here. What is much more important is that we’ve found a “repeating pattern” of statements, and we reorganized our program to repeat the pattern.
+
+The values [0,1,2,3] were provided to make the loop body execute 4 times. We could have used any four values. For example, consider the following program.
+
+
+```python
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+
+for i in ["yellow", "red", "purple", "blue"]:
+	alex.forward(50)
+	alex.left(90)
+
+wn.exitonclick()
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/JNsxfnGjDxXiBFfah9/giphy.gif)
+
+
+In the previous example, there were four integers in the list. This time there are four strings. Since there are four items in the list, the iteration will still occur four times. `aColor` will take on each color in the list. We can even take this one step further and use the value of `aColor` as part of the computation.
+
+
+```python
+import turtle
+wn = turtle.Screen()
+alex = turtle.Turtle()
+alex.speed(1)
+
+for aColor in ["yellow", "red", "purple", "blue"]:
+	alex.color(aColor)
+	alex.forward(50)
+	alex.left(90)
+
+wn.exitonclick()
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/kaBYWace19K4sBiTty/giphy.gif)
+
+
+In this case, the value of `aColor` is used to change the color attribute of `alex`. Each iteration causes `aColor` to change to the next value in the list.
+
+The for-loop is our first example of a **compound statement**. Syntactically a compound statement is a statement. The level of indentation of a (whole) compound statement is the indentation of its heading. In the example above there are five statements with the same indentation, executed sequentially: the import, 2 assignments, the whole for-loop, and `wn.exitonclick()`. The for-loop compound statement is executed completely before going on to the next sequential statement, `wn.exitonclick()`.
+
+
+-----
+--------
+
+**Check your understanding**
+
+**E1** : How many times is the word HELLO printed by the following statements?
+
+```python
+s = "python rocks"
+for ch in s:
+	print("HELLO")
+```
+
+
+A. 10 <br>
+B. 11 <br>
+C. 12 ✅ <br>
+D. Error, the for statement needs to use the range function.  <br>
+
+---
+
+**E2** : How many times is the word HELLO printed by the following statements?
+
+
+```python
+s = "python rocks"
+for ch in s[3:8]:
+	print("HELLO")
+```
+
+
+A. 4 <br>
+B. 5 ✅ <br>
+C. 6 <br>
+D. Error, the for statement cannot use slice.  <br>
+
+---
+
+
+**E3** : How many times will the for loop iterate in the following statements?
+
+
+```python
+p = [3, 4, "Me", 3, [], "Why", 0, "Tell", 9.3]
+for ch in p:
+	print(ch)
+```
+
+
+A. 8 <br>
+B. 9 ✅ <br>
+C. 15 <br>
+D. Error, the for statement needs to use the range function.  <br>
+
+---
+
+**E4** : How does python know what statements are contained in the loop body?
+
+
+A. They are indented to the same degree from the loop header. ✅ <br>
+B. There is always exactly one line in the loop body. <br>
+C. 15 <br>
+D. The loop body ends with a semi-colon (; ) which is not shown in the code above.  <br>
+
+---
+
+
+**E5** : Consider the following code:
+
+
+```python
+for aColor in ["yellow", "red", "green", "blue"]:
+	alex.forward(50)
+	alex.left(90)
+```
+
+What does each iteration through the loop do?
+
+A. Draw a square using the same color for each side. <br>
+B. Draw a square using a different color for each side. <br>
+C. Draw one side of a square. ✅ <br>
+
+---
+
+#### The Accumulator Pattern and `range` Function
+
+One common programming “pattern” is to traverse a sequence, accumulating a value as we go, such as the sum-so-far or the maximum-so-far. That way, at the end of the traversal we have accumulated a single value, such as the sum total of all the items or the largest item.
+
+***The anatomy of the accumulation pattern includes:***
+* initializing an “accumulator” variable to an initial value (such as 0 if accumulating a sum)
+* iterating (e.g., traversing the items in a sequence)
+* updating the accumulator variable on each iteration (i.e., when processing each item in the sequence)
+
+For example, consider the following code, which computes the sum of the numbers in a list.
+
+
+```python
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+accum = 0
+for w in nums:
+	accum = accum + w
+print(accum)
+```
+
+**Output** :
+
+```
+55
+```
+
+In the program above, notice that the variable `accum` starts out with a value of 0. Next, the iteration is performed 10 times. Inside the for loop, the update occurs. `w` has the value of current item (1 the first time, then 2, then 3, etc.). `accum` is reassigned a new value which is the old value plus the current value of `w`.
+
+This pattern of iterating the updating of a variable is commonly referred to as the **accumulator pattern**. We refer to the variable as the **accumulator**. This pattern will come up over and over again. Remember that the key to making it work successfully is to be sure to initialize the variable before you start the iteration. Once inside the iteration, it is required that you update the accumulator.
+
+We can utilize the range function in this situation as well. Previously, you’ve seen it used when we wanted to draw in turtle. There we used it to iterate a certain number of times. We can do more than that though. The `range` function takes at least one input - which should be an integer - and returns a list as long as your input. While you can provide two inputs, we will focus on using range with just one input. With one input, range will start at zero and go up to - but not include - the input. Here are the examples:
+
+```python
+print("range(5)")
+for i in range(5):
+	print(i)
+
+print("range(0,5)")
+for i in range(0,5):
+	print(i)
+
+print("range(1,5)")
+for i in range(1,5):
+	print(i)
+
+print(list(range(5)))
+print(list(range(0,5)))
+
+print(range(5))
+```
+
+**Output** :
+
+```
+range(5)
+0
+1
+2
+3
+4
+range(0,5)
+0
+1
+2
+3
+4
+range(1,5)
+1
+2
+3
+4
+[0, 1, 2, 3, 4]
+[0, 1, 2, 3, 4]
+range(0, 5)
+```
+
+One important thing to know about the range function in python3 is that if we want to use it outside of iteration, we have to cast it as a list using `list()`. Inside the textbook you’ll notice that `range` works with or without casting it as a list but it is best for you to try and get into the habit of casting it as a list. Here’s how you could use the range function in the previous problem.
+
+
+
+```python
+accum = 0
+for w in range(11):
+	accum = accum + w
+print(accum)
+
+sec_accum = 0
+for w in range(1,11):
+	sec_accum = sec_accum + w
+print(sec_accum)
+```
+
+**Output** :
+
+```
+55
+55
+```
+
+
+Because the range function is exclusive of the ending number, we have to use 11 as the function input.
+
+We can use the accumulation pattern is count the number of something or to sum up a total. The above examples only covered how to get the sum for a list, but we can also count how many items are in the list if we wanted to.
+
+```python
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+count = 0
+for w in nums:
+	count = count + 1
+print(count)
+```
+
+**Output** :
+
+```
+10
+```
+
+In this example we don’t make use of `w` even though the iterator variable (loop variable) is a necessary part of constructing a for loop. Instead of adding the value of `w` to `count` we add a 1 to it, because we’re incrementing the value of count when we iterate each time through the loop. Though in this scenario we could have used the `len` function, there are other cases later on where len won’t be useful but we will still need to count.
+
+-----
+--------
+
+**Check your understanding**
+
+**E1** : Consider the following code:
+
+```python
+nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for w in nums :
+	accum = 0
+	accum = accum + w
+print(accum)
+```
+
+What happens if you put the initialization of accum inside the for loop as the first instruction in the loop?
+
+
+A. It will print out 10 instead of 55 ✅ <br>
+B. It will cause a run-time error <br>
+C. It will print out 0 instead of 55 <br>
+
+---
+
+**E2** : Rearrange the code statements so that the program will add up the first n odd numbers where n is provided by the user.
+
+![](http://i65.tinypic.com/rbkv20.png)
+
+---
+
+**E3** : Write code to create a list of integers from 0 through 52 and assign that list to the variable `numbers`. You should use a special Python function – do not type out the whole list yourself. HINT: You can do this in one line of code!
+
+```python
+numbers = list(range(53))
+print(numbers)
+```
+
+**Output** :
+
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+```
+
+----
+
+
+**E4** : Count the number of characters in string `str1`. Do not use `len()`. Save the number in variable `numbs`.
+
+```python
+# Given
+str1 = "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
+
+
+# Solution
+numbs = 0
+for char in str1:
+    numbs += 1
+print(numbs)
+```
+
+**Output** :
+
+```
+90
+```
+
+----
+
+
+**E5** : Create a list of numbers 0 through 40 and assign this list to the variable `numbers`. Then, accumulate the total of the list’s values and assign that sum to the variable `sum1`.
+
+```python
+numbers = list(range(41))
+sum1 = 0
+for num in numbers:
+    sum1 += num
+print(sum1)
+```
+
+**Output** :
+
+```
+820
+```
+
+----
+
+#### Traversal and the `for` Loop: By Index
+
+It is also possible to iterate through the indexes of a string or sequence. The `for` loop can then be used to iterate over these positions. These positions can be used together with the indexing operator to access the individual characters in the string. We can use **Enumerate**, a built-in Python function, to make this process easier because it allows us to loop through something and have an automatic counter.
+
+
+
+```python
+for counter, item in enumerate(["apple", "pear", "apricot", "cherry", "peach"]):
+	print(counter, item)
+```
+
+**Output** :
+
+```
+0 apple
+1 pear
+2 apricot
+3 cherry
+4 peach
+```
+
+
+By using the enumerate function, we can print out a counter that tells us the position of an item in a list. We could do this ourselves, but this saves us from having to do that. The index positions in the list are 0, 1 , 2, 3, and 4. This is exactly the same sequence of integers that are stored in `counter` each time the loop is iterated. The first time through the for loop, `counter` will be 0 and “apple” will be printed. Then, `counter` will be reassigned to 1 and “pear” will be displayed. This will continue until the list has ended, so that the final value for `counter` will be 4 and the final value of `item` will be “peach”.
+
+Conveniently, we can also use the `range` function to automatically generate the indices of the characters.
+
+
+```python
+x = range(5)
+print(type(x))
+print(x)
+print(list(x))
+```
+
+**Output** :
+
+```
+<class 'range'>
+range(0, 5)
+[0, 1, 2, 3, 4]
+```
+
+In order to make the iteration more general, we can use the `len` function to provide the bound for `range`. This is a very common pattern for traversing any sequence by position. Make sure you understand why the range function behaves correctly when using `len` of the string as its parameter value.
+
+
+```python
+fruit = ["apple", "pear", "apricot", "cherry", "peach"]
+for n in range(len(fruit)):
+	print(n, fruit[n])
+```
+
+**Output** :
+
+```
+0 apple
+1 pear
+2 apricot
+3 cherry
+4 peach
+```
+
+You may also note that iteration by position allows the programmer to control the direction of the traversal by changing the sequence of index values.
+
+
+```python
+fruit = ["apple", "pear", "apricot", "cherry", "peach"]
+for idx in [0, 2, 4, 3, 1]:
+	print(fruit[idx])
+```
+
+**Output** :
+
+```
+apple
+apricot
+peach
+cherry
+pear
+```
+
+-----
+--------
+
+**Check your understanding**
+
+**E1** : How many times is the letter p printed by the following statements?
+
+```python
+s = "python"
+for idx in range(len(s)):
+	print(s[idx % 2])
+```
+
+A. 0 <br>
+B. 1 <br>
+C. 2 <br>
+D. 3 ✅<br>
+E. 6 <br>
+
+---
+
+
+#### Nested Iteration: Image Processing
+
+Two dimensional tables have both rows and columns. You have probably seen many tables like this if you have used a spreadsheet program. Another object that is organized in rows and columns is a digital image. In this section we will explore how iteration allows us to manipulate these images.
+
+A **digital image** is a finite collection of small, discrete picture elements called **pixels**. These pixels are organized in a two-dimensional grid. Each pixel represents the smallest amount of picture information that is available. Sometimes these pixels appear as small “dots”.
+
+Each image (grid of pixels) has its own width and its own height. The width is the number of columns and the height is the number of rows. We can name the pixels in the grid by using the column number and row number. However, it is very important to remember that computer scientists like to start counting with 0! This means that if there are 20 rows, they will be named 0,1,2, and so on through 19. This will be very useful later when we iterate using range.
+
+In the figure below, the pixel of interest is found at column `c` and row `r`.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_images/image.png)
+
+
+#### The RGB Color Model
+
+Each pixel of the image will represent a single color. The specific color depends on a formula that mixes various amounts of three basic colors: red, green, and blue. This technique for creating color is known as the **RGB Color Model**. The amount of each color, sometimes called the intensity of the color, allows us to have very fine control over the resulting color.
+
+The minimum intensity value for a basic color is 0. For example if the red intensity is 0, then there is no red in the pixel. The maximum intensity is 255. This means that there are actually 256 different amounts of intensity for each basic color. Since there are three basic colors, that means that you can create 2563 distinct colors using the RGB Color Model.
+
+Here are the red, green and blue intensities for some common colors. Note that “Black” is represented by a pixel having no basic color. On the other hand, “White” has maximum values for all three basic color components.
+
+
+| Color | Red | Green | Blue |
+|--|--|--|--|
+| Red | 255 | 0 | 0 |
+| Green | 0 | 255 | 0 |
+| Blue | 0 | 0 | 255 |
+| White | 255 | 255 | 255 |
+| Black | 0 | 0 | 0 |
+| Yellow | 255 | 255 | 0 |
+| Magenta | 255 | 0 | 255 |
+
+In order to manipulate an image, we need to be able to access individual pixels. This capability is provided by a module called **image**, provided in ActiveCode [1]. The image module defines two classes: `Image` and `Pixel`.
+
+***If you want to explore image processing on your own outside of the browser you can install the cImage module from http://pypi.org.***
+
+
+Each Pixel object has three attributes: the red intensity, the green intensity, and the blue intensity. A pixel provides three methods that allow us to ask for the intensity values. They are called `getRed`, `getGreen`, and `getBlue`. In addition, we can ask a pixel to change an intensity value using its `setRed`, `setGreen`, and `setBlue` methods.
+
+
+| Color | Red | Green |
+|--|--|--|
+| `Pixel(r,g,b)` | `Pixel(20,100,50)` | Create a new pixel with 20 red, 100 green, and 50 blue. |
+| `getRed()` | `r = p.getRed()` | Return the red component intensity. |
+| `getGreen()` | `r = p.getGreen()` | Return the green component intensity. |
+| `getBlue()` | `r = p.getBlue()` | Return the blue component intensity. |
+| `setRed()` | `p.setRed(100)` | Set the red component intensity to 100. |
+| `setGreen()` | `p.setGreen(45)` | Set the green component intensity to 45. |
+| `setBlue()` | `p.setBlue(156` | Set the blue component intensity to 156. |
+
+
+In the example below, we first create a pixel with 45 units of red, 76 units of green, and 200 units of blue. We then print the current amount of red, change the amount of red, and finally, set the amount of blue to be the same as the current amount of green.
+
+
+```python
+import image
+
+p = image.Pixel(45, 76, 200)
+print(p.getRed())
+
+p.setRed(66)
+print(p.getRed())
+
+p.setBlue(p.getGreen())
+print(p.getGreen(), p.getBlue())
+```
+
+**Output** :
+
+```
+45
+66
+76 76
+```
+
+
+#### Image Objects
+
+To access the pixels in a real image, we need to first create an `Image` object. Image objects can be created in two ways. First, an Image object can be made from the files that store digital images. The image object has an attribute corresponding to the width, the height, and the collection of pixels in the image.
+
+It is also possible to create an Image object that is “empty”. An `EmptyImage` has a width and a height. However, the pixel collection consists of only “White” pixels.
+
+We can ask an image object to return its size using the `getWidth` and `getHeight` methods. We can also get a pixel from a particular location in the image using getPixel and change the pixel at a particular location using `setPixel`.
+
+The Image class is shown below. Note that the first two entries show how to create image objects. The parameters are different depending on whether you are using an image file or creating an empty image.
+
+
+| Method Name | Example | Explanation |
+|--|--|--|
+| `Image(filename)` | `img = image.Image(“cy.png”)` | Create an Image object from the file cy.png |
+| `EmptyImage()` | `img = image.EmptyImage(100,200)` | Create an Image object that has all “White” pixels |
+| `getWidth()` | `w = img.getWidth()` | Return the width of the image in pixels |
+| `getHeight()` | `h = img.getHeight()` | Return the height of the image in pixels |
+| `getPixel(col,row)` | `p = img.getPixel(35,86)` | Return the pixel at column 35, row 86 |
+| `setPixel(col,row,p)` | `img.setPixel(100,50,mp)` | Set the pixel at column 100, row 50 to be mp |
+
+Consider the image shown below. Assume that the image is stored in a file called “luther.jpg”. Line 2 opens the file and uses the contents to create an image object that is referred to by `img`. Once we have an image object, we can use the methods described above to access information about the image or to get a specific pixel and check on its basic color intensities.
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/LutherBellPic.jpg)
+
+
+
+```python
+import image
+img = image.Image("luther.jpg")
+
+print(img.getWidth())
+print(img.getHeight())
+
+p = img.getPixel(45, 55)
+print(p.getRed(), p.getGreen(), p.getBlue())
+```
+
+**Output** :
+
+```
+400
+244
+165 161 158
+```
+
+When you run the program you can see that the image has a width of 400 pixels and a height of 244 pixels. Also, the pixel at column 45, row 55, has RGB values of 165, 161, and 158. Try a few other pixel locations by changing the `getPixel` arguments and rerunning the program.
+
+
+#### Image Processing and Nested Iteration
+
+**Image processing** refers to the ability to manipulate the individual pixels in a digital image. In order to process all of the pixels, we need to be able to systematically visit all of the rows and columns in the image. The best way to do this is to use **nested iteration**.
+
+Nested iteration simply means that we will place one iteration construct inside of another. We will call these two iterations the **outer iteration** and the **inner iteration**. To see how this works, consider the iteration below.
+
+```python
+for i in range(5):
+  print(i)
+```
+
+We have seen this enough times to know that the value of i will be 0, then 1, then 2, and so on up to 4. The `print` will be performed once for each pass. However, the body of the loop can contain any statements including another iteration (another `for` statement). For example,
+
+```python
+for i in range(5):
+  for j in range(3):
+    print(i, j)
+```
+
+The `for i` iteration is the outer iteration and the `for j` iteration is the inner iteration. Each pass through the outer iteration will result in the complete processing of the inner iteration from beginning to end. This means that the output from this nested iteration will show that for each value of `i`, all values of `j` will occur.
+
+Here is the same example in activecode. Try it. Note that the value of `i` stays the same while the value of `j` changes. The inner iteration, in effect, is moving faster than the outer iteration.
+
+```python
+for i in range(5):
+  for j in range(3):
+    print(i, j)
+```
+
+**Output** :
+
+```
+0 0
+0 1
+0 2
+1 0
+1 1
+1 2
+2 0
+2 1
+2 2
+3 0
+3 1
+3 2
+4 0
+4 1
+4 2
+```
+
+Another way to see this in more detail is to examine the behavior with codelens. Step through the iterations to see the flow of control as it occurs with the nested iteration. Again, for every value of `i`, all of the values of `j` will occur. You can see that the inner iteration completes before going on to the next pass of the outer iteration.
+
+
+Our goal with image processing is to visit each pixel. We will use an iteration to process each row. Within that iteration, we will use a nested iteration to process each column. The result is a nested iteration, similar to the one seen above, where the outer `for` loop processes the rows, from 0 up to but not including the height of the image. The inner `for` loop will process each column of a row, again from 0 up to but not including the width of the image.
+
+The resulting code will look like the following. We are now free to do anything we wish to each pixel in the image.
+
+
+```python
+for row in range(img.getHeight()):
+    for col in range(img.getWidth()):
+        # do something with the pixel at position (col,row)
+```
+
+One of the easiest image processing algorithms will create what is known as a **negative** image. A negative image simply means that each pixel will be the opposite of what it was originally. But what does opposite mean?
+
+In the RGB color model, we can consider the opposite of the red component as the difference between the original red and 255. For example, if the original red component was 50, then the opposite, or negative red value would be `255-50` or 205. In other words, pixels with a lot of red will have negatives with little red and pixels with little red will have negatives with a lot. We do the same for the blue and green as well.
+
+The program below implements this algorithm using the previous image (luther.jpg). Run it to see the resulting negative image. Note that there is a lot of processing taking place and this may take a few seconds to complete. In addition, here are two other images that you can use (cy.png and goldygopher.png).
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/cy.png)
+**cy.py**
+
+![](https://fopp.umsi.education/runestone/static/fopp/_static/goldygopher.png)
+**goldygopher.png**
+
+
+Change the name of the file in the `image.Image()` call to see how these images look as negatives. Also, note that there is an `exitonclick` method call at the very end which will close the window when you click on it. This will allow you to “clear the screen” before drawing the next negative.
+
+```python
+import image
+
+img = image.Image("luther.jpg")
+win = image.ImageWin(img.getWidth(), img.getHeight())
+img.draw(win)
+img.setDelay(1,15)   # setDelay(0) turns off animation
+
+for row in range(img.getHeight()):
+    for col in range(img.getWidth()):
+        p = img.getPixel(col, row)
+
+        newred = 255 - p.getRed()
+        newgreen = 255 - p.getGreen()
+        newblue = 255 - p.getBlue()
+
+        newpixel = image.Pixel(newred, newgreen, newblue)
+
+        img.setPixel(col, row, newpixel)
+
+img.draw(win)
+win.exitonclick()
+```
+
+Let’s take a closer look at the code. After importing the image module, we create an image object called `img` that represents a typical digital photo. We will update each pixel in this image from top to bottom, left to right, which you should be able to observe. You can change the values in `setDelay` to make the program progress faster or slower.
+
+Lines 8 and 9 create the nested iteration that we discussed earlier. This allows us to process each pixel in the image. Line 10 gets an individual pixel.
+
+Lines 12-14 create the negative intensity values by extracting the original intensity from the pixel and subtracting it from 255. Once we have the `newred`, `newgreen`, and `newblue` values, we can create a new pixel (Line 15).
+
+Finally, we need to replace the old pixel with the new pixel in our image. It is important to put the new pixel into the same location as the original pixel that it came from in the digital photo.
+
+Try to change the program above so that the outer loop iterates over the columns and the inner loop iterates over the rows. We still create a negative image, but you can see that the pixels update in a very different order.
+
+-----
+--------
+
+**Check your understanding**
+
+**E1** : If you have a pixel whose RGB value is (50, 0, 0), what color will this pixel appear to be?
+
+
+A. 0 <br>
+B. 1 <br>
+C. 2 <br>
+D. 3 ✅ <br>
+E. 6 <br>
+
+---
+
+**E2** : Using the previous ActiveCode example, select the answer that is closest to the RGB values of the pixel at row 100, column 30? The values may be off by one or two due to differences in browsers.
+
+
+A. 149 132 122 <br>
+B. 183 179 170 ✅ <br>
+C. 165 161 158 <br>
+D. 201 104 115 <br>
+
+---
+
+
+**E3** : What will the following nested for-loop print?
+
+```python
+for i in range(3):
+    for j in range(2):
+        print(i, j)
+```
+
+```
+a. ✅
+    0 0
+    0 1
+    1 0
+    1 1
+    2 0
+    2 1
+
+b.
+    0   0
+    1   0
+    2   0
+    0   1
+    1   1
+    2   1
+
+c.
+    0   0
+    0   1
+    0   2
+    1   0
+    1   1
+    1   2
+
+d.
+    0   1
+    0   1
+    0   1
+```
+
+---
+
+
+**E4** : What would the image produced from ActiveCode box 16 look like if you replaced the lines:
+
+```python
+newred = 255 - p.getRed()
+newgreen = 255 - p.getGreen()
+newblue = 255 - p.getBlue()
+```
+
+with the lines :
+
+```python
+newred = p.getRed()
+newgreen = 0
+newblue = 0
+```
+
+
+A. It would look like a red-washed version of the bell image ✅ <br>
+B. It would be a solid red rectangle the same size as the original image <br>
+C. It would look the same as the original image <br>
+D. It would look the same as the negative image in the example code  <br>
 
 
 ### The Way of the Programmer
