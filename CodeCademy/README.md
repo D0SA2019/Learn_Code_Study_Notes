@@ -59,3 +59,10 @@ My personal notes and projects on Codecademy
 3. Forms
 	* [Forms](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/3.1_Forms.md)
 	* [Form Validation](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/CodeCademy/%20Introduction_to_HTML/Notes/3.2_Form_Validation.md)
+
+
+### 4. [Learn SQL](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/CodeCademy/Learn_SQL) ⏳
+1. Manipulation
+2. Queries
+3. Aggregate Functions
+4. Multiple Tables
