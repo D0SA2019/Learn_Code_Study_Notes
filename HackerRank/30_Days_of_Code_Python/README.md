@@ -15,3 +15,4 @@ My HackerRank solutions and challenges
 * [Day 9: Recursion 3](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_9-Recursion_3.md)
 * [Day 10: Binary Numbers](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_10-Binary_Numbers.md)
 * [Day 11: 2D Arrays](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_11-2D_Arrays.md)
+* [Day 12: Inheritance](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_12-Inheritance.md)
