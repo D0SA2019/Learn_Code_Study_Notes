@@ -42,7 +42,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Common Errors](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.23_Common_Errors.md)
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/1.24_Chapter_Assessment.md)
 
-#### Week 2 : Sequences and Iteration ⏳
+#### Week 2 : Sequences and Iteration ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.py))***
 
 * Lists and Strings
@@ -55,7 +55,15 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Split and Join](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.7_Split_and_Join.md)
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.8_Chapter_Assessment.md)
 * Iteration
+	- [The For Loop](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.9_The_For_Loop.md)
+	- [The Accumulator Pattern and range Function](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.10_The_Accumulator_Pattern_and_range_Function.md)
+	- [Traversal and the for Loop: By Index](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.11_Traversal_and_the_for_Loop_By_Index.md)
+	- [Nested Iteration: Image Processing](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.12_Nested_Iteration_Image_Processing.md)
 * The Way of the Programmer
+	- [Naming Your Variables in For Loops](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.13_Naming_Your_Variables_in_For_Loops.md)
+	- [Printing Intermediate Results](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.14_Printing_Intermediate_Results.md)
+	- [Keeping Track of Your Iterator Variable and Your Iterable](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.15_Keeping_Track_of_Your_Iterator_Variable_and_Your_Iterable.md)
+	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.16_Chapter_Assessment.md)
 
 #### Week 3 : Booleans and Conditionals 🔜
 * Boolean Expressions
