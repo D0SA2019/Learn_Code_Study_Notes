@@ -303,7 +303,6 @@ print(wrds)
 print("============================================")
 print("============ 2.9. The For Loop =============")
 print("--------------------------------------------")
-
 for name in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
 	print("Hi", name, "Please come to my party on Saturday!")
 
@@ -362,7 +361,6 @@ print("")
 p = [3, 4, "Me", 3, [], "Why", 0, "Tell", 9.3]
 for ch in p:
 	print(ch)
-
 print("============================================")
 print("============ 2.10. The For Loop ============")
 print("============ and range Function ============")
@@ -486,3 +484,289 @@ print("")
 s = "python"
 for idx in range(len(s)):
 	print(s[idx % 2])
+
+print("============================================")
+print("======= 2.13. Naming Your Variables ========")
+print("============== in For Loops ================")
+print("--------------------------------------------")
+x = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
+
+for y in x:
+  print(y)
+
+
+print("")
+
+genres = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
+
+for genre in genres:
+  print(genre)
+
+print("============================================")
+print("=== 2.14. Printing Intermediate Results ====")
+print("--------------------------------------------")
+w = range(10)
+
+tot = 0
+
+for num in w:
+  tot += num
+
+print(tot)
+
+print("")
+
+w = range(10)
+
+tot = 0
+
+for num in w:
+  print(num)
+  tot += num
+
+print(tot)
+
+print("")
+
+w = range(10)
+
+tot = 0
+
+for num in w:
+  print(num)
+  tot += num
+  print(tot)
+
+print(tot)
+
+print("")
+
+w = range(10)
+
+tot = 0
+
+print("***** Before the For Loop *****")
+for num in w:
+  print("***** A New Loop Iteration *****")
+  print("Value of num:", num)
+  tot += num
+  print("Value of tot:", tot)
+
+print("***** End of For Loop *****")
+print("Final total:", tot)
+
+print("============================================")
+print("=== 2.15. Keeping Track of Your Iterator ===")
+print("============= and Your Iterable ============")
+print("--------------------------------------------")
+n = ["word", "phrase", 8, ("beam")]
+
+for item in n:
+	print(item)
+
+print("")
+
+t = "couch"
+
+for z in t:
+	print(z)
+
+print("")
+
+t = ("couch", "chair", "washer", "dryer", "table")
+
+for z in t:
+	print(z)
+
+
+print("")
+
+t = "couch"
+
+for z in t:
+	print(z)
+
+print("")
+
+t = ["couch", "chair", "washer", "dryer", "table"]
+
+for z in t:
+	print(z)
+
+
+print("")
+
+t = [9, "setter", 3, "wing spiker", 10, "middle blocker"]
+
+for z in t:
+	print(z)
+
+print("")
+
+red = "colors"
+
+for blue in red:
+	print(blue)
+
+print("============================================")
+print("=== 2.16. Chapter Assessments & Exercises ===")
+print("--------------------------------------------")
+
+prefixes = "JKLMNOPQ"
+suffix = "ack"
+
+for p in prefixes:
+    if p == "O" or p == "Q":
+        print(p + "u" + suffix)
+    else:
+        print(p + suffix)
+
+print("")
+
+text = input("Enter a word or sentence: ")
+rev = ""
+for char in text[::-1]:
+    rev += char
+print(rev)
+
+print("")
+
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+for month in months:
+  print("One of the months of the year is", month)
+
+
+print("")
+
+numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+
+for number in numbers:
+  print(number)
+
+for number in numbers:
+  print(number ** 2)
+
+
+print("")
+
+import turtle
+sc = turtle.Screen()
+steve = turtle.Turtle()
+steve.speed(1)
+steve.pensize(5)
+
+sides = int(input("Enter the number of sides: "))
+len_sides = int(input("Enter the lenght of the sides: "))
+color = steve.color(input("Enter a color name: "))
+
+steve.begin_fill()
+for line in range(sides):
+	steve.forward(len_sides)
+	steve.left(72)
+steve.end_fill()
+sc.clear()
+
+print("")
+
+prite = turtle.Turtle()
+prite.speed(1)
+prite.pensize(3)
+
+angles = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+head = 0
+
+for angle in angles:
+  prite.left(angle)
+  prite.forward(100)
+  head = (head + angle) % 360
+
+print(head)
+
+sc.exitonclick()
+
+print("")
+
+my_str = "MICHIGAN"
+
+for char in my_str:
+	print(char)
+
+print("")
+
+several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+for item in several_things:
+	print(item)
+
+for item_type in several_things:
+	print(type(item_type))
+
+
+print("")
+
+str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]
+
+for item in str_list:
+	print(len(item))
+
+print("")
+
+import turtle
+import random
+
+sc = turtle.Screen()
+steve = turtle.Turtle()
+steve.pensize(4)
+steve.speed(2)
+
+for line in range(random.randrange(1, 15)):
+	steve.left(random.randrange(10, 360, 10))
+	steve.forward(random.randrange(5, 150))
+
+sc.exitonclick()
+
+print("")
+
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
+
+num_chars = 0
+
+for char in original_str:
+	num_chars += 1
+
+print(num_chars)
+
+
+print("")
+
+addition_str = "2+5+10+20"
+
+sliced = addition_str.split("+")
+sum_val = 0
+
+for number in sliced:
+	sum_val += int(number)
+
+print(sum_val)
+
+
+print("")
+
+week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
+
+temps = week_temps_f.split(",")
+len_temps = len(temps)
+sum_temps = 0
+avg_temp = 0
+
+for temp in temps:
+	sum_temps += float(temp)
+
+avg_temp = sum_temps / len_temps
+print(avg_temp)
+
+print("")
+
+nums = list(range(68))
+print(nums)

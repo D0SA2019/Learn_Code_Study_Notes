@@ -2323,3 +2323,919 @@ D. It would look the same as the negative image in the example code  <br>
 
 
 ### The Way of the Programmer
+
+#### Naming Your Variables in For Loops
+
+We’ve mentioned before about carefully choosing your variable names. Though the names you choose aren’t meaningful to the program, they can be to you. When we choose names for variables in for loops, the more understandable they are to us, the easier it will be to use them. Here are some tips to make your for loops more readable for yourself and anyone else who may read your programs:
+
+1. Use singular nouns for the iterator variable, which is also called the loop variable (things like “song”, “book”, “post”, “letter”, “word”).
+2. Use plural nouns for the sequence variable (things like “songs”, “books”, “posts”, “letters”, “words”).
+
+While these two tips won’t always apply, they are general best practices when it comes to choosing variable names. Below we have an example!
+
+
+```python
+x = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
+
+for y in x:
+  print(y)
+```
+
+**Output** :
+
+```
+jazz
+pop
+rock
+country
+punk
+folk
+hip-hop
+rap
+alternative
+```
+
+These names would make the program hard to understand. Let’s compare this to a program that does the same thing, but uses better names.
+
+```python
+genres = ["jazz", "pop", "rock", "country", "punk", "folk", "hip-hop", "rap", "alternative"]
+
+for genre in genres:
+  print(y)
+```
+
+**Output** :
+
+```
+jazz
+pop
+rock
+country
+punk
+folk
+hip-hop
+rap
+alternative
+```
+
+#### Printing Intermediate Results
+
+In this course we provide the codelens tool so that you are able to step through the program and watch what happens each time a line is evaluated by the Python interpretor. What if you didn’t have codelens though, what would you do?
+
+In that case, print statements are your best friend. They can show you what the value of something is. This is especially helpful in the case of writing for loops or accumulating a value. If something is going wrong you can compare what you expect to happen to what is actually happening.
+
+
+```python
+w = range(10)
+
+tot = 0
+
+for num in w:
+  tot += num
+
+print(tot)
+```
+
+**Output** :
+
+```
+45
+```
+
+Say we weren’t sure what `num` was being assigned each time we iterated. One way to find out would be to add a print statement inside of the for loop to see.
+
+```python
+w = range(10)
+
+tot = 0
+
+for num in w:
+  print(num)
+  tot += num
+
+print(tot)
+```
+
+**Output** :
+
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+45
+```
+
+If we wanted to see what was happening to `tot` as well, we could print that out in the for loop as well!
+
+
+```python
+w = range(10)
+
+tot = 0
+
+for num in w:
+  print(num)
+  tot += num
+  print(tot)
+
+print(tot)
+```
+
+**Output** :
+
+```
+0
+0
+1
+1
+2
+3
+3
+6
+4
+10
+5
+15
+6
+21
+7
+28
+8
+36
+9
+45
+45
+```
+
+
+Finally, if we wanted to make these numbers easier to understand, we could add more to the print statements to make them easier to read!
+
+```python
+w = range(10)
+
+tot = 0
+
+print("***** Before the For Loop *****")
+for num in w:
+  print("***** A New Loop Iteration *****")
+  print("Value of num:", num)
+  tot += num
+  print("Value of tot:", tot)
+
+print("***** End of For Loop *****")
+print("Final total:", tot)
+```
+
+**Output** :
+
+```
+***** Before the For Loop *****
+***** A New Loop Iteration *****
+Value of num: 0
+Value of tot: 0
+***** A New Loop Iteration *****
+Value of num: 1
+Value of tot: 1
+***** A New Loop Iteration *****
+Value of num: 2
+Value of tot: 3
+***** A New Loop Iteration *****
+Value of num: 3
+Value of tot: 6
+***** A New Loop Iteration *****
+Value of num: 4
+Value of tot: 10
+***** A New Loop Iteration *****
+Value of num: 5
+Value of tot: 15
+***** A New Loop Iteration *****
+Value of num: 6
+Value of tot: 21
+***** A New Loop Iteration *****
+Value of num: 7
+Value of tot: 28
+***** A New Loop Iteration *****
+Value of num: 8
+Value of tot: 36
+***** A New Loop Iteration *****
+Value of num: 9
+Value of tot: 45
+***** End of For Loop *****
+Final total: 45
+```
+
+
+#### Keeping Track of Your Iterator Variable and Your Iterable
+
+When students first begin using for loops, they sometimes have difficulty understanding the difference between the iterator variable (the loop variable) and the iterable.
+
+The iterable is the object that you will parsing through in a for loop. Generally, this object does not change while the for loop is being executed.
+
+The iterator (loop) variable is the variable which stores a portion of the iterable when the for loop is being executed. Each time the loop iterates, the value of the iterator variable will change to a different portion of the iterable.
+
+
+**E1** : What is the type of your iterable?
+
+```python
+n = ["word", "phrase", 8, ("beam")]
+
+for item in n:
+	print(item)
+```
+
+A. string <br>
+B. list ✅ <br>
+C. tuple <br>
+D. iterable <br>
+E. error, unable to iterate over the object. <br>
+
+
+**Output** :
+
+```
+word
+phrase
+8
+beam
+```
+
+
+**E2** : What is the type of your iterable?
+
+```python
+t = "couch"
+
+for z in t:
+	print(z)
+```
+
+A. string ✅<br>
+B. list <br>
+C. tuple <br>
+D. iterable <br>
+E. error, unable to iterate over the object. <br>
+
+
+**Output** :
+
+```
+c
+o
+u
+c
+h
+```
+
+
+**E3** : What is the type of your iterable?
+
+```python
+y = 18
+
+for z in y:
+	print(z)
+```
+
+A. string <br>
+B. list <br>
+C. tuple <br>
+D. iterable <br>
+E. error, unable to iterate over the object. ✅ <br>
+
+
+
+**E4** : What is the type of your iterable?
+
+```python
+t = ("couch", "chair", "washer", "dryer", "table")
+
+for z in t:
+	print(z)
+```
+
+A. string <br>
+B. list <br>
+C. tuple ✅ <br>
+D. iterable <br>
+E. error, unable to iterate over the object. <br>
+
+
+**Output** :
+
+```
+couch
+chair
+washer
+dryer
+table
+```
+
+
+**E5** : What is the type of your iterable?
+
+```python
+t = "couch"
+
+for z in t:
+	print(z)
+```
+
+A. string ✅ <br>
+B. list <br>
+C. tuple <br>
+D. iterable <br>
+E. error, unable to iterate over the object. <br>
+
+
+**Output** :
+
+```
+c
+o
+u
+c
+h
+```
+
+
+**E6** : What is the type of your iterator variable?
+
+```python
+t = ["couch", "chair", "washer", "dryer", "table"]
+
+for z in t:
+	print(z)
+```
+
+A. string ✅ <br>
+B. list <br>
+C. tuple <br>
+D. iterable <br>
+E. error, unable to iterate over the object. <br>
+
+
+**Output** :
+
+```
+couch
+chair
+washer
+dryer
+table
+```
+
+
+**E7** : What’s the type of your iterator variable in the first iteration?
+
+```python
+t = [9, "setter", 3, "wing spiker", 10, "middle blocker"]
+
+for z in t:
+	print(z)
+```
+
+A. string <br>
+B. list <br>
+C. tuple <br>
+D. integer ✅ <br>
+E. error, unable to iterate and initialize the iterator variable <br>
+
+
+**Output** :
+
+```
+9
+setter
+3
+wing spiker
+10
+middle blocker
+```
+
+
+**E8** : What’s the type of your iterator variable in the second iteration?
+
+```python
+t = [9, "setter", 3, "wing spiker", 10, "middle blocker"]
+
+for z in t:
+	print(z)
+```
+
+A. string ✅ <br>
+B. list <br>
+C. tuple <br>
+D. integer <br>
+E. error, unable to iterate and initialize the iterator variable <br>
+
+
+**Output** :
+
+```
+9
+setter
+3
+wing spiker
+10
+middle blocker
+```
+
+**E9** : What’s the type of your iterator variable in the final iteration?
+
+```python
+red = "colors"
+
+for blue in red:
+	print(blue)
+```
+
+A. string ✅ <br>
+B. list <br>
+C. tuple <br>
+D. integer <br>
+E. error, unable to iterate and initialize the iterator variable <br>
+
+
+**Output** :
+
+```
+c
+o
+l
+o
+r
+s
+```
+
+#### Chapter Assessments & Exercises
+
+#### Assessments
+
+**A1**. Write one for loop to print out each character of the string my_str on a separate line.
+
+
+```python
+# Given
+my_str = "MICHIGAN"
+
+
+# Solution
+my_str = "MICHIGAN"
+for char in my_str:
+	print(char)
+```
+
+**Output** :
+
+```
+M
+I
+C
+H
+I
+G
+A
+N
+```
+
+-----
+
+**A2**. Write one for loop to print out each element of the list `several_things`. Then, write another for loop to print out the TYPE of each element of the list `several_things`. To complete this problem you should have written two different for loops, each of which iterates over the list `several_things`, but each of those 2 for loops should have a different result.
+
+
+```python
+# Given
+several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+# Solution
+several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+for item in several_things:
+	print(item)
+
+for item_type in several_things:
+	print(type(item_type))
+```
+
+**Output** :
+
+```
+hello
+2
+4
+6.0
+7.5
+234352354
+the end
+
+99
+<class 'str'>
+<class 'int'>
+<class 'int'>
+<class 'float'>
+<class 'float'>
+<class 'int'>
+<class 'str'>
+<class 'str'>
+<class 'int'>
+```
+
+
+-----
+
+**A3**. Write code that uses iteration to print out the length of each element of the list stored in `str_list`.
+
+
+```python
+# Given
+str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]
+
+
+# Solution
+str_list = ["hello", "", "goodbye", "wonderful", "I love Python"]
+
+for item in str_list:
+	print(len(item))
+
+```
+
+**Output** :
+
+```
+5
+0
+7
+9
+13
+```
+
+
+
+-----
+
+**A4**. Write a program that uses the turtle module and a for loop to draw something. It doesn’t have to be complicated, but draw something different than we have done in the past. (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting `.speed(10)` for the turtle to draw fast, or `.speed(0)` for it to draw super fast with no animation.)
+
+
+```python
+import turtle
+import random
+
+sc = turtle.Screen()
+steve = turtle.Turtle()
+steve.pensize(4)
+steve.speed(2)
+
+for line in range(random.randrange(1, 15)):
+	steve.left(random.randrange(10, 360, 10))
+	steve.forward(random.randrange(5, 150))
+
+sc.exitonclick()
+```
+
+**Output** :
+
+![](https://media.giphy.com/media/huCmBaygQO8AS5ayYQ/giphy.gif)
+
+
+-----
+
+**A5**. Write code to count the number of characters in `original_str` using the accumulation pattern and assign the answer to a variable `num_chars`. Do NOT use the `len` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
+
+
+```python
+# Given
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
+
+
+# Solution
+original_str = "The quick brown rhino jumped over the extremely lazy fox."
+num_chars = 0
+
+for char in original_str:
+	num_chars += 1
+
+print(num_chars)
+```
+
+**Output** :
+
+```
+57
+```
+
+-----
+
+**A6**. `addition_str` is a string with a list of numbers separated by the `+` sign. Write code that uses the accumulation pattern to take the sum of all of the numbers and assigns it to `sum_val` (an integer). (You should use the `.split("+")` function to split by `"+"` and `int()` to cast to an integer).
+
+
+```python
+# Given
+addition_str = "2+5+10+20"
+
+
+# Solution
+addition_str = "2+5+10+20"
+
+sliced = addition_str.split("+")
+sum_val = 0
+
+for number in sliced:
+	sum_val += int(number)
+
+print(sum_val)
+```
+
+**Output** :
+
+```
+37
+```
+
+
+-----
+
+**A7**.  `week_temps_f` is a string with a list of fahrenheit temperatures separated by the `,` sign. Write code that uses the accumulation pattern to compute the **average** (sum divided by number of items) and assigns it to `avg_temp`. Do not hard code your answer (i.e., make your code compute both the sum or the number of items in `week_temps_f`) (You should use the `.split(","`) function to split by `","` and `float()` to cast to a float).
+
+
+```python
+# Given
+week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
+
+
+# Solution
+week_temps_f = "75.1,77.7,83.2,82.5,81.0,79.5,85.7"
+
+temps = week_temps_f.split(",")
+len_temps = len(temps)
+sum_temps = 0
+avg_temp = 0
+
+for temp in temps:
+	sum_temps += float(temp)
+
+avg_temp = sum_temps / len_temps
+print(avg_temp)
+```
+
+**Output** :
+
+```
+80.67142857142858
+```
+
+
+-----
+
+**A8**.  Write code to create a list of numbers from 0 to 67 and assign that list to the variable `nums`. Do not hard code the list.
+
+
+```python
+nums = list(range(68))
+print(nums)
+```
+
+**Output** :
+
+```
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67]
+```
+
+
+----
+----
+
+#### Exercises
+
+**Q1**. In Robert McCloskey’s book Make Way for Ducklings, the names of the ducklings are Jack, Kack, Lack, Mack, Nack, Ouack, Pack, and Quack. This loop tries to output these names in order.
+
+Of course, that’s not quite right because Ouack and Quack are misspelled. Can you fix it?
+
+```python
+# Given
+prefixes = "JKLMNOPQ"
+suffix = "ack"
+
+for p in prefixes:
+    print(p + suffix)
+
+
+# Solution
+prefixes = "JKLMNOPQ"
+suffix = "ack"
+
+for p in prefixes:
+    if p == "O" or p == "Q":
+        print(p + "u" + suffix)
+    else:
+        print(p + suffix)
+```
+
+**Output**:
+
+```
+Jack
+Kack
+Lack
+Mack
+Nack
+Ouack
+Pack
+Quack
+```
+
+----
+
+
+**Q2**. Get the user to enter some text and print it out in reverse order.
+
+```python  
+text = input("Enter a word or sentence: ")
+rev = ""
+for char in text[::-1]:
+    rev += char
+print(rev)
+```
+
+**Output**:
+
+```
+Enter a word or sentence: I don't know what's goin on!
+!no niog s'tahw wonk t'nod I
+```
+
+----
+
+
+**Q3**. Write a program that uses a for loop to print
+
+```
+One of the months of the year is January
+One of the months of the year is February
+One of the months of the year is March
+```
+
+etc...
+
+```python
+months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
+for month in months:
+  print("One of the months of the year is", month)
+```
+
+**Output**:
+
+```
+One of the months of the year is January
+One of the months of the year is February
+One of the months of the year is March
+One of the months of the year is April
+One of the months of the year is May
+One of the months of the year is June
+One of the months of the year is July
+One of the months of the year is August
+One of the months of the year is September
+One of the months of the year is October
+One of the months of the year is November
+One of the months of the year is December
+```
+
+----
+
+
+**Q4**. Assume you have a list of numbers `12, 10, 32, 3, 66, 17, 42, 99, 20`
+
+* Write a loop that prints each of the numbers on a new line.
+* Write a loop that prints each number and its square on a new line.
+
+
+```python
+numbers = [12, 10, 32, 3, 66, 17, 42, 99, 20]
+
+for number in numbers:
+  print(number)
+
+for number in numbers:
+  print(number ** 2)
+```
+
+**Output**:
+
+```
+12
+10
+32
+3
+66
+17
+42
+99
+20
+144
+100
+1024
+9
+4356
+289
+1764
+9801
+400
+```
+
+----
+
+
+**Q5**. Write a program that asks the user for the number of sides, the length of the side, the color, and the fill color of a regular polygon. The program should draw the polygon and then fill it in.
+
+
+```python
+import turtle
+sc = turtle.Screen()
+steve = turtle.Turtle()
+steve.speed(1)
+steve.pensize(5)
+
+sides = int(input("Enter the number of sides: "))
+len_sides = int(input("Enter the lenght of the sides: "))
+color = steve.color(input("Enter a color name: "))
+
+steve.begin_fill()
+for line in range(sides):
+	steve.forward(len_sides)
+	steve.left(72)
+steve.end_fill()
+
+sc.exitonclick()
+```
+
+**User Inputs**:
+
+```
+Enter the number of sides: 5
+Enter the lenght of the sides: 100
+Enter a color name: red
+```
+
+**Output**:
+
+![](https://media.giphy.com/media/L13Nav7NhYHEQMMWed/giphy.gif)
+
+---
+
+
+**Q6**. A drunk pirate makes a random turn and then takes 100 steps forward, makes another random turn, takes another 100 steps, turns another random amount, etc. A social science student records the angle of each turn before the next 100 steps are taken. Her experimental data is `160, -43, 270, -97, -43, 200, -940, 17, -86`. (Positive angles are counter-clockwise.) Use a turtle to draw the path taken by our drunk friend. After the pirate is done walking, print the current heading. Assume that the turtle originally has a heading of 0 and accumulate the changes in heading to print out the final. Your solution should work for any sequence of experimental data.
+
+
+```python
+import turtle
+sc = turtle.Screen()
+prite = turtle.Turtle()
+prite.speed(1)
+prite.pensize(3)
+
+angles = [160, -43, 270, -97, -43, 200, -940, 17, -86]
+head = 0
+
+for angle in angles:
+  prite.left(angle)
+  prite.forward(100)
+  head = (head + angle) % 360
+
+print(head)
+
+sc.exitonclick()
+```
+
+**Output**:
+
+![](https://media.giphy.com/media/izye9ktrfrHFHj3uBs/giphy.gif)
+
+```
+158
+```
+
+----
+
+
+**Q7**. Write a program that will go through a list of temperatures and print them out to the user.
+
+**Output**:
+
+![](http://i63.tinypic.com/acqud2.png)
+
+----
+
+**Q8**. Write a program that will print out a greeting to each student in the list. This list should also keep track of how many students have been greeted and note that each time a new student has been greeted.
+
+**Output**:
+
+![](http://i66.tinypic.com/1534ebb.png)
+
+----
