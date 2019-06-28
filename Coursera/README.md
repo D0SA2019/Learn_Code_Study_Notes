@@ -50,7 +50,7 @@
 * ##### Course 1 : Python Basics ⏳
 	- [General Introduction](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.py))*
 	- [Sequences and Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.py))*
-	- Booleans and Conditionals
+	- [Booleans and Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.py))*
 	- Sequence Mutation and Accumulation Patterns
 * ##### Course 2 : Python Functions, Files, and Dictionaries 🔜
 * ##### Course 3 : Data Collection and Processing with Python 🔜
