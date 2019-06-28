@@ -65,9 +65,20 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Keeping Track of Your Iterator Variable and Your Iterable](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.15_Keeping_Track_of_Your_Iterator_Variable_and_Your_Iterable.md)
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.16_Chapter_Assessment.md)
 
-#### Week 3 : Booleans and Conditionals 🔜
+#### Week 3 : Booleans and Conditionals ⏳
 * Boolean Expressions
+	- [Boolean Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.1_Boolean_Expressions.md)
+	- [Logical Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.2_Logical_Operators.md)
+	- [The in and not in Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.3_The_in_and_not_in_Operators.md)
+	- [Precedence of Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.4_Precedence_of_Operators.md)
 * Conditional Execution
+	- [Conditional Execution](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.5_Conditional_Execution.md)
+	- [Unary Selection](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.6_Unary_Selection.md)
+	- [Nested Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.7_Nested_Conditionals.md)
+	- [Chained Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.8_Chained_Conditionals.md)
+	- [Setting Up Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.9_Setting_Up_Conditionals.md)
+	- [The Accumulator Pattern with Conditionals and Accumulating a Maximum Value](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.10_The_Accumulator_Pattern_with_Conditionals.md)
+	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.11_Chapter_Assessment.md)
 
 #### Week 4 : Sequence Mutation and Accumulation Patterns 🔜
 * Sequence Mutation
