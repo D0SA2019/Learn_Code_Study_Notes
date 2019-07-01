@@ -66,6 +66,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/2.16_Chapter_Assessment.md)
 
 #### Week 3 : Booleans and Conditionals ✅
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.py))***
 * Boolean Expressions
 	- [Boolean Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.1_Boolean_Expressions.md)
 	- [Logical Operators](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.2_Logical_Operators.md)
@@ -81,7 +82,13 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.11_Chapter_Assessment.md)
 
 #### Week 4 : Sequence Mutation and Accumulation Patterns ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.py))***
 * Sequence Mutation
+	- [Mutability](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.1_Mutability.md)
+	- [List Element Deletion](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.2_List_Element_Deletion.md)
+	- [Objects and References](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.3_Objects_and_References.md)
+	- [Aliasing](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.4_%20Aliasing.md)
+	- [Cloning Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.5_Cloning_Lists.md)
 * Methods on Strings and Lists
 * Accumulating Lists and Strings
 * The Way of the Programmer
