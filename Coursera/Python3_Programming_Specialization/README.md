@@ -90,6 +90,10 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Aliasing](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.4_%20Aliasing.md)
 	- [Cloning Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.5_Cloning_Lists.md)
 * Methods on Strings and Lists
+	- [Methods on Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.6_Methods_on_Lists.md)
+	- [Append vs Concatenate](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.7_Append_vs_Concatenate.md)
+	- [Non-Mutating Methods on Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.8_Non-Mutating_Methods_on_Strings.md)
+	- [String Format Method](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.9_String_Format_Method.md)
 * Accumulating Lists and Strings
 * The Way of the Programmer
 * Python Basics - Final Course Assignment
