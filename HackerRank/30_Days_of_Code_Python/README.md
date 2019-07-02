@@ -17,3 +17,4 @@ My HackerRank solutions and challenges
 * [Day 11: 2D Arrays](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_11-2D_Arrays.md)
 * [Day 12: Inheritance](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_12-Inheritance.md)
 * [Day 13: Abstract Classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_13-Abstract_Classes.md)
+* [Day 14: Scope](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/HackerRank/30_Days_of_Code_Python/Day_14-Scope.md)
