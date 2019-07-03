@@ -95,6 +95,8 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Non-Mutating Methods on Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.8_Non-Mutating_Methods_on_Strings.md)
 	- [String Format Method](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.9_String_Format_Method.md)
 * Accumulating Lists and Strings
+	- [The Accumulator Pattern with Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.10_The_Accumulator_Pattern_with_Lists.md)
+	- [The Accumulator Pattern with Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.11_The_Accumulator_Pattern_with_Strings.md)
 * The Way of the Programmer
 * Python Basics - Final Course Assignment
 
