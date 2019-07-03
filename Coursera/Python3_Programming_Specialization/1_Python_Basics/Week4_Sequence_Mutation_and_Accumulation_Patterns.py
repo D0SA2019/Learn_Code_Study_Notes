@@ -315,3 +315,88 @@ print("sum of {} and {} is {}; product: {}.".format(x, y, x+y, x*y))
 
 v = 2.34567
 print("{:.1f} {:.2f} {:.7f}".format(v, v, v))
+
+print("============================================")
+print("====== 4.10. The Accumulator Pattern =======")
+print("================ with Lists ================")
+print("--------------------------------------------")
+nums = [3, 5, 8]
+accum = []
+for w in nums:
+	x = w ** 2
+	accum.append(x)
+print(accum)
+
+print("")
+
+alist = [4, 2, 8, 6, 5]
+blist = []
+for item in alist:
+	blist.append(item+5)
+print(blist)
+
+lst = [3, 0, 9, 4, 1, 7]
+new_list = []
+for i in range(len(lst)):
+	new_list.append(lst[i]+5)
+print(new_list)
+
+print("")
+
+verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
+ing = []
+for word in verbs:
+    word = word + "ing"
+    ing.append(word)
+print(ing)
+
+
+numbs = [5, 10, 15, 20, 25]
+newlist = []
+
+for num in numbs:
+    num += 5
+    newlist.append(num)
+print(newlist)
+
+
+lst_nums = [4, 29, 5.3, 10, 2, 1817, 1967, 9, 31.32]
+larger_nums = []
+for number in lst_nums:
+    number = number * 2
+    larger_nums.append(number)
+print(larger_nums)
+
+print("============================================")
+print("====== 4.11. The Accumulator Pattern =======")
+print("=============== with Strings ===============")
+print("--------------------------------------------")
+
+s = input("Enter some text: ")
+ac = ""
+
+for c in s:
+	ac = ac + c + "-" + c + "-"
+print(ac)
+
+
+s = "ball"
+r = ""
+
+for item in s:
+	r = item.upper() + r
+
+print(r)
+
+
+str1 = "I love python"
+chars = []
+for char in str1:
+    chars.append(char)
+print(chars)
+
+
+output = ""
+for a in range(35):
+    output = output + "a"
+print(output)
