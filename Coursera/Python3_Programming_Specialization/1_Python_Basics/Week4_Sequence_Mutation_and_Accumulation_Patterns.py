@@ -400,3 +400,278 @@ output = ""
 for a in range(35):
     output = output + "a"
 print(output)
+
+print("============================================")
+print("======== 4.13. Don’t Mutate A List =========")
+print("===== That You Are Iterating Through =======")
+print("--------------------------------------------")
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
+for color in colors:
+	print(color)
+
+print("")
+
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+initials = []
+
+for color in colors:
+	initials.append(color[0])
+
+print(initials)
+
+print("")
+
+print("============================================")
+print("====== 4.14. Assessments & Exercises =======")
+print("--------------------------------------------")
+verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
+len_verbs = len(verbs)
+for i in range(len_verbs):
+    verbing = verbs[i] + "ing"
+    verbs.append(verbing)
+del verbs[:len_verbs]
+print(verbs)
+
+print("")
+
+classes = ["MATH 150", "PSYCH 111", "PSYCH 313", "PSYCH 412", "MATH 300", "MATH 404", "MATH 206", "ENG 100", "ENG 103", "ENG 201", "PSYCH 508", "ENG 220", "ENG 125", "ENG 124"]
+
+upper = []
+lower = []
+
+for clas in classes:
+    cls = clas.split()
+    if cls[0] == "MATH":
+        if int(cls[1]) >= 300 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+    elif cls[0] == "ENG":
+        if int(cls[1]) >= 200 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+    elif cls[0] == "PSYCH":
+        if int(cls[1]) >= 400 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+print(upper)
+print(lower)
+
+print("")
+
+myList = [76, 92.3, 'hello', True, 4, 76]
+myList.append("apple")
+myList.append(76)
+myList.insert(3, "cat")
+myList.insert(0, 99)
+print(myList.index("hello"))
+print(myList.count(76))
+myList.remove(76)
+myList.pop(myList.index(True))
+print(myList)
+
+print("")
+
+import keyword
+test = ["else", "integer", "except", "elif"]
+keyword_test = []
+
+for word in test:
+    val = keyword.iskeyword(word)
+    keyword_test.append(val)
+
+print(keyword_test)
+
+print("")
+
+import string
+chars = ['h', '1', 'C', 'i', '9', 'True', '3.1', '8', 'F', '4', 'j']
+
+nums = string.digits
+is_num = []
+
+for char in chars:
+    if char in nums:
+        v = True
+    else:
+        v = False
+    is_num.append((char, v))
+
+print(is_num)
+
+print("")
+
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+
+sports.insert(2, "horseback riding")
+print(sports)
+
+print("")
+
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'London', 'Melbourne']
+del trav_dest[trav_dest.index("London")]
+print(trav_dest)
+
+print("")
+
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne']
+
+trav_dest.append("Guadalajara")
+print(trav_dest)
+
+print("")
+
+a = ["holiday", "celebrate!"]
+quiet = a
+quiet.append("company")
+print(a)
+
+print("")
+
+b = ['q', 'u', 'i']
+z = b
+b[1] = 'i'
+z.remove('i')
+print(z)
+
+print("")
+
+sent = "Holidays can be a fun time when you have good company!"
+phrase = sent
+phrase = phrase + " Holidays can also be fun on your own!"
+print(sent)
+print(phrase)
+
+print("")
+
+sent = "The mall has excellent sales right now."
+wrds = sent.split()
+wrds[1] = 'store'
+new_sent = " ".join(wrds)
+print(sent)
+print(wrds)
+print(new_sent)
+
+print("")
+
+awards = ['Emmy', 'Tony', 'Academy', 'Grammy']
+pos = awards.index("Tony")
+print(pos)
+
+print("")
+
+str1 = "I love python"
+chars = []
+
+for char in str1:
+    chars.append(char)
+print(chars)
+
+print("")
+
+ael = "python!"
+app = []
+
+for char in ael:
+    app.append(char)
+print(app)
+
+print("")
+
+wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+past_wrds = []
+
+for word in wrds:
+    word = word + "ed"
+    past_wrds.append(word)
+print(past_wrds)
+
+print("")
+
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+num_words_list = []
+list_str = original_str.split()
+
+for word in list_str:
+    num_words_list.append(len(word))
+
+print(num_words_list)
+
+print("")
+
+lett = ""
+
+for b in range(7):
+    lett = lett + "b"
+
+print(lett)
+
+print("")
+
+scores = "67 80 90 78 93 20 79 89 96 97 92 88 79 68 58 90 98 100 79 74 83 88 80 86 85 70 90 100"
+
+scores = scores.split()
+a_scores = 0
+
+for score in scores:
+    if int(score) >= 90:
+        a_scores += 1
+print(a_scores)
+
+print("")
+
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', "The"]
+org = "The organization for health, safety, and education"
+acro = ""
+
+org_list = org.split()
+
+for word in org_list:
+    if word.lower() in stopwords:
+        pass
+    else:
+        acro_word = word[0].upper()
+        acro = acro + acro_word
+print(acro)
+
+print("")
+
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The']
+sent = "The water earth and air are vital"
+acro = ""
+sent_list = sent.split()
+
+for word in sent_list:
+    if word.lower() in stopwords:
+        pass
+    elif word == sent_list[-1]:
+        acro_word = word[:2].upper()
+        acro = acro + acro_word
+    else:
+        acro_word = word[:2].upper()
+        acro = acro + acro_word + ". "
+print(acro)
+
+print("")
+
+p_phrase = "was it a car or a cat I saw"
+r_phrase = []
+lst = p_phrase.split()
+
+for word in lst:
+    r_phrase.append(word[::-1])
+
+r_phrase.reverse()
+r_phrase = " ".join(r_phrase)
+print(r_phrase)
+
+print("")
+
+inventory = ["shoes, 12, 29.99", "shirts, 20, 9.99", "sweatpants, 25, 15.00", "scarves, 13, 7.75"]
+
+for items in inventory:
+    item, number, price = items.split(",")
+    print("The store has {} {}, each for {} USD.".format(number.strip(), item, price.strip()))

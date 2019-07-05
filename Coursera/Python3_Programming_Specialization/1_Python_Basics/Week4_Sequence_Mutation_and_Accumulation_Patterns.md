@@ -1408,7 +1408,1158 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 ### The Way of the Programmer
 
+#### Accumulator Pattern Strategies
+
+**When to Use it**
+
+When children first encounter word problems in their math classes, they find it difficult to translate those words into arithmetic expressions involving addition, subtraction, multiplication, and division. Teachers offer heuristics. If the problem says “how many…altogether”, that’s an addition problem. If it says “how many are left”, that’s going to be a subtraction problem.
+
+Learning to use the accumulator pattern can be similarly confusing. The first step is to recognizing something in the problem statement that suggests an accumulation pattern. Here are a few. You might want to try adding some more of your own.
+
+
+| Phrase | Accumulation Pattern |
+|--|--|
+| how many | count accumulation |
+| how frequently | |
+| total | sum accumulation |
+| a list of | list accumulation |
+| concatenate | string accumulation |
+| join together | |
+
+
+For example, if the problem is to compute the total distance traveled in a series of small trips, you would want to accumulate a sum. If the problem is to make a list of the cubes of all the numbers from 1-25, you want a list accumulation, starting with an empty list and appending one more cube each time. If the problem is to make a comma separated list of all the people invited to a party, you should think of concatenating them; you could start with an empty string and concatenate one more person on each iteration through a list of name.
+
+
+**Before Writing it**
+
+Before writing any code, we recommend that you first answer the following questions:
+
+* What sequence will you iterate through as you accumulate a result? It could be a range of numbers, the letters in a string, or some existing list that you have just as a list of names.
+* What type of value will you accumulate? If your final result will be a number, your accumulator will start out with a number and always have a number even as it is updated each time. Similarly, if your final result will be a list, start with a list. If your final result will be a string, you’ll probably want to start with a string; one other option is to accumulate a list of strings and then use the .join() method at the end to concatenate them all together.
+
+We recommend writing your answers to these questions in a comment. As you encounter bugs and have to look things up, it will help remind you of what you were trying to implement. Sometimes, just writing the comment can help you to realize a potential problem and avoid it before you ever write any code.
+
+
+**Choosing Good Accumulator and Iterator Variable Names**
+
+The final piece of advice regarding accumulation strategies is to be intentional when choosing variable names for the accumulator and iterator variables. A good name can help remind you of what the value is assigned to the variable as well as what you should have by the end of your code. While it might be tempting at first to use a short variable name, such as `a` or `x`, if you run into any bugs or look at your code later, you may have trouble understanding what you intended to do and what your code is actually doing.
+
+For the accumulator variable, one thing that can help is to make the variable name end with “so_far”. The prefix can be something that helps remind you of what you’re supposed to end up with. For example: count_so_far, total_so_far, or cubes_so_far.
+
+As mentioned previously in a previous Way of the Programmer segment, 👩‍💻 Naming Variables in For Loops, the iterator variable should be a singular noun. It should describe what one item in the original sequence, not what one item in the final result will be. For example, when accumulating the cubes of the numbers from 1-25, don’t write for cube in range(25):. Instead, write for num in range(25):. If you name the iterator variable cube you run the risk of getting confused that it has already been cubed, when that’s an operation that you still have to write in your code.
+
+
+----
+-----
+
+**Check Your Understanding**
+
+
+**E1** : Does the following prompt require an accumulation pattern? If so, what words indicate that? For each string in `wrds`, add ‘ed’ to the end of the word (to make the word past tense). Save these past tense words to a list called `past_wrds`.
+
+A. Yes; "save... to a list" ✅ <br>
+B. Yes; "add 'ed' to the end of the word"  <br>
+C. No <br>
+
+---
+
+**E2** : Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code to sum up all of the numbers in the list `seat_counts`. Store that number in the variable `total_seat_counts`.
+
+A. Yes; "to sum up" ✅ <br>
+B. Yes; "numbers in the list" <br>
+C. No <br>
+
+---
+
+**E3** : Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code to print out each character of the string `my_str` on a separate line.
+
+A. Yes; "print out each" <br>
+B. Yes; "on a separate line" <br>
+C. No ✅<br>
+
+---
+
+**E4** : Does the following prompt require an accumulation pattern? If so, what words indicate that? Write code that will count the number of vowels in the sentence `s` and assign the result to the variable `num_vowels`.
+
+A. Yes; "vowels in the sentence" <br>
+B. Yes; "code that will count" ✅ <br>
+C. No <br>
+
+---
+
+**E5** : What type should be used for the accumulator variable in the following prompt? Write code that will count the number of vowels in the sentence `s` and assign the result to the variable `num_vowels`.
+
+A. string <br>
+B. list <br>
+C. integer ✅ <br>
+D. none, there is no accumulator variable. <br>
+
+
+---
+
+**E6** : What sequence will you iterate through as you accumulate a result in the following prompt? Write code that will count the number of vowels in the sentence `s` and assign the result to the variable `num_vowels`.
+
+A. num_vowels <br>
+B. s ✅ <br>
+C. the prompt does not say <br>
+
+
+---
+
+
+**E7** : What type should be used for the accumulator variable in the following prompt? For each string in `wrds`, add ‘ed’ to the end of the word (to make the word past tense). Save these past tense words to a list called `past_wrds`.
+
+A. string <br>
+B. list ✅ <br>
+C. integer <br>
+D. none, there is no accumulator variable. <br>
+
+---
+
+**E8** :  What sequence will you iterate through as you accumulate a result in the following prompt? For each string in `wrds`, add ‘ed’ to the end of the word (to make the word past tense). Save these past tense words to a list called `past_wrds`.
+
+A. wrds ✅ <br>
+B. past_wrds <br>
+C. the prompt does not say <br>
+
+---
+
+**E9** :  What type should be used for the accumulator variable in the following prompt? Write code to sum up all of the numbers in the list `seat_counts`. Store that number in the variable `total_seat_counts`.
+
+A. string <br>
+B. list <br>
+C. integer ✅ <br>
+D. none, there is no accumulator variable. <br>
+
+---
+
+**E10** :  What sequence will you iterate through as you accumulate a result in the following prompt? Write code to sum up all of the numbers in the list `seat_counts`. Store that number in the variable `total_seat_counts`.
+
+A. seat_counts ✅ <br>
+B. total_seat_counts <br>
+C. the prompt does not say <br>
+
+---
+
+**E11** :  What type should be used for the accumulator variable in the following prompt? Write code to print out each character of the string `my_str` on a separate line.
+
+A. string <br>
+B. list <br>
+C. integer <br>
+D. none, there is no accumulator variable. ✅ <br>
+
+---
+
+**E12** :  What sequence will you iterate through as you accumulate a result in the following prompt? Write code to print out each character of the string `my_str` on a separate line.
+
+A. my_str ✅ <br>
+B. my_str.split() <br>
+C. the prompt does not say <br>
+
+---
+
+**E13** :  Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? For each string in `wrds`, add ‘ed’ to the end of the word (to make the word past tense). Save these past tense words to a list `called past_wrds`.
+
+A. Accumulator Variable: wrds_so_far ; Iterator Variable: wrd ✅ <br>
+B. Accumulator Variable: wrds_so_far ; Iterator Variable: x <br>
+C. Accumulator Variable: changed_wrds ; Iterator Variable: ed <br>
+
+---
+
+**E14** :  Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code that will count the number of vowels in the sentence `s` and assign the result to the variable `num_vowels`.
+
+A. Accumulator Variable: count_so_far ; Iterator Variable: l <br>
+B. Accumulator Variable: total_so_far ; Iterator Variable: letter ✅<br>
+C. Accumulator Variable: n_v ; Iterator Variable: letter <br>
+
+---
+
+
+**E15** :  Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code to sum up all of the numbers in the list `seat_counts`. Store that number in the variable `total_seat_counts`.
+
+A. Accumulator Variable: total_so_far ; Iterator Variable: seat <br>
+B. Accumulator Variable: total_seats_so_far ; Iterator Variable: seat_count ✅ <br>
+C. Accumulator Variable: count ; Iterator Variable: n <br>
+
+---
+
+**E16** :  Which of these are good alternatives to the accumulator variable and iterator variable names for the following prompt? Write code to print out each character of the string `my_str` on a separate line.
+
+A. Accumulator Variable: character_so_far ; Iterator Variable: char <br>
+B. Accumulator Variable: no variable needed ; Iterator Variable: c <br>
+C. Accumulator Variable: no variable needed ; Iterator Variable: char ✅ <br>
+
+---
+
+#### Don’t Mutate A List That You Are Iterating Through
+
+So far we’ve shown you how to iterate through a list:
+
+```python
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
+for color in colors:
+	print(color)
+```
+
+**Output** :
+
+```
+Red
+Orange
+Yellow
+Green
+Blue
+Indigo
+Violet
+```
+
+As well as accumulate a list by appending or deleting items!
+
+
+```python
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+initials = []
+
+for color in colors:
+	initials.append(color[0])
+
+print(initials)
+```
+
+**Output** :
+
+```
+['R', 'O', 'Y', 'G', 'B', 'I', 'V']
+```
+
+You may be tempted now to iterate through a list and accumulate some data into it or delete data from it, however that often becomes very confusing. In the following code we will filter out all words that begin with P, B, or T.
+
+
+```python
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet", "Purple", "Pink", "Brown", "Teal", "Turquois", "Peach", "Beige"]
+
+for position in range(len(colors)):
+    color = colors[position]
+    print(color)
+    if color[0] in ["P", "B", "T"]:
+        del colors[position]
+
+print(colors)
+```
+
+**Output** :
+
+```
+Red
+Orange
+Yellow
+Green
+Blue
+Violet
+Purple
+Brown
+Turquois
+Beige
+Traceback (most recent call last):
+  File "Week4_Sequence_Mutation_and_Accumulation_Patterns.py", line 430, in <module>
+    color = colors[position]
+IndexError: list index out of range
+```
+
+In the code above, we iterated through `range(len(colors))` because it made it easier to locate the position of the item in the list and delete it. However, we run into a problem because as we delete content from the list, the list becomes shorter. Not only do we have an issue indexing on line 4 after a certain point, but we also skip over some strings because they’ve been moved around. To see this more easily, try walking through this code in codelens. Note that each time we iterate through the list python does not reevaluate the iterator variable.
+
+We can also try to accumulate a list that we’re iterating through as well. What do you think will happen here?
+
+
+```python
+colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+
+for color in colors:
+	if color[0] in ["A", "E", "I", "O", "U"]:
+		colors.append(color)
+
+print(colors)
+```
+
+Though there is not an error, the behavior may not be expected. When we come across a color that begins with a vowel, that color is added to the end of the list. Again, because Python does not reevaluate the iterator variable we are not stuck adding colors that start with vowels for an infinite number of times. That’s good in this case! Ultimately though, it can be confusing to write code like this. We recommend not iterating over a list that you will be mutating within the for loop.
+
 
 
 
 ### Python Basics - Final Course Assignment
+
+#### Chapter Assessments & Exercises
+
+#### Assessments
+
+**A1**. Which of these is a correct reference diagram following the execution of the following code?
+
+
+```python
+lst = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune', 'pluto']
+lst.remove('pluto')
+first_three = lst[:3]
+```
+
+I. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a1_1.png)
+
+II. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a1_2.png)
+
+A. I. ✅  <br>
+B. II. <br>
+C. Neither is the correct reference diagram. <br>
+
+-----
+
+**A2**. Which method would you use to figure out the position of an item in a list?
+
+A. .pop() <br>
+B. .insert() <br>
+C. .count() <br>
+D. .index() ✅  <br>
+
+-----
+
+
+**A3**. Which method is best to use when adding an item to the end of a list?
+
+A. .insert() ✅ <br>
+B. .pop() <br>
+C. .append() <br>
+D. .remove() <br>
+
+
+-----
+
+
+**A4**. Write code to add ‘horseback riding’ to the third position (i.e., right before volleyball) in the list `sports`.
+
+```python
+# Given
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+
+
+
+# Solution
+sports = ['cricket', 'football', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+
+sports.insert(2, "horseback riding")
+print(sports)
+```
+
+**Output** :
+
+```
+['cricket', 'football', 'horseback riding', 'volleyball', 'baseball', 'softball', 'track and field', 'curling', 'ping pong', 'hockey']
+```
+
+-----
+
+**A5**. Write code to take ‘London’ out of the list `trav_dest`.
+
+```python
+# Given
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'London', 'Melbourne']
+
+
+
+# Solution
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'London', 'Melbourne']
+del trav_dest[trav_dest.index("London")]
+print(trav_dest)
+```
+
+**Output** :
+
+```
+['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne']
+```
+
+-----
+
+
+**A6**. Write code to add ‘Guadalajara’ to the end of the list `trav_dest` using a list method.
+
+```python
+# Given
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne']
+
+
+# Solution
+trav_dest = ['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne']
+
+trav_dest.append("Guadalajara")
+print(trav_dest)
+```
+
+**Output** :
+
+```
+['Beirut', 'Milan', 'Pittsburgh', 'Buenos Aires', 'Nairobi', 'Kathmandu', 'Osaka', 'Melbourne', 'Guadalajara']
+```
+
+-----
+
+**A7**. What will be the value of `a` after the following code has executed?
+
+```python
+a = ["holiday", "celebrate!"]
+quiet = a
+quiet.append("company")
+print(a)
+```
+
+**Output** :
+
+```
+["holiday", "celebrate!", "company"]
+```
+
+-----
+
+**A8**. Could aliasing cause potential confusion in this problem?
+
+```python
+b = ['q', 'u', 'i']
+z = b
+b[1] = 'i'
+z.remove('i')
+print(z)
+```
+
+**Output** :
+
+```
+['q', 'i']
+```
+
+A. yes ✅ <br>
+B. no <br>
+
+-----
+
+
+**A9**. Could aliasing cause potential confusion in this problem?
+
+```python
+sent = "Holidays can be a fun time when you have good company!"
+phrase = sent
+phrase = phrase + " Holidays can also be fun on your own!"
+```
+
+
+A. yes <br>
+B. no ✅ <br>
+
+-----
+
+
+**A10**. Which of these is a correct reference diagram following the execution of the following code?
+
+```python
+x = ["dogs", "cats", "birds", "reptiles"]
+y = x
+x += ['fish', 'horses']
+y = y + ['sheep']
+```
+
+I. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a3_1.png)
+
+II. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a3_2.png)
+
+III. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a3_3.png)
+
+IV. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a3_4.png)
+
+
+A. I. <br>
+B. II. <br>
+C. III. <br>
+D. IV. ✅<br>
+
+-----
+
+**A11**. Which of these is a correct reference diagram following the execution of the following code?
+
+```python
+sent = "The mall has excellent sales right now."
+wrds = sent.split()
+wrds[1] = 'store'
+new_sent = " ".join(wrds)
+```
+
+I. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a2_1.png)
+
+II. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a2_2.png)
+
+III. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a2_3.png)
+
+IV. ![](https://fopp.umsi.education/runestone/static/fopp/_images/week3a2_4.png)
+
+
+A. I. ✅ <br>
+B. II. <br>
+C. III. <br>
+D. IV. <br>
+
+-----
+
+**A12**. Write code to find the postion of the string “Tony” in the list `awards` and save that information in the variable `pos`.
+
+```python
+# Given
+awards = ['Emmy', 'Tony', 'Academy', 'Grammy']
+
+
+
+# Solution
+awards = ['Emmy', 'Tony', 'Academy', 'Grammy']
+pos = awards.index("Tony")
+print(pos)
+```
+
+**Output** :
+
+```
+1
+```
+
+-----
+
+
+**A13**. Which of these is the accumulator variable?
+
+```python
+byzo = 'hello world!'
+c = 0
+for x in byzo:
+    z = x + "!"
+    print(z)
+    c = c + 1
+```
+
+A. byzo <br>
+B. x <br>
+C. z <br>
+D. c  ✅<br>
+
+-----
+
+**A14**. Which of these is the sequence?
+
+```python
+cawdra = ['candy', 'daisy', 'pear', 'peach', 'gem', 'crown']
+t = 0
+for elem in cawdra:
+    t = t + len(elem)
+```
+
+A. cawdra ✅<br>
+B. elem <br>
+C. t <br>
+
+-----
+
+**A15**. Which of these is the iterator (loop) variable?
+
+```python
+lst = [5, 10, 3, 8, 94, 2, 4, 9]
+num = 0
+for item in lst:
+    num += item
+```
+
+A. item ✅<br>
+B. lst <br>
+C. num <br>
+
+-----
+
+
+**A16**. What is the iterator (loop) variable in the following?
+
+```python
+rest = ["sleep", 'dormir', 'dormire', "slaap", 'sen', 'yuxu', 'yanam']
+let = ''
+for phrase in rest:
+    let += phrase[0]
+```
+
+The iterator variable is : `phrase`
+
+-----
+
+**A17**. Currently there is a string called `str1`. Write code to create a list called `chars` which should contain the characters from `str1`. Each character in `str1` should be its own element in the list `chars`.
+
+```python
+# Given
+str1 = "I love python"
+
+
+# Solution
+str1 = "I love python"
+chars = []
+
+for char in str1:
+    chars.append(char)
+print(chars)
+```
+
+**Output** :
+
+```
+['I', ' ', 'l', 'o', 'v', 'e', ' ', 'p', 'y', 't', 'h', 'o', 'n']
+```
+
+-----
+
+
+**A18**. Given that we want to accumulate the total sum of a list of numbers, which of the following accumulator patterns would be appropriate?
+
+I.
+```python
+nums = [4, 5, 2, 93, 3, 5]
+s = 0
+for n in nums:
+    s = s + 1
+```
+
+II.
+```python
+nums = [4, 5, 2, 93, 3, 5]
+s = 0
+for n in nums:
+    s = n + n
+```
+
+III.
+```python
+nums = [4, 5, 2, 93, 3, 5]
+s = 0
+for n in nums:
+    s = s + n
+```
+
+A. I. <br>
+B. II. <br>
+C. III. ✅<br>
+D. none of the above would be appropriate for the problem. <br>
+
+
+-----
+
+**A19**. Given that we want to accumulate the total number of strings in the list, which of the following accumulator patterns would be appropriate?
+
+1.
+```python
+lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+s = 0
+for n in lst:
+    s = s + n
+```
+
+2.
+```python
+lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+for item in lst:
+    s = 0
+    if type(item) == type("string"):
+        s = s + 1
+```
+
+3.
+```python
+lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+s = ""
+for n in lst:
+    s = s + n
+```
+
+4.
+```python
+lst = ['plan', 'answer', 5, 9.29, 'order, items', [4]]
+s = 0
+for item in lst:
+    if type(item) == type("string"):
+        s = s + 1
+```
+
+A. 1. <br>
+B. 2. <br>
+C. 3. <br>
+D. 4. ✅<br>
+E. none of the above would be appropriate for the problem. <br>
+
+-----
+
+**A20**. Which of these are good names for an accumulator variable? Select as many as apply.
+
+A. sum <br>
+B. x <br>
+C. total ✅<br>
+D. accum ✅<br>
+E. none of the above <br>
+
+-----
+
+**A21**. Which of these are good names for an iterator (loop) variable? Select as many as apply.
+
+A. item ✅<br>
+B. y <br>
+C. elem ✅<br>
+D. char ✅<br>
+E. none of the above <br>
+
+-----
+
+
+**A22**. Which of these are good names for a sequence variable? Select as many as apply.
+
+A. num_lst ✅<br>
+B. p <br>
+C. sentence ✅<br>
+D. names ✅<br>
+E. none of the above <br>
+
+-----
+
+**A23**. Given the following scenario, what are good names for the accumulator variable, iterator variable, and sequence variable? You are writing code that uses a list of sentences and accumulates the total number of sentences that have the word ‘happy’ in them.
+
+A. accumulator variable: x | iterator variable: s | sequence variable: lst <br>
+B. accumulator variable: total | iterator variable: s | sequence variable: lst <br>
+C. accumulator variable: x | iterator variable: sentences | sequence variable: sentence_lst <br>
+D. accumulator variable: total | iterator variable: sentence |sequence variable: sentence_lst ✅ <br>
+E. none of the above <br>
+
+-----
+
+
+**A24**. For each character in the string saved in `ael`, append that character to a list that should be saved in a variable `app`.
+
+```python
+# Given
+ael = "python!"
+
+
+# Solution
+ael = "python!"
+app = []
+
+for char in ael:
+    app.append(char)
+print(app)
+```
+
+**Output** :
+
+```
+['p', 'y', 't', 'h', 'o', 'n', '!']
+```
+
+-----
+
+**A25**. For each string in `wrds`, add ‘ed’ to the end of the word (to make the word past tense). Save these past tense words to a list called `past_wrds`.
+
+```python
+# Given
+wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+
+
+
+# Solution
+wrds = ["end", 'work', "play", "start", "walk", "look", "open", "rain", "learn", "clean"]
+past_wrds = []
+
+for word in wrds:
+    word = word + "ed"
+    past_wrds.append(word)
+print(past_wrds)
+```
+
+**Output** :
+
+```
+['ended', 'worked', 'played', 'started', 'walked', 'looked', 'opened', 'rained', 'learned', 'cleaned']
+```
+
+-----
+
+**A26**. Write code to create a **list of word lengths** for the words in `original_str` using the accumulation pattern and assign the answer to a variable `num_words_list`. (You should use the `len` function).
+
+```python
+# Given
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+
+
+
+# Solution
+original_str = "The quick brown rhino jumped over the extremely lazy fox"
+num_words_list = []
+list_str = original_str.split()
+
+for word in list_str:
+    num_words_list.append(len(word))
+
+print(num_words_list)
+```
+
+**Output** :
+
+```
+[3, 5, 5, 5, 6, 4, 3, 9, 4, 3]
+```
+
+-----
+**A27**. Create an empty string and assign it to the variable `lett`. Then using range, write code such that when your code is run, `lett` has 7 b’s ("`bbbbbbb`").
+
+```python
+lett = ""
+
+for b in range(7):
+    lett = lett + "b"
+
+print(lett)
+```
+
+**Output** :
+
+```
+bbbbbbb
+```
+
+-----
+
+
+**A28**. Below are a set of scores that students have received in the past semester. Write code to determine how many are 90 or above and assign that result to the value `a_scores`.
+
+```python
+# Given
+scores = "67 80 90 78 93 20 79 89 96 97 92 88 79 68 58 90 98 100 79 74 83 88 80 86 85 70 90 100"
+
+
+
+# Solution
+scores = "67 80 90 78 93 20 79 89 96 97 92 88 79 68 58 90 98 100 79 74 83 88 80 86 85 70 90 100"
+
+scores = scores.split()
+a_scores = 0
+
+for score in scores:
+    if int(score) >= 90:
+        a_scores += 1
+print(a_scores)
+```
+
+**Output** :
+
+```
+10
+```
+
+-----
+
+**A29**. Write code that uses the string stored in `org` and creates an acronym which is assigned to the variable `acro`. Only the first letter of each word should be used, each letter in the acronym should be a capital letter, and there should be nothing to separate the letters of the acronym. Words that should not be included in the acronym are stored in the list `stopwords`. For example, if `org` was assigned the string “hello to world” then the resulting acronym should be `“HW”`.
+
+```python
+# Given
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', "The"]
+org = "The organization for health, safety, and education"
+
+
+# Solution
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', "The"]
+org = "The organization for health, safety, and education"
+acro = ""
+
+org_list = org.split()
+
+for word in org_list:
+    if word.lower() in stopwords:
+        pass
+    else:
+        acro_word = word[0].upper()
+        acro = acro + acro_word
+print(acro)
+```
+
+**Output** :
+
+```
+OHSE
+```
+
+-----
+
+-----
+
+**A30**. Write code that uses the string stored in `sent` and creates an acronym which is assigned to the variable `acro`. The first two letters of each word should be used, each letter in the acronym should be a capital letter, and each element of the acronym should be separated by a “. ” (dot and space). Words that should not be included in the acronym are stored in the list `stopwords`. For example, if `sent` was assigned the string “height and ewok wonder” then the resulting acronym should be “HE. EW. WO”.
+
+```python
+# Given
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The']
+sent = "The water earth and air are vital"
+
+
+
+# Solution
+stopwords = ['to', 'a', 'for', 'by', 'an', 'am', 'the', 'so', 'it', 'and', 'The']
+sent = "The water earth and air are vital"
+acro = ""
+sent_list = sent.split()
+
+for word in sent_list:
+    if word.lower() in stopwords:
+        pass
+    elif word == sent_list[-1]:
+        acro_word = word[:2].upper()
+        acro = acro + acro_word
+    else:
+        acro_word = word[:2].upper()
+        acro = acro + acro_word + ". "
+print(acro)
+```
+
+**Output** :
+
+```
+WA. EA. AI. AR. VI
+```
+
+-----
+
+**A31**. A palindrome is a phrase that, if reversed, would read the exact same. Write code that checks if `p_phrase` is a palindrome by reversing it and then checking if the reversed version is equal to the original. Assign the reversed version of `p_phrase` to the variable `r_phrase` so that we can check your work.
+
+```python
+# Given
+p_phrase = "was it a car or a cat I saw"
+
+
+# Solution
+p_phrase = "was it a car or a cat I saw"
+r_phrase = []
+lst = p_phrase.split()
+
+for word in lst:
+    r_phrase.append(word[::-1])
+
+r_phrase.reverse()
+r_phrase = " ".join(r_phrase)
+print(r_phrase)
+```
+
+**Output** :
+
+```
+was I tac a ro rac a ti saw
+```
+
+-----
+
+**A32**. Provided is a list of data about a store’s inventory where each item in the list represents the name of an item, how much is in stock, and how much it costs. Print out each item in the list with the same formatting, using the .format method (not string concatenation). For example, the first print statment should read `The store has 12 shoes, each for 29.99 USD`.
+
+```python
+# Given
+inventory = ["shoes, 12, 29.99", "shirts, 20, 9.99", "sweatpants, 25, 15.00", "scarves, 13, 7.75"]
+
+
+
+# Solution
+inventory = ["shoes, 12, 29.99", "shirts, 20, 9.99", "sweatpants, 25, 15.00", "scarves, 13, 7.75"]
+for items in inventory:
+    item, number, price = items.split(",")
+    print("The store has {} {}, each for {} USD.".format(number.strip(), item, price.strip()))
+```
+
+**Output** :
+
+```
+The store has 12 shoes, each for 29.99 USD.
+The store has 20 shirts, each for 9.99 USD.
+The store has 25 sweatpants, each for 15.00 USD.
+The store has 13 scarves, each for 7.75 USD.
+```
+
+-----
+
+----
+----
+
+#### Exercises
+
+**Q1**. For each word in the list `verbs`, add an -ing ending. Overwrite the old list so that `verbs` has the same words with `ing` at the end of each one.
+
+```python
+# Given
+verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
+
+
+
+# Solution
+verbs = ["kayak", "cry", "walk", "eat", "drink", "fly"]
+len_verbs = len(verbs)
+for i in range(len_verbs):
+    verbing = verbs[i] + "ing"
+    verbs.append(verbing)
+del verbs[:len_verbs]
+print(verbs)
+```
+
+**Output** :
+
+```
+['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying']
+```
+
+
+----
+
+**Q2**. In XYZ University, upper level math classes are numbered 300 and up. Upper level English classes are numbered 200 and up. Upper level Psychology classes are 400 and up. Create two lists, `upper` and `lower`. Assign each course in `classes` to the correct list, `upper` or `lower`. HINT: remember, you can convert some strings to different types!
+
+```python
+# Given
+classes = ["MATH 150", "PSYCH 111", "PSYCH 313", "PSYCH 412", "MATH 300", "MATH 404", "MATH 206", "ENG 100", "ENG 103", "ENG 201", "PSYCH 508", "ENG 220", "ENG 125", "ENG 124"]
+
+
+
+# Solution
+classes = ["MATH 150", "PSYCH 111", "PSYCH 313", "PSYCH 412", "MATH 300", "MATH 404", "MATH 206", "ENG 100", "ENG 103", "ENG 201", "PSYCH 508", "ENG 220", "ENG 125", "ENG 124"]
+upper = []
+lower = []
+
+for clas in classes:
+    cls = clas.split()
+    if cls[0] == "MATH":
+        if int(cls[1]) >= 300 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+    elif cls[0] == "ENG":
+        if int(cls[1]) >= 200 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+    elif cls[0] == "PSYCH":
+        if int(cls[1]) >= 400 :
+            upper.append(clas)
+        else:
+            lower.append(clas)
+print(upper)
+print(lower)
+```
+
+**Output** :
+
+```
+['PSYCH 412', 'MATH 300', 'MATH 404', 'ENG 201', 'PSYCH 508', 'ENG 220']
+['MATH 150', 'PSYCH 111', 'PSYCH 313', 'MATH 206', 'ENG 100', 'ENG 103', 'ENG 125', 'ENG 124']
+```
+
+----
+
+**Q3**. Starting with the list `myList = [76, 92.3, ‘hello’, True, 4, 76]`, write Python statements to do the following:
+
+
+a. Append “apple” and 76 to the list. <br>
+b. Insert the value “cat” at position 3.<br>
+c. Insert the value 99 at the start of the list. <br>
+d. Find the index of “hello”. <br>
+e. Count the number of 76s in the list. <br>
+f. Remove the first occurrence of 76 from the list. <br>
+g. Remove True from the list using `pop` and `index`.<br>
+
+
+
+```python
+# Given
+myList = [76, 92.3, 'hello', True, 4, 76]
+
+
+# Solution
+myList = [76, 92.3, 'hello', True, 4, 76]
+myList.append("apple")
+myList.append(76)
+myList.insert(3, "cat")
+myList.insert(0, 99)
+print(myList.index("hello"))
+print(myList.count(76))
+myList.remove(76)
+myList.pop(myList.index(True))
+print(myList)
+```
+
+**Output** :
+
+```
+3
+3
+[99, 92.3, 'hello', 'cat', 4, 76, 'apple', 76]
+```
+
+----
+
+
+**Q4**. The module `keyword` determines if a string is a keyword. e.g. `keyword.iskeyword(s)` where `s` is a string will return either `True` or `False`, depending on whether or not the string is a Python keyword. Import the `keyword` module and test to see whether each of the words in list `test` are keywords. Save the respective answers in a list, `keyword_test`.
+
+
+```python
+# Given
+test = ["else", "integer", "except", "elif"]
+
+
+# Solution
+import keyword
+test = ["else", "integer", "except", "elif"]
+keyword_test = []
+
+for word in test:
+    val = keyword.iskeyword(word)
+    keyword_test.append(val)
+
+print(keyword_test)
+```
+
+**Output** :
+
+```
+[True, False, True, True]
+```
+
+
+----
+
+
+**Q5**. The `string` module provides sequences of various types of Python characters. It has an attribute called `digits` that produces the string ‘0123456789’. Import the module and assign this string to the variable `nums`. Below, we have provided a list of characters called `chars`. Using `nums` and `chars`, produce a list called `is_num` that consists of tuples. The first element of each tuple should be the character from `chars`, and the second element should be a Boolean that reflects whether or not it is a Python digit.
+
+
+```python
+# Given
+chars = ['h', '1', 'C', 'i', '9', 'True', '3.1', '8', 'F', '4', 'j']
+
+
+
+# Solution
+import string
+chars = ['h', '1', 'C', 'i', '9', 'True', '3.1', '8', 'F', '4', 'j']
+
+nums = string.digits
+is_num = []
+
+for char in chars:
+    if char in nums:
+        v = True
+    else:
+        v = False
+    is_num.append((char, v))
+
+print(is_num)
+```
+
+**Output** :
+
+```
+[('h', False), ('1', True), ('C', False), ('i', False), ('9', True), ('True', False), ('3.1', False), ('8', True), ('F', False), ('4', True), ('j', False)]
+```
+
+
+----
