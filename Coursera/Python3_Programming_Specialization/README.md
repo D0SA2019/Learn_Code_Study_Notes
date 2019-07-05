@@ -81,7 +81,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [The Accumulator Pattern with Conditionals and Accumulating a Maximum Value](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.10_The_Accumulator_Pattern_with_Conditionals.md)
 	- [Chapter Assignments and Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/3.11_Chapter_Assessment.md)
 
-#### Week 4 : Sequence Mutation and Accumulation Patterns ⏳
+#### Week 4 : Sequence Mutation and Accumulation Patterns ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.py))***
 * Sequence Mutation
 	- [Mutability](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.1_Mutability.md)
@@ -98,11 +98,33 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [The Accumulator Pattern with Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.10_The_Accumulator_Pattern_with_Lists.md)
 	- [The Accumulator Pattern with Strings](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.11_The_Accumulator_Pattern_with_Strings.md)
 * The Way of the Programmer
-* Python Basics - Final Course Assignment
+	- [Accumulator Pattern Strategies](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.12_Accumulator_Pattern_Strategies.md)
+	- [Don’t Mutate A List That You Are Iterating Through](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.13_Dont_Mutate_A_List_That_You_Are_Iterating_Through.md)
+* [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/4.14_Chapter_Assessment.md)
 
 ----
 
-## Course 2 : Python Functions, Files, and Dictionaries 🔜
+## Course 2 : Python Functions, Files, and Dictionaries ⏳
+***All-in-One : ([notes](), [worksheet]())***
+
+* Files and CSV Output
+	- Welcome to Python Functions, Files, and Dictionaries!
+	- Files
+	- CSV Output
+* Dictionaries and Dictionary Accumulation
+	- Dictionary Mechanics
+	- Dictionary Accumulation
+* Functions and Tuples
+	- Function Basics
+	- Local and Global Variables, and Side Effects
+	- Tuples
+* More Iteration and Advanced Functions
+	- While Loop
+	- Advanced Functions
+* Sorting
+	- Sorting Basics
+	- Sorting Dictionaries, Breaking Ties
+	- Python Functions, Files, and Dictionaries - Final Course Project
 
 ----
 

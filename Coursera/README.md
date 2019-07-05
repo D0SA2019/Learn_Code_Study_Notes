@@ -47,12 +47,17 @@
 -----
 
 ### [Python 3 Programming Specialization](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/tree/master/Coursera/Python3_Programming_Specialization) ⏳
-* ##### Course 1 : Python Basics ⏳
+* ##### Course 1 : Python Basics ✅
 	- [General Introduction](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week1_Introduction_to_the_Specialization.py))*
 	- [Sequences and Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week2_Sequences_and_Iteration.py))*
 	- [Booleans and Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.py))*
 	- [Sequence Mutation and Accumulation Patterns](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.py))*
-* ##### Course 2 : Python Functions, Files, and Dictionaries 🔜
+* ##### Course 2 : Python Functions, Files, and Dictionaries ⏳
+	- Files and CSV Output *(worksheet)*
+	- Dictionaries and Dictionary Accumulation *(worksheet)*
+	- Functions and Tuples *(worksheet)*
+	- More Iteration and Advanced Functions *(worksheet)*
+	- Sorting *(worksheet)*
 * ##### Course 3 : Data Collection and Processing with Python 🔜
 * ##### Course 4 : Python Classes and Inheritance 🔜
 * ##### Course 5 : Python Project: pillow, tesseract, and opencv 🔜
