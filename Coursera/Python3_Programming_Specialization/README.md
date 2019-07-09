@@ -105,26 +105,46 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 ----
 
 ## Course 2 : Python Functions, Files, and Dictionaries ⏳
-***All-in-One : ([notes](), [worksheet]())***
 
-* Files and CSV Output
-	- Welcome to Python Functions, Files, and Dictionaries!
-	- Files
-	- CSV Output
-* Dictionaries and Dictionary Accumulation
-	- Dictionary Mechanics
-	- Dictionary Accumulation
-* Functions and Tuples
-	- Function Basics
-	- Local and Global Variables, and Side Effects
-	- Tuples
-* More Iteration and Advanced Functions
-	- While Loop
-	- Advanced Functions
-* Sorting
-	- Sorting Basics
-	- Sorting Dictionaries, Breaking Ties
-	- Python Functions, Files, and Dictionaries - Final Course Project
+#### Week 1 : Files and CSV Output ✅
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week1_Files_and_CSV_Output.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week1_Files_and_CSV_Output.py))***
+* Welcome to Python Functions, Files, and Dictionaries!
+* Files
+	- [Reading a File](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.2_Reading_a_File.md)
+	- [Finding a File in Your File System](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.3_Finding_a_File_in_Your_File_System.md)
+	- [Writing to a File](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.4_Writing_to_a_File.md)
+	- [Using with to Open Files](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.5_Using_With_to_Open_Files.md)
+* CSV Output
+	- [Reading a .csv File](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.6_Reading_a_csv_File.md)
+	- [Writing Data to a .csv File](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.7_Writing_Data_to_a_csv_File.md)
+	- [Tips on File Naming](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.8_Tips_on_File_Naming.md)
+* [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/1.9_Chapter_Assessments_Exercises.md)
+
+#### Week 2 : Dictionaries and Dictionary Accumulation ✅
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week2_Dictionaries_and_Dictionary_Accumulation.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week2_Dictionaries_and_Dictionary_Accumulation.py))***
+* Dictionary Mechanics
+	- [Dictionaries](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.1_%20Dictionaries.md)
+	- [Dictionary Operations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.2_Dictionary_Operations.md)
+	- [Dictionary Methods](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.3_Dictionary_Methods.md)
+	- [Aliasing and Copying with Dictionaries](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.4_Aliasing_and_Copying_with_Dictionaries.md)
+* Dictionary Accumulation
+	- [Dictionary Accumulation](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.5_Dictionary_Accumulation.md)
+	- [Accumulating Results From a Dictionary](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.6_Accumulating_Results_From_a_Dictionary.md)
+* [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.7_Chapter_Assessments_Exercises.md)
+
+#### Week 3 :Functions and Tuples ⏳
+* Function Basics
+* Local and Global Variables, and Side Effects
+* Tuples
+
+#### Week 4 : More Iteration and Advanced Functions 🔜
+* While Loop
+* Advanced Functions
+
+#### Week 5 : Sorting 🔜
+* Sorting Basics
+* Sorting Dictionaries, Breaking Ties
+* Python Functions, Files, and Dictionaries - Final Course Project
 
 ----
 

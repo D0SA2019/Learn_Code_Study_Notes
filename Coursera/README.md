@@ -53,8 +53,8 @@
 	- [Booleans and Conditionals](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week3_Booleans_and_Conditionals.py))*
 	- [Sequence Mutation and Accumulation Patterns](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/1_Python_Basics/Week4_Sequence_Mutation_and_Accumulation_Patterns.py))*
 * ##### Course 2 : Python Functions, Files, and Dictionaries ⏳
-	- Files and CSV Output *(worksheet)*
-	- Dictionaries and Dictionary Accumulation *(worksheet)*
+	- [Files and CSV Output](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week1_Files_and_CSV_Output.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week1_Files_and_CSV_Output.py))*
+	- [Dictionaries and Dictionary Accumulation](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week2_Dictionaries_and_Dictionary_Accumulation.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week2_Dictionaries_and_Dictionary_Accumulation.py))*
 	- Functions and Tuples *(worksheet)*
 	- More Iteration and Advanced Functions *(worksheet)*
 	- Sorting *(worksheet)*
