@@ -133,8 +133,15 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 * [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.7_Chapter_Assessments_Exercises.md)
 
 #### Week 3 :Functions and Tuples ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.py))***
 * Function Basics
+	- [Defining Functions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.1_Defining_Functions.md)
+	- [Function Parameters](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.2_Function_Parameters.md)
+	- [Returning Values](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.3_Returning_Values.md)
+	- [Decoding a Function](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.4_Decoding_a_Function.md)
+	- [A Function that Accumulates](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.5_A_Function_that_Accumulates.md)
 * Local and Global Variables, and Side Effects
+	- [Local and Global Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.6_Local_and_Global_Variables.md)
 * Tuples
 
 #### Week 4 : More Iteration and Advanced Functions 🔜
