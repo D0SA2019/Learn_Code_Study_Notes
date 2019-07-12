@@ -132,7 +132,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Accumulating Results From a Dictionary](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.6_Accumulating_Results_From_a_Dictionary.md)
 * [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/2.7_Chapter_Assessments_Exercises.md)
 
-#### Week 3 :Functions and Tuples ⏳
+#### Week 3 :Functions and Tuples ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.py))***
 * Function Basics
 	- [Defining Functions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.1_Defining_Functions.md)
@@ -142,9 +142,16 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [A Function that Accumulates](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.5_A_Function_that_Accumulates.md)
 * Local and Global Variables, and Side Effects
 	- [Local and Global Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.6_Local_and_Global_Variables.md)
+	- [Function Composition](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.7_Function_Composition.md)
+	- [Print vs. return](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.8_Print_vs_return.md)
+	- [Mutable Objects and Side Effects](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.9_Mutable_Objects_and_Side_Effects.md)
 * Tuples
+	- [Tuple Packing](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.10_Tuple_Packing.md)
+	- [Tuple Assignment with Unpacking](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.11_Tuple_Assignment_with_Unpacking.md)
+* [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.12_Chapter_Assessments_Exercises.md)
 
-#### Week 4 : More Iteration and Advanced Functions 🔜
+
+#### Week 4 : More Iteration and Advanced Functions ⏳
 * While Loop
 * Advanced Functions
 
