@@ -151,9 +151,20 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 * [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/3.12_Chapter_Assessments_Exercises.md)
 
 
-#### Week 4 : More Iteration and Advanced Functions ⏳
+#### Week 4 : More Iteration and Advanced Functions ✅
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week4_More_Iteration_and_Advanced_Functions.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week4_More_Iteration_and_Advanced_Functions.py))***
 * While Loop
+	- [The While Statement](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.1_The_While_Statement.md)
+	- [The Listener Loop](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.2_The_Listener_Loop.md)
+	- [Randomly Walking Turtles](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.3_Randomly_Walking_Turtles.md)
+	- [Break and Continue](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.4_Break_and_Continue.md)
+	- [Infinite Loops](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.5_Infinite_Loops.md)
 * Advanced Functions
+	- [Optional Parameters](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.6_Optional_Parameters.md)
+	- [Keyword Parameters](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.7_Keyword_Parameters.md)
+	- [Anonymous Functions with Lambda Expressions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.8_Anonymous_Functions_with_Lambda_Expressions.md)
+	- [Method Invocations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.9_Method_Invocations.md)
+* [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.10_Chapter_Assessments_Exercises.md)
 
 #### Week 5 : Sorting 🔜
 * Sorting Basics
