@@ -166,9 +166,15 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Method Invocations](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.9_Method_Invocations.md)
 * [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/4.10_Chapter_Assessments_Exercises.md)
 
-#### Week 5 : Sorting 🔜
+#### Week 5 : Sorting ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week5_Sorting.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week5_Sorting.py))***
 * Sorting Basics
+	- [Invoking .sort and sorted](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/5.1_Invoking_sort_and_sorted.md)
+	- [Optional Reverse Parameter](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/5.2_Optional_Reverse_Parameter.md)
+	- [Optional Key Parameter](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/5.3_Optional_Key_Parameter.md)
 * Sorting Dictionaries, Breaking Ties
+	- [Sorting A Dictionary's Keys](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/5.4_Sorting_A_Dictionarys_Keys.md)
+	- [Breaking Ties](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/5.5_Breaking_Ties.md)
 * Python Functions, Files, and Dictionaries - Final Course Project
 
 ----
