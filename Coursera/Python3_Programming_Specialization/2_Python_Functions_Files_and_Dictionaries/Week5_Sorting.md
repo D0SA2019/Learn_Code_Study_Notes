@@ -767,3 +767,505 @@ There will be other situations that are even more complicated than this. In some
 
 ----
 ----
+
+
+### 5.7. Chapter Assessments & Exercises
+
+#### Assessments
+
+**A1**. Sort the following string alphabetically, from z to a, and assign it to the variable `sorted_letters`.
+
+
+```python
+# Given
+letters = "alwnfiwaksuezlaeiajsdl"
+
+
+# Solution
+sorted_letters = sorted(letters, reverse=True)
+print(sorted_letters)
+print("".join(sorted_letters))
+```
+
+**Output** :
+
+```
+['z', 'w', 'w', 'u', 's', 's', 'n', 'l', 'l', 'l', 'k', 'j', 'i', 'i', 'f', 'e', 'e', 'd', 'a', 'a', 'a', 'a']
+zwwussnlllkjiifeedaaaa
+```
+
+-----
+
+**A2**. Sort the list below, `animals`, into alphabetical order, a-z. Save the new list as `animals_sorted`.
+
+
+```python
+# Given
+animals = ['elephant', 'cat', 'moose', 'antelope', 'elk', 'rabbit', 'zebra', 'yak', 'salamander', 'deer', 'otter', 'minx', 'giraffe', 'goat', 'cow', 'tiger', 'bear']
+
+
+# Solution
+animals_sorted = sorted(animals)
+print(animals_sorted)
+```
+
+**Output** :
+
+```
+['antelope', 'bear', 'cat', 'cow', 'deer', 'elephant', 'elk', 'giraffe', 'goat', 'minx', 'moose', 'otter', 'rabbit', 'salamander', 'tiger', 'yak', 'zebra']
+```
+
+-----
+
+**A3**. Write code to rearrange the strings in the list `winners` so that they are in alphabetical order by first name from A to Z.
+
+
+```python
+# Given
+winners = ['Kazuo Ishiguro', 'Rainer Weiss', 'Youyou Tu', 'Malala Yousafzai', 'Alice Munro', 'Alvin E. Roth']
+
+
+# Solution
+sorted_winners = sorted(winners)
+print(sorted_winners)
+```
+
+**Output** :
+
+```
+['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
+```
+
+-----
+
+**A4**. Write code to switch the order of the `winners` list so that it is now Z to A, by first name. Assign this list to the variable `z_winners`.
+
+
+```python
+# Given
+winners = ['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
+
+
+# Solution
+z_winners = sorted(winners, reverse=True)
+print(z_winners)
+```
+
+**Output** :
+
+```
+['Youyou Tu', 'Rainer Weiss', 'Malala Yousafzai', 'Kazuo Ishiguro', 'Alvin E. Roth', 'Alice Munro']
+```
+
+-----
+
+
+**A5**. Write code to switch the order of the `winners` list so that it is now A to Z by last name. Assign this list to the variable `z_winners`.
+
+
+```python
+# Given
+winners = ['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
+
+
+# Solution
+z_winners = sorted(winners, key=lambda x: x.split()[-1])
+print(z_winners)
+```
+
+**Output** :
+
+```
+['Kazuo Ishiguro', 'Alice Munro', 'Alvin E. Roth', 'Youyou Tu', 'Rainer Weiss', 'Malala Yousafzai']
+```
+
+-----
+
+**A6**. The dictionary, `medals`, shows the medal count for six countries during the Rio Olympics. Sort the country names so they appear alphabetically. Save this list to the variable `alphabetical`.
+
+
+```python
+# Given
+medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
+
+
+# Solution
+alphabetical = sorted(medals)
+print(alphabetical)
+```
+
+**Output** :
+
+```
+['China', 'Germany', 'Japan', 'Russia', 'South Korea', 'United States']
+```
+
+-----
+
+
+**A7**. Given the same dictionary, `medals`, now sort by the medal count. Save the three countries with the highest medal count to the list, `top_three`.
+
+
+```python
+# Given
+medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
+
+# Solution
+top_three = sorted(medals, reverse=True, key=lambda x: medals[x])[:3]
+print(top_three)
+```
+
+**Output** :
+
+```
+['United States', 'China', 'Russia']
+```
+
+-----
+
+
+**A8**. We have provided the dictionary `groceries`. You should return a list of its keys, but they should be sorted by their values, from highest to lowest. Save the new list as `most_needed`.
+
+
+```python
+# Given
+groceries = {'apples': 5,
+							'pasta': 3,
+							'carrots': 12,
+							'orange juice': 2,
+							'bananas': 8,
+							'popcorn': 1,
+							'salsa': 3,
+							'cereal': 4,
+							'coffee': 5,
+							'granola bars': 15,
+							'onions': 7,
+							'rice': 1,
+							'peanut butter': 2,
+							'spinach': 9}
+
+
+# Solution
+most_needed = sorted(groceries, reverse=True, key=lambda x: groceries[x])
+print(most_needed)
+```
+
+**Output** :
+
+```
+['granola bars', 'carrots', 'spinach', 'bananas', 'onions', 'apples', 'coffee', 'cereal', 'pasta', 'salsa', 'orange juice', 'peanut butter', 'popcorn', 'rice']
+```
+
+-----
+
+**A9**. Create a function called `last_four` that takes in an ID number and returns the last four digits. For example, the number 17573005 should return 3005. Then, use this function to sort the list of ids stored in the variable, `ids`, from lowest to highest. Save this sorted list in the variable, `sorted_ids`. Hint: Remember that only strings can be indexed, so conversions may be needed.
+
+
+```python
+# Given
+def last_four(x):
+
+ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
+
+
+# Solution
+def last_four(x):
+	x = str(x)
+	return x[-4:]
+
+
+ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
+sorted_ids = sorted(ids, key=last_four)
+print(sorted_ids)
+```
+
+**Output** :
+
+```
+[17570002, 17572342, 17572345, 17573005, 17579000, 17579329]
+```
+
+-----
+
+
+**A10**. Sort the list `ids` by the last four digits of each id. Do this using lambda and not using a defined function. Save this sorted list in the variable `sorted_id`.
+
+
+```python
+# Given
+ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
+
+# Solution
+sorted_id = sorted(ids, key=lambda x: str(x)[-4:])
+print(sorted_id)
+```
+
+**Output** :
+
+```
+[17570002, 17572342, 17572345, 17573005, 17579000, 17579329]
+```
+
+-----
+
+
+**A11**. Sort the following list by each element’s second letter a to z. Do so by using lambda. Assign the resulting value to the variable `lambda_sort`.
+
+
+```python
+# Given
+ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
+
+
+# Solution
+lambda_sort = sorted(ex_lst, key=lambda x: x[1])
+print(lambda_sort)
+```
+
+**Output** :
+
+```
+['dance', 'zebra', 'hi', 'how are you', 'apple', 'bye']
+```
+
+-----
+
+
+----
+----
+
+#### Exercises
+
+
+**Q1**. You’re going to write a function that takes a string as a parameter and returns a list of the five most frequent characters in the string.
+
+```python
+# Given
+L = [8, 7, 6, 6, 4, 4, 3, 1, 0]
+
+
+
+# Solution
+L = [0, 1, 6, 7, 3, 6, 8, 4, 4, 6, 1, 6, 6, 5, 4, 4, 3, 35, 4, 11]
+str1 = "Hello body are you there?"
+
+def c_char(astring):
+	char_dic = {}
+	for letter in astring:
+		char_dic[letter] = astring.count(letter)
+	print(char_dic)
+	sorted_five = sorted(char_dic, key=lambda x: char_dic[x], reverse=True)
+	print(sorted_five)
+	print(sorted_five[:5])
+	return sorted_five[:5]
+
+print(c_char(L))
+print(c_char(str1))
+```
+
+**Output** :
+
+```
+{0: 1, 1: 2, 6: 5, 7: 1, 3: 2, 8: 1, 4: 5, 5: 1, 35: 1, 11: 1}
+[6, 4, 1, 3, 0, 7, 8, 5, 35, 11]
+[6, 4, 1, 3, 0]
+[6, 4, 1, 3, 0]
+{'H': 1, 'e': 4, 'l': 2, 'o': 3, ' ': 4, 'b': 1, 'd': 1, 'y': 2, 'a': 1, 'r': 2, 'u': 1, 't': 1, 'h': 1, '?': 1}
+['e', ' ', 'o', 'l', 'y', 'r', 'H', 'b', 'd', 'a', 'u', 't', 'h', '?']
+['e', ' ', 'o', 'l', 'y']
+['e', ' ', 'o', 'l', 'y']
+```
+
+-----
+
+
+### 5.8. Project - Sentiment Classifier
+
+We have provided some synthetic (fake, semi-randomly generated) twitter data in a csv file named project_twitter_data.csv which has the text of a tweet, the number of retweets of that tweet, and the number of replies to that tweet. We have also words that express positive sentiment and negative sentiment, in the files positive_words.txt and negative_words.txt.
+
+Your task is to build a sentiment classifier, which will detect how positive or negative each tweet is. You will create a csv file, which contains columns for the Number of Retweets, Number of Replies, Positive Score (which is how many happy words are in the tweet), Negative Score (which is how many angry words are in the tweet), and the Net Score for each tweet. At the end, you upload the csv file to Excel or Google Sheets, and produce a graph of the Net Score vs Number of Retweets.
+
+To start, define a function called `strip_punctuation` which takes one parameter, a string which represents a word, and removes characters considered punctuation from everywhere in the word. (Hint: remember the .replace() method for strings.)
+
+
+```python
+# Given
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+
+
+# Solution
+def strip_punctuation(atext):
+    for punc in punctuation_chars:
+        if punc in atext:
+            atext = atext.replace(punc, "")
+    return atext
+
+print(strip_punctuation('#Amazing'))
+print(strip_punctuation('wow'))
+print(strip_punctuation('incredible'))
+print(strip_punctuation('wonderful'))
+```
+
+**Output** :
+
+```
+Amazing
+wow
+incredible
+wonderful
+```
+
+Next, copy in your strip_punctuation function and define a function called `get_pos` which takes one parameter, a string which represents a one or more sentences, and calculates how many words in the string are considered positive words. Use the list, `positive_words` to determine what words will count as positive. The function should return a positive integer - how many occurances there are of positive words in the text.
+
+```python
+# Given
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+
+
+# Solution
+def strip_punctuation(atext):
+    for punc in punctuation_chars:
+        if punc in atext:
+            atext = atext.replace(punc, "")
+    return atext
+
+def get_pos(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    print(words)
+    tot = 0
+    for word in words:
+        if word in positive_words:
+            tot += 1
+    return tot
+
+positives = {}
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+```
+
+Next, copy in your `strip_punctuation` function and define a function called `get_neg` which takes one parameter, a string which represents a one or more sentences, and calculates how many words in the string are considered negative words. Use the list, `negative_words` to determine what words will count as negative. The function should return a positive integer - how many occurances there are of negative words in the text.
+
+```python
+# Given
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+
+# Solution
+def strip_punctuation(atext):
+    for punc in punctuation_chars:
+        if punc in atext:
+            atext = atext.replace(punc, "")
+    return atext
+
+def get_neg(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    print(words)
+    tot = 0
+    for word in words:
+        if word in negative_words:
+            tot += 1
+    return tot
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+```
+
+Finally, copy in your previous functions and write code that opens the file `project_twitter_data.csv` which has the fake generated twitter data (the text of a tweet, the number of retweets of that tweet, and the number of replies to that tweet). Your task is to build a sentiment classifier, which will detect how positive or negative each tweet is. Copy the code from the code windows above, and put that in the top of this code window. Now, you will write code to create a csv file called `resulting_data.csv`, which contains the Number of Retweets, Number of Replies, Positive Score (which is how many happy words are in the tweet), Negative Score (which is how many angry words are in the tweet), and the Net Score (how positive or negative the text is overall) for each tweet. The file should have those headers in that order. Remember that there is another component to this project. You will upload the csv file to Excel or Google Sheets and produce a graph of the Net Score vs Number of Retweets. Check Coursera for that portion of the assignment, if you’re accessing this textbook from Coursera.
+
+
+```python
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+def strip_punctuation(atext):
+    for punc in punctuation_chars:
+        if punc in atext:
+            atext = atext.replace(punc, "")
+    return atext
+
+def get_pos(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    #print(words)
+    tot = 0
+    for word in words:
+        if word in positive_words:
+            tot += 1
+    return tot
+
+def get_neg(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    #print(words)
+    tot = 0
+    for word in words:
+        if word in negative_words:
+            tot += 1
+    return tot
+
+positives = {}
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+
+with open("project_twitter_data.csv", "r") as tweets:
+	results = []
+	result_file = open("resulting_data.csv", "w+")
+	head = "Number of Retweets,Number of Replies,Positive Score,Negative Score,Net Score\n"
+	result_file.write(head)
+	for tweet in tweets:
+		if tweet.startswith("tweet_text"):
+			pass
+		else:
+			negative = get_neg(tweet)
+			positive = get_pos(tweet)
+			score = positive - negative
+			tweet = tweet.strip().split(",")
+			tweet_text, retweets, replies = tweet[0], tweet[1], tweet[2]
+			res = "{},{},{},{},{}\n".format(retweets, replies, positive, negative, score)
+			result_file.write(res)
+```
+
+
+-----

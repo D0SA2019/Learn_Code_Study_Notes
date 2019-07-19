@@ -319,3 +319,187 @@ states = {"Minnesota": ["St. Paul", "Minneapolis", "Saint Cloud", "Stillwater"],
             "Washington": ["Seattle", "Tacoma", "Olympia", "Vancouver"]}
 
 print(sorted(states, key=lambda state: s_cities_count(states[state])))
+
+
+
+print("")
+
+print("============================================")
+print("======= 5.7. Assessments & Exercises =======")
+print("--------------------------------------------")
+L = [0, 1, 6, 7, 3, 6, 8, 4, 4, 6, 1, 6, 6, 5, 4, 4, 3, 35, 4, 11]
+str1 = "Hello body are you there?"
+
+def c_char(astring):
+	char_dic = {}
+	for letter in astring:
+		char_dic[letter] = astring.count(letter)
+	print(char_dic)
+	sorted_five = sorted(char_dic, key=lambda x: char_dic[x], reverse=True)
+	print(sorted_five)
+	print(sorted_five[:5])
+	return sorted_five[:5]
+
+print(c_char(L))
+print(c_char(str1))
+
+
+print("")
+
+letters = "alwnfiwaksuezlaeiajsdl"
+
+sorted_letters = sorted(letters, reverse=True)
+print(sorted_letters)
+print("".join(sorted_letters))
+
+print("")
+
+animals = ['elephant', 'cat', 'moose', 'antelope', 'elk', 'rabbit', 'zebra', 'yak', 'salamander', 'deer', 'otter', 'minx', 'giraffe', 'goat', 'cow', 'tiger', 'bear']
+
+animals_sorted = sorted(animals)
+print(animals_sorted)
+print(", ".join(animals_sorted))
+
+print("")
+
+winners = ['Kazuo Ishiguro', 'Rainer Weiss', 'Youyou Tu', 'Malala Yousafzai', 'Alice Munro', 'Alvin E. Roth']
+
+sorted_winners = sorted(winners)
+print(sorted_winners)
+
+
+print("")
+
+
+winners = ['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
+
+z_winners = sorted(winners, reverse=True)
+print(z_winners)
+
+
+print("")
+
+winners = ['Alice Munro', 'Alvin E. Roth', 'Kazuo Ishiguro', 'Malala Yousafzai', 'Rainer Weiss', 'Youyou Tu']
+
+z_winners = sorted(winners, key=lambda x: x.split()[-1])
+print(z_winners)
+
+
+print("")
+
+medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
+
+alphabetical = sorted(medals)
+print(alphabetical)
+
+
+print("")
+
+medals = {'Japan':41, 'Russia':56, 'South Korea':21, 'United States':121, 'Germany':42, 'China':70}
+
+top_three = sorted(medals, reverse=True, key=lambda x: medals[x])[:3]
+print(top_three)
+
+
+print("")
+
+groceries = {'apples': 5, 'pasta': 3, 'carrots': 12, 'orange juice': 2, 'bananas': 8, 'popcorn': 1, 'salsa': 3, 'cereal': 4, 'coffee': 5, 'granola bars': 15, 'onions': 7, 'rice': 1, 'peanut butter': 2, 'spinach': 9}
+
+most_needed = sorted(groceries, reverse=True, key=lambda x: groceries[x])
+print(most_needed)
+
+print("")
+
+def last_four(x):
+	x = str(x)
+	return x[-4:]
+
+
+ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
+sorted_ids = sorted(ids, key=last_four)
+print(sorted_ids)
+
+
+print("")
+
+ids = [17573005, 17572342, 17579000, 17570002, 17572345, 17579329]
+
+sorted_id = sorted(ids, key=lambda x: str(x)[-4:])
+print(sorted_id)
+
+print("")
+
+ex_lst = ['hi', 'how are you', 'bye', 'apple', 'zebra', 'dance']
+
+lambda_sort = sorted(ex_lst, key=lambda x: x[1])
+print(lambda_sort)
+
+
+print("")
+
+print("============================================")
+print("==== 5.8. Project: Sentiment Classifier ====")
+print("--------------------------------------------")
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+
+def strip_punctuation(atext):
+    for punc in punctuation_chars:
+        if punc in atext:
+            atext = atext.replace(punc, "")
+    return atext
+
+def get_pos(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    #print(words)
+    tot = 0
+    for word in words:
+        if word in positive_words:
+            tot += 1
+    return tot
+
+def get_neg(astring):
+    astring= strip_punctuation(astring)
+    astring = astring.lower()
+    words = astring.split()
+    #print(words)
+    tot = 0
+    for word in words:
+        if word in negative_words:
+            tot += 1
+    return tot
+
+positives = {}
+
+punctuation_chars = ["'", '"', ",", ".", "!", ":", ";", '#', '@']
+# list of positive words to use
+positive_words = []
+with open("positive_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            positive_words.append(lin.strip())
+
+negative_words = []
+with open("negative_words.txt") as pos_f:
+    for lin in pos_f:
+        if lin[0] != ';' and lin[0] != '\n':
+            negative_words.append(lin.strip())
+
+
+with open("project_twitter_data.csv", "r") as tweets:
+	results = []
+	result_file = open("resulting_data.csv", "w+")
+	head = "Number of Retweets,Number of Replies,Positive Score,Negative Score,Net Score\n"
+	result_file.write(head)
+	for tweet in tweets:
+		if tweet.startswith("tweet_text"):
+			pass
+		else:
+			negative = get_neg(tweet)
+			positive = get_pos(tweet)
+			score = positive - negative 
+			tweet = tweet.strip().split(",")
+			tweet_text, retweets, replies = tweet[0], tweet[1], tweet[2]
+			res = "{},{},{},{},{}\n".format(retweets, replies, positive, negative, score)
+			result_file.write(res)
