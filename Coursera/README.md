@@ -58,6 +58,9 @@
 	- [Functions and Tuples](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week3_Functions_and_Tuples.py))*
 	- [More Iteration and Advanced Functions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week4_More_Iteration_and_Advanced_Functions.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week4_More_Iteration_and_Advanced_Functions.py))*
 	- [Sorting](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week5_Sorting.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/2_Python_Functions_Files_and_Dictionaries/Week5_Sorting.py))*
-* ##### Course 3 : Data Collection and Processing with Python 🔜
+* ##### Course 3 : Data Collection and Processing with Python ⏳
+	- [Nested Data and Nested Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week1_Nested_Data_and_Nested_Iteration.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week1_Nested_Data_and_Nested_Iteration.py))*
+	- Map, Filter, and List Comprehensions *(worksheet)*
+	- Internet APIs *(worksheet)*
 * ##### Course 4 : Python Classes and Inheritance 🔜
 * ##### Course 5 : Python Project: pillow, tesseract, and opencv 🔜

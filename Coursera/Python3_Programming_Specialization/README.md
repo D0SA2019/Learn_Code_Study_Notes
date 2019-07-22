@@ -180,7 +180,25 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 
 ----
 
-## Course 3 : Data Collection and Processing with Python 🔜
+## Course 3 : Data Collection and Processing with Python ⏳
+#### Week 1 : Nested Data and Nested Iteration ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week1_Nested_Data_and_Nested_Iteration.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week1_Nested_Data_and_Nested_Iteration.py))***
+- Nested Data and Nested Iteration
+	* [Nested Lists](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.1_Nested_Lists.md)
+	* [Nested Dictionaries](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.2_Nested_Dictionaries.md)
+	* [JSON Format and the JSON Module](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.3_JSON_Format_and_the_JSON_Module.md)
+- Nested Iteration
+
+#### Week 2 : Map, Filter, and List Comprehensions 🔜
+- Map and Filter
+- List Comprehensions
+- Zip
+
+#### Week 3 : Internet APIs 🔜
+- Requesting Data from the Internet
+- Using REST APIs
+- Practice with REST APIs
+- Data Collection and Processing with Python - Final Course Project
 
 ----
 
