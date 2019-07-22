@@ -38,7 +38,7 @@ Not Weird
 N = int(input())
 ```
 
-## Solution
+## Solution 1
 
 ```python
 N = int(input())
@@ -50,4 +50,27 @@ elif N % 2 == 0 and N > 20 :
     print("Not Weird")
 else :
     print("Weird")
+```
+
+
+
+## Solution 2
+
+```python
+def odd(num):
+    if num % 2 != 0:
+        return "Weird"
+    else:
+        return even(num)
+
+def even(num):
+    if 2 <= num <= 5:
+        return "Not Weird"
+    elif 6 <= num <= 20:
+        return "Weird"
+    elif num > 20:
+        return "Not Weird"
+
+N = int(input())
+print(odd(N))
 ```
