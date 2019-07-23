@@ -39,7 +39,7 @@ if __name__ == '__main__':
     b = int(input())
 ```
 
-## Solution
+## Solution 1
 
 ```python
 if __name__ == '__main__':
@@ -49,4 +49,25 @@ if __name__ == '__main__':
     print(a + b)
     print(a - b)
     print(a * b)
+```
+
+## Solution 2
+
+```python
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+
+    def add_two(x,y):
+        return x + y
+
+    def ext_two(x,y):
+        return x - y
+
+    def mul_two(x,y):
+        return x * y
+
+    print(add_two(a,b))
+    print(ext_two(a,b))
+    print(mul_two(a,b))
 ```
