@@ -188,6 +188,11 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	* [Nested Dictionaries](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.2_Nested_Dictionaries.md)
 	* [JSON Format and the JSON Module](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.3_JSON_Format_and_the_JSON_Module.md)
 - Nested Iteration
+	* [Nested Iteration](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.4_Nested_Iteration.md)
+	* [Structuring Nested Data](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.5_Structuring_Nested_Data.md)
+	* [Deep and Shallow Copies](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.6_Deep_and_Shallow_Copies.md)
+	* [Extracting from Nested Data](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.7_Extracting_from_Nested_Data.md)
+- [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.8_Chapter_Assessments_Exercises.md)
 
 #### Week 2 : Map, Filter, and List Comprehensions 🔜
 - Map and Filter
