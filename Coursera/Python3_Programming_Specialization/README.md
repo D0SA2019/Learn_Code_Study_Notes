@@ -194,7 +194,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	* [Extracting from Nested Data](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.7_Extracting_from_Nested_Data.md)
 - [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/1.8_Chapter_Assessments_Exercises.md)
 
-#### Week 2 : Map, Filter, and List Comprehensions ⏳
+#### Week 2 : Map, Filter, and List Comprehensions ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week2_Map_Filter_and_List_Comprehensions.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week2_Map_Filter_and_List_Comprehensions.py))***
 - Map and Filter
 	* [Map](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/2.1_Map.md)
@@ -202,9 +202,17 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 - [List Comprehensions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/2.3_List_Comprehensions.md)
 - [Zip](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/2.4_Zip.md)
 
-#### Week 3 : Internet APIs 🔜
+#### Week 3 : Internet APIs ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.py))***
 - Requesting Data from the Internet
+	- [How The Internet Works](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.1_How_The_Internet_Works.md)
+	- [Using REST APIs](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.2_Using_REST_APIs.md)
+	- [Fetching a page](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.3_Fetching_a_page.md)
 - Using REST APIs
+	- [Generating URLs with requests.get](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.4_Generating_URLs_with_requests_get.md)
+	- [Reading API Documentation: Datamuse](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.5_Reading_API_Documentation_Datamuse.md)
+	- [Debugging Calls to requests.get](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.6_Debugging_Calls_to_requests_get.md)
+	- [Caching Response Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.7_Caching_Response_Content.md)
 - Practice with REST APIs
 - Data Collection and Processing with Python - Final Course Project
 
