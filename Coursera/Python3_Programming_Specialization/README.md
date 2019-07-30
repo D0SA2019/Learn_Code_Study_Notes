@@ -214,6 +214,9 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Debugging Calls to requests.get](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.6_Debugging_Calls_to_requests_get.md)
 	- [Caching Response Content](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.7_Caching_Response_Content.md)
 - Practice with REST APIs
+	- [Searching for Media on iTunes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.8_Searching_for_Media_on_iTunes.md)
+	- [Searching for tags on flickr](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.9_Searching_for_tags_on_flickr.md)
+	- [Unicode for non-English characters](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.10_Unicode_for_non-English_characters.md)
 - Data Collection and Processing with Python - Final Course Project
 
 ----
