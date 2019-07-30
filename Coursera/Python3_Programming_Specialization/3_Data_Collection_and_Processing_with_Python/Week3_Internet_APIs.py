@@ -85,5 +85,26 @@ print(resp.text[:200])
 print("")
 
 print("============================================")
-print("====== 3.7. Caching Response Content =======")
+print("==== 3.8. Searching for Media on iTunes ====")
+print("--------------------------------------------")
+parameters = {"term": "Ann Arbor", "entity": "podcast"}
+iTunes_response = requests.get("https://itunes.apple.com/search", params=parameters)
+
+py_data = json.loads(iTunes_response.text)
+print(json.dumps(py_data, indent=2)[:500])
+
+print("")
+
+print(json.dumps(py_data["results"], indent=2))
+
+print("")
+
+for r in py_data["results"]:
+  print(r["trackName"])
+
+
+print("")
+
+print("============================================")
+print("==== 3.11. Project - OMDB and TasteDive ====")
 print("--------------------------------------------")

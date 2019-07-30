@@ -558,5 +558,276 @@ D. Because the make_cache_key function as written here is what saves the cache d
 
 ### Practice with REST APIs
 
+#### 3.8. Searching for Media on iTunes
+
+The iTunes API allows users to search for movies, podcasts, music, music videos, tv shows, and books that are hosted on the iTunes site. You can explore the official [iTunes API documentation](https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/).
+
+Earlier we showed a possible query for podcasts about Ann Arbor. Now, we’ll show you how to construct it yourself!
+
+We will first need to write our import statements, so that we have access to the requests module and json module.
+
+
+```python
+import requests
+import json
+```
+
+
+At this point, we look to our documentation to find out what the base of the url will be as well as what parameters are neeed to construct the request. In the Searching section of the documentation, we can see that the url should be in the form of `https://itunes.apple.com/search?parameterkeyvalue` so we know the base url should be `https://itunes.apple.com/search`. To determine what parameters are necessary, we can look at the table in the documentation to learn what parameter keys and values will be understood by the iTuens API server.
+
+`term` is a required parameter with no default value, so we’ll have to provide that.
+
+```python
+import requests
+import json
+
+params = {"term": "Ann Arbor"}
+```
+
+We also want to make sure that we’re searching for podcasts.
+
+```python
+import requests
+import json
+
+params = {"entity": "podcast"}
+# or
+params = {"media": "podcast"}
+```
+
+Note that both **entity** and **media** are parameters we can use for this task. Entity can be more specific though, so you may need to use that in rather than media!
+
+Now, our code can now make a request to the iTunes API. We’re using the request_with_caching module and providing a cached response to the query in the activecodes. You can try running different queries, but if the itunes webserver is inaccessible to you for one reason or another, it may not work.
+
+
+```python
+import requests
+import json
+
+parameters = {"term": "Ann Arbor", "entity": "podcast"}
+iTunes_response = requests.get("https://itunes.apple.com/search", params=parameters)
+
+py_data = json.loads(iTunes_response.text)
+print(json.dumps(py_data, indent=2)[:500])
+```
+
+**Output** :
+
+```
+{
+  "resultCount": 29,
+  "results": [
+    {
+      "wrapperType": "track",
+      "kind": "podcast",
+      "collectionId": 1089272384,
+      "trackId": 1089272384,
+      "artistName": "Ann Arbor District Library",
+      "collectionName": "Ann Arbor Stories | Ann Arbor District Library",
+      "trackName": "Ann Arbor Stories | Ann Arbor District Library",
+      "collectionCensoredName": "Ann Arbor Stories | Ann Arbor District Library",
+      "trackCensoredName": "Ann Arbor Stories | Ann Arbor Distr
+```
+
+With that result in hand, you will have to go through the process previously described as Understand. Extract. Repeat. . For example, to print out the names of all the podcasts returned, one could run the following code.
+
+```python
+import requests
+import json
+
+parameters = {"term": "Ann Arbor", "entity": "podcast"}
+iTunes_response = requests.get("https://itunes.apple.com/search", params=parameters)
+
+py_data = json.loads(iTunes_response.text)
+
+for r in py_data["results"]:
+  print(r["trackName"])
+```
+
+**Output** :
+
+```
+Ann Arbor Stories | Ann Arbor District Library
+2|42 Community Church - Ann Arbor
+Sermons – NewLifeA2.org
+Harvest Mission Community Church (Ann Arbor) Sermons
+Living Writers
+Grace Ann Arbor Church
+Grace Bible Church Ann Arbor
+Antioch Ann Arbor
+Blue Ocean Faith Ann Arbor
+Sermons from First Pres
+Presenting Alfred Hitchcock Presents | Ann Arbor District Library
+It’s Hot In Here
+Radiant Church - Ann Arbor: Sermons
+Fellow Youths | Ann Arbor District Library
+Calvary Sunday Messages
+Ann Arbor SPARK CEO Podcast
+Behind The Marquee | Ann Arbor District Library
+Welcome to Tree Town
+Martin Bandyke Under Covers | Ann Arbor District Library
+Mosaic Church of Ann Arbor
+Ann Arbor West Side UMC Sermons
+Grace Ann Arbor Podcast
+A2 City News
+Redeemer Ann Arbor
+Zion Lutheran Ann Arbor
+Christ Church Ann Arbor
+AADL Reads | Ann Arbor District Library
+Vineyard Church of Ann Arbor Sermon Podcast
+Ann Arbor, MI – PODCAST WEATHER TEAM
+```
+------
+------
+
+
+#### 3.9. Searching for tags on flickr
+
+Consider another service, the image sharing site flickr. People interact with the site using a web browser or mobile apps. Users who upload photos can assign one or more short “tags” to each photo. Tags are words like “sunset” or “spaghetti” that describe something about the photo. They can be used for searching or finding related photos.
+
+An API is available to make it easier for application programs to fetch data from the site and post data to the site. That allows third parties to make applications that integrate elements of flickr. Flickr provides the API as a way to increase the value of its service, and thus attract more customers. You can explore [the official documentation](https://www.flickr.com/services/api/) about the site.
+
+Here we will explore some aspects of one endpoint that flickr provides, for searching for photos matching certain criteria. Check out the [full documentation for photo search](https://www.flickr.com/services/api/flickr.photos.search.html) for details.
+
+This API is more complex than the APIs you examined in previous subchapters, because it requires authentication, and because it requires you to specify that you want results to be returned in JSON format. It also provide more good practice at learning to use an API from the documentation. Plus, photo data is pretty interesting to examine.
+
+The structure of a URL for a photo search on flickr is:
+
+* base URL is `https://api.flickr.com/services/rest/`
+* `?`
+* **key=value pairs, separated by &s**:
+  - One pair is `method=flickr.photos.search`. This says to do a photo search, rather than one of the many other operations that the API allows. Don’t be confused by the word “method” here– it is not a python method. That’s just the name flickr uses to distinguish among the different operations a client application can request.
+  - `format=json`. This says to return results in JSON format.
+  - `per_page=5`. This says to return 5 results at a time.
+  - `tags=mountains,river`. This says to return things that are tagged with “mountains” and “river”.
+  - `tag_mode=all`. This says to return things that are tagged with both mountains and river.
+  - `media=photos`. This says to return photos
+  - `api_key=....` Flickr only lets authorized applications access the API. Each request must include a secret code as a value associated with api_key. Anyone can get a key. See the [documentation for how to get one](https://www.flickr.com/services/api/misc.api_keys.html). We recommend that you get one so that you can test out the sample code in this chapter creatively. We have included some cached responses, and they are accessible even without an API key.
+  - `nojsoncallback=1`. This says to return the raw JSON result without a function wrapper around the JSON response.
+
+Let’s put everything together to make a little retrieval tool for flickr images containing particular tags. Of course, in a browser, you can just use flickr’s search tool. But doing this through the API opens up other possibilities that you can explore for features not provided on the regular flickr website.
+
+Below is some code that queries the flickr API for images that have a particular tag.
+
+**Note** : Searching for “mountains” and “rivers” usually produces beautiful images that are “safe for work”, so the example below does that search. We have already cached a response for the particular search in the code window below. That allows the code to run even if you don’t provide a valid flickr api_key. We’ve also checked to make sure that the five returned images are indeed safe for work. If you run this code outside of a browser, or if you do other searches, you will need to provide a valid flickr api_key.
+
+```python
+# import statements
+import requests
+import json
+# import webbrowser
+
+# apply for a flickr authentication key at http://www.flickr.com/services/apps/create/apply/?
+# paste the key (not the secret) as the value of the variable flickr_key
+flickr_key = 'yourkeyhere'
+
+def get_flickr_data(tags_string):
+    baseurl = "https://api.flickr.com/services/rest/"
+    params_diction = {}
+    params_diction["api_key"] = flickr_key # from the above global variable
+    params_diction["tags"] = tags_string # must be a comma separated string to work correctly
+    params_diction["tag_mode"] = "all"
+    params_diction["method"] = "flickr.photos.search"
+    params_diction["per_page"] = 5
+    params_diction["media"] = "photos"
+    params_diction["format"] = "json"
+    params_diction["nojsoncallback"] = 1
+    flickr_resp = requests.get(baseurl, params = params_diction)
+    # Useful for debugging: print the url! Uncomment the below line to do so.
+    print(flickr_resp.url) # Paste the result into the browser to check it out...
+    return flickr_resp.json()
+
+result_river_mts = get_flickr_data("river,mountains")
+
+# Some code to open up a few photos that are tagged with the mountains and river tags...
+
+photos = result_river_mts['photos']['photo']
+for photo in photos:
+    owner = photo['owner']
+    photo_id = photo['id']
+    url = 'https://www.flickr.com/photos/{}/{}'.format(owner, photo_id)
+    print(url)
+    # webbrowser.open(url)
+```
+
+**Output** :
+
+```
+https://api.flickr.com/services/rest/?api_key=yourkeyhere&tags=river%2Cmountains&tag_mode=all&method=flickr.photos.search&per_page=5&media=photos&format=json&nojsoncallback=1
+https://www.flickr.com/photos/45934971@N07/44858440865
+https://www.flickr.com/photos/145056248@N07/43953569330
+https://www.flickr.com/photos/145056248@N07/43953448610
+https://www.flickr.com/photos/131540074@N08/44857602655
+https://www.flickr.com/photos/145056248@N07/44857423045
+```
+
+The response sent back by flickr is loaded into a python dictionary using `json.loads()`.
+
+In the end, we loop through the list of photo dictionaries that were returned, extracting two fields, `owner` and `photo_id`. Those are used to create new URLs that are in the format flickr expects for displaying a webpage containing a single image. In the runestone environment, you’ll have to copy those URLs to new tabs to see the photos. In a full python environment, you can uncomment the line of code that imports the webbrowser module and the line of code that calls the `webbrowser.open()` function. If all goes well, that should open five browser tabs, each with a picture that some flickr user had tagged with the words “mountains” and “rivers”.
+
+
+------
+------
+
+**Check Your Understanding**
+
+**Q1** :  If you wanted to search for photos tagged with either river or mountains, rather than requiring both, what would you change in the code? (Hint: check the documentation)
+
+A. Make two calls, ``get_flickr_data('mountains')`` and ``get_flickr_data('river')``  <br>
+B. Call ``get_flickr_data('mountains | river')``  <br>
+C. Set ``params_diction["tag_mode"] = "any"``  ✅ <br>
+D. Set ``params_diction["method"] = "any"``  <br>
+E. Set ``params_diction["tag_mode"] = "OR"``  <br>
+
+------
+
+#### 3.10. Unicode for non-English characters
+
+Sometimes, you may need to deal with text that includes characters that are not part of the standard English alphabet, such as é, ö, Ф, or ¥. This is especially likely if you use REST APIs to fetch user-contributed content from social media sites like Twitter, Facebook, or flickr.
+
+Python’s strings are in **unicode**, which allows for characters to be from a much larger alphabet, including more than 75,000 ideographic characters used in Chinese, Japanese, and Korean alphabets. Everything works fine inside Python, for operations like slicing and appending and concatenating strings and using `.find()` or the `in` operator.
+
+Things only get tricky when you want to input strings into Python, or print them to an output window or write them to a file.
+
+For output, your terminal (output) window will typically be set up to display characters only from a restricted set of languages (perhaps just English). If you issue a print statement on a string containing other characters, it may not display correctly in your terminal window. Indeed, you may get an error message. We will offer a workaround later on this page.
+
+If you want to store unicode text in a file, you have to choose an “encoding”. This is analogous to the encoding of special characters in a URL string, but not the same. In a file, each unicode character has to be encoded as one or more “bytes” for storage in a file. We have avoided low-level details about data encodings until now, but understanding a little about bits and bytes will help make sense of this.
+
+A **bit** is a BInary digiT. It is a single value restricted to two (binary) possibilities, which we conventionally write as 0 or 1. Computers store bits as electrical charges (high or low voltage) or as magnetic polarities, or some other way that we need not be concerned about. A sequence of eight 0-1 bits is called a byte. For example: 01001000.
+
+There are 2^^8=256 distinct eight-bit bytes. If we only had 256 possible letters in our alphabet, we could simply encode each letter as one of the available bytes. When we restrict ourselves to regular python strings, using only the ASCII alphabet (English, plus a few special characters), the encoding is that simple, so simple that we haven’t had to think about it before.
+
+When there are 75,000 possible characters, they can’t all be encoded with a single byte, because there are only 256 distinct bytes (eight-bit sequences). There are many possible encodings. The one you will be most likely to encounter, using REST APIs, is called UTF-8. A single unicode character is mapped to a sequence of up to four bytes.
+
+If you read in a UTF-8 encoded text, and get the contents using `.read()` or `.readlines()`, you will need to “decode” the contents in order to turn it into a proper unicode string that you can read and use.
+
+Fortunately, the requests module will normally handle this for us automatically. When we fetch a webpage that is in json format, the webpage will have a header called ‘content-type’ that will say something like `application/json; charset=utf8`. If it specifies the utf8 character set in that way, the requests module will automatically decode the contents into unicode: `requests.get('that web page').text` will yield a string, with each of those sequences of one to four bytes coverted into a single character.
+
+If, for some reason, you get json-formatted text that is utf-encoded but the requests module hasn’t magically decoded it for you, the `json.loads()` function call can take care of the decoding for you. `loads()` takes an optional parameter, encoding. Its default value is ‘utf-8’, so you don’t need to specify it unless you think the text you have received was in some other encoding than ‘utf-8’.
+
+**Note** : You may see a `u` before the string in a Python 2.7 program indicating that it’s a unicode string. In Python 3, all strings are unicode strings, so you shouldn’t encounter any of those strange u characters in this textbook.
+
+Once you have python strings, everything will work fine until you try to print or write the contents to a file. If you print, and your terminal window is not set up to display that language, you may get a strange output, or an error message.
+
+If you try to write to a file with unicode strings, you may get an error. When you write a unicode string to a file, Python tries to encode it in ASCII. If there is a non-ASCII character, the execution fails and raises an error that looks like this: `UnicodeEncodeError: 'ascii' codec can't encode character u'\xea' in position 1: ordinal not in range(128)`.
+
+One solution is to use the Python method to encode the string, using a format such as utf-8. For example, `s.encode('utf-8')` will encode string `s` as `utf-8`. That will encode non-ASCII characters with multiple character sequences that are difficult for people to read but can decoded back into single Unicode characters. This is often the best way.
+
+Another quick-and-dirty option, if you just have a few stray characters that are getting in your way, is to replace any non-ASCII characters with question marks. For example, `s.encode('ascii', 'replace')`. Of course, replacing characters with question marks destroys some of the information, but it may be helpful in some circumstances.
+
+-----
+------
+
+**Check Your Understanding**
+
+**Q1** : When you have non-ASCII characters in a string and you get an error trying to write them, which method should you invoke on the string?
+
+A. ``.encode()`` ✅ <br>
+B. ``.decode()`` <br>
+C. ``.json()`` <br>
+
+
+----
+
 
 ### Data Collection and Processing with Python - Final Course Project
