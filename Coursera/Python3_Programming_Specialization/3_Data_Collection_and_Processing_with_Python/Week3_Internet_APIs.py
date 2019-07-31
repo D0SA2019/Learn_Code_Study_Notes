@@ -4,7 +4,7 @@ print("Course 3 : Data Collection and Processing with Python")
 print("Week 3 : Internet APIs")
 
 print("")
-"""
+
 print("============================================")
 print("============ 3.3. Fetching A Page ==========")
 print("--------------------------------------------")
@@ -104,7 +104,7 @@ for r in py_data["results"]:
 
 
 print("")
-"""
+
 print("============================================")
 print("==== 3.11. Project - OMDB and TasteDive ====")
 print("--------------------------------------------")
