@@ -4,7 +4,7 @@ print("Course 3 : Data Collection and Processing with Python")
 print("Week 3 : Internet APIs")
 
 print("")
-
+"""
 print("============================================")
 print("============ 3.3. Fetching A Page ==========")
 print("--------------------------------------------")
@@ -104,7 +104,62 @@ for r in py_data["results"]:
 
 
 print("")
-
+"""
 print("============================================")
 print("==== 3.11. Project - OMDB and TasteDive ====")
 print("--------------------------------------------")
+import requests
+import json
+
+def get_movies_from_tastedive(movie_name):
+    baseurl = "https://tastedive.com/api/similar"
+    params_dive = {}
+    params_dive["q"] = movie_name
+    params_dive["type"] = "movies"
+    params_dive["limit"] = 5
+    search_result = requests.get(baseurl, params=params_dive)
+    return search_result.json()
+
+def extract_movie_titles(theresult):
+    similar_movies = theresult["Similar"]["Results"]
+    movie_names = []
+    for movie in similar_movies:
+        #print(movie)
+        movie_names.append(movie["Name"])
+    return movie_names
+
+def get_related_titles(movie_list):
+    all_in_one = []
+    for movie in movie_list:
+        the_movies = extract_movie_titles(get_movies_from_tastedive(movie))
+        for m in the_movies:
+            if m not in all_in_one:
+                all_in_one.append(m)
+    return all_in_one
+
+
+def get_movie_data(themovie):
+    params_om = {}
+    baseurl = "http://www.omdbapi.com/"
+    params_om["apikey"] = "YOURKEY"
+    params_om["s"] = themovie
+    params_om["type"] = "movie"
+    movie_info = requests.get(baseurl, params=params_om)
+    return movie_info.json()
+
+
+def get_movie_rating(themovie):
+    params_rotten = {}
+
+related = get_related_titles("Black Panther")
+print(related)
+
+print("")
+
+for movie in related:
+    info = get_movie_data(movie)
+    print(json.dumps(info, indent=2))
+    print("")
+
+#infos = get_movie_data("Black Panther")
+#print(json.dumps(infos, indent=2))
