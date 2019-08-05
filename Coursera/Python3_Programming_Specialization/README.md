@@ -202,7 +202,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 - [List Comprehensions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/2.3_List_Comprehensions.md)
 - [Zip](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/2.4_Zip.md)
 
-#### Week 3 : Internet APIs ⏳
+#### Week 3 : Internet APIs ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.py))***
 - Requesting Data from the Internet
 	- [How The Internet Works](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/3.1_How_The_Internet_Works.md)
@@ -221,7 +221,30 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 
 ----
 
-## Course 4 : Python Classes and Inheritance 🔜
+## Course 4 : Python Classes and Inheritance ⏳
+
+#### Week 1 :  Classes ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.py))***
+
+- Constructing Classes
+	* [User-Defined Classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.1_User_Defined_Classes.md)
+	* [Adding Parameters to the Constructor](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.2_Adding_Parameters_to_the_Constructor.md)
+	* [Adding Other Methods to a Class](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.3_Adding_Other_Methods_to_a_Class.md)
+- Objects and Instances
+
+
+#### Week 2 :  Inheritance 🔜
+***All-in-One : ([notes](), [worksheet]())***
+
+- Inheritance
+
+#### Week 3 :  Unit Testing and Exceptions 🔜
+***All-in-One : ([notes](), [worksheet]())***
+
+- Writing Test Cases
+- Exceptions
+- Way of the Programmer: Django
+- Python Classes and Inheritance - Final Course Project
 
 ----
 
