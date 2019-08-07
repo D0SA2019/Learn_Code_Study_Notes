@@ -231,6 +231,15 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	* [Adding Parameters to the Constructor](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.2_Adding_Parameters_to_the_Constructor.md)
 	* [Adding Other Methods to a Class](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.3_Adding_Other_Methods_to_a_Class.md)
 - Objects and Instances
+	- [Objects as Arguments and Parameters](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.4_Objects_as_Arguments_and_Parameters.md)
+	- [Converting an Object to a String](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.5_Converting_an_Object_to_a_String.md)
+	- [Instances as Return Values](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.6_Instances_as_Return_Values.md)
+	- [Sorting Lists of Instances](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.7_Sorting_Lists_of_Instances.md)
+	- [Class Variables and Instance Variables](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.8_Class_Variables_and_Instance_Variables.md)
+	- [Thinking About Classes and Instances](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.9_Thinking_About_Classes_and_Instances.md)
+	- [A Tamagotchi Game](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.10_A_Tamagotchi_Game.md)
+	- [Testing classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.11_Testing_classes.md)
+	- [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.12_Chapter_Assessments_Exercises.md)
 
 
 #### Week 2 :  Inheritance 🔜
