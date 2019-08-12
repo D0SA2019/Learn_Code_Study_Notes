@@ -223,7 +223,7 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 
 ## Course 4 : Python Classes and Inheritance ⏳
 
-#### Week 1 :  Classes ⏳
+#### Week 1 :  Classes ✅
 ***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.py))***
 
 - Constructing Classes
@@ -242,10 +242,16 @@ The personal notes, codes and assignments of "***Python 3 Programming Specializa
 	- [Chapter Assessments & Exercises](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/1.12_Chapter_Assessments_Exercises.md)
 
 
-#### Week 2 :  Inheritance 🔜
-***All-in-One : ([notes](), [worksheet]())***
+#### Week 2 :  Inheritance ⏳
+***All-in-One : ([notes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week2_Inheritance.md), [worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week2_Inheritance.py))***
 
 - Inheritance
+	- [Introduction: Class Inheritance](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/2.1_Introduction_Class_Inheritance.md)
+	- [Inheriting Variables and Methods](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/2.2_Inheriting_Variables_and_Methods.md)
+	- [Overriding Methods](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/2.3_Overriding_Methods.md)
+	- [Invoking the Parent Class's Method](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/2.4_Invoking_the_Parent_Class_s_Method.md)
+	- [Tamagotchi Revisited](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/2.5_Tamagotchi_Revisited.md)
+	- Chapter Assessments & Exercises
 
 #### Week 3 :  Unit Testing and Exceptions 🔜
 ***All-in-One : ([notes](), [worksheet]())***

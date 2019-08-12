@@ -63,8 +63,8 @@
 	- [Map, Filter, and List Comprehensions](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week2_Map_Filter_and_List_Comprehensions.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week2_Map_Filter_and_List_Comprehensions.py))*
 	- [Internet APIs](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/3_Data_Collection_and_Processing_with_Python/Week3_Internet_APIs.py))*
 * ##### Course 4 : Python Classes and Inheritance ⏳
-	- Classes
-	- Inheritance
+	- [Classes](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week1_Classes.py))*
+	- [Inheritance](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week2_Inheritance.md) *([worksheet](https://github.com/hevalhazalkurt/Learn_Code_Study_Notes/blob/master/Coursera/Python3_Programming_Specialization/4_Python_Classes_and_Inheritance/Week2_Inheritance.py))*
 	- Unit Testing and Exceptions
 
 * ##### Course 5 : Python Project: pillow, tesseract, and opencv 🔜
